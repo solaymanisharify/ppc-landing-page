@@ -75,7 +75,7 @@
                             <h2>Listing Optimization</h2>
                         </div>
                         <div class="listing-optimization-desc-content">
-                            <h3>An Enhanced Amazon <br class="mobile-only-br"> Listing Boosts Discoverability And Sales 4x</h3>
+                            <h3>An Enhanced Amazon <br > Listing Boosts Discoverability  And Sales 4x</h3>
                             <p>Optimized with powerful copy, keyword<br class="mobile-only-br"> integrartion, and backend enhancements.</p>
                         </div>
                         <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
@@ -185,7 +185,7 @@
                         </div>
                         <div class="amazon-ppc-card-stat">
                             <div>
-                                <h2>81%</h2>
+                                <h2>81<span class="percentage">%</span></h2>
                                 <p>Average Year Over Year Profit Growth For Our Partners</p>
                             </div>
                             <span class="amazon-ppc-card-stat-line"></span>
@@ -200,7 +200,7 @@
                             </div>
                             <span class="amazon-ppc-card-stat-line"></span>
                             <div>
-                                <h2>98.7%</h2>
+                                <h2>98.7<span class="percentage">%</span></h2>
                                 <p>Client Retention Rate</p>
                             </div>
                         </div>
