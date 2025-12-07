@@ -36,28 +36,28 @@
             </div>
             <div class="reveneue-section">
                 <div class="item-list">
-                    <div class="">
+                    <div class="item-list-1">
                         <div class="revenue-icon">
                             <img src="/assets/images/Desktop/revenue-icon.png" alt="">
                             <h1>2.7B+</h1>
                         </div>
                         <p>REVENUE GENERATED</p>
                     </div>
-                    <div>
+                    <div class="item-list-2">
                         <div class="revenue-icon">
                             <img src="/assets/images/Desktop/ad-icon.png" alt="">
                             <h1>335M+</h1>
                         </div>
                         <p>ADS SPEND MANAGED</p>
                     </div>
-                    <div>
+                    <div class="item-list-3">
                         <div class="revenue-icon">
                             <img src="/assets/images/Desktop/brand-icon.png" alt="">
                             <h1>335M+</h1>
                         </div>
                         <p>BRANDS WE MANAGED</p>
                     </div>
-                    <div>
+                    <div class="item-list-4">
                         <div class="revenue-icon">
                             <img src="/assets/images/Desktop/experience-icon.png" alt="">
                             <h1>15+</h1>

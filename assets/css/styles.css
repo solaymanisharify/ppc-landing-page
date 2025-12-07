@@ -187,6 +187,24 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
+
+.item-list-2 img {
+  width: 70px;
+  height: 60px;
+}
+.item-list-1 img {
+  width: 45px;
+  height: 55px;
+}
+.item-list-3 img {
+  width: 60px;
+  height: 60px;
+}
+.item-list-4 img {
+  width: 55px;
+  height: 60px;
+}
+
 .item-list > div {
   display: flex;
   flex-direction: column;
@@ -196,7 +214,7 @@ h1 {
   margin: 0;
 }
 .item-list h1 {
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 700;
   font-family: sans-serif;
   background: linear-gradient(to bottom, #41d0dd 0%, #41d0dd 40%, #4298ff 60%, #4298ff 100%);
@@ -206,10 +224,10 @@ h1 {
 }
 .item-list p {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: sans-serif;
   color: white;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .listing-optimization {
   /* max-width: 100%; */
@@ -749,7 +767,7 @@ h1 {
   font-weight: normal;
   margin: 0;
 }
-.percentage{
+.percentage {
   font-family: sans-serif;
 }
 .amazon-ppc-card-stat p {
@@ -1187,6 +1205,7 @@ h1 {
 }
 .amazon-advertising-pricing img {
   height: 685px;
+  width:100%;
 }
 .amazon-advertising-pricing-text {
   position: absolute;
@@ -1526,7 +1545,6 @@ h1 {
   }
   .fake-review-img img {
     object-position: left top !important;
-
   }
   .review-card-top {
     gap: 10px;
@@ -1951,10 +1969,10 @@ h1 {
     pointer-events: auto;
   }
   .amazon-ppc-strategy-img {
-    height: 200px ;
+    height: 200px;
   }
   .img-wrapper img {
-    width: 95% ;
+    width: 95%;
     height: 100%;
     object-fit: cover;
   }
@@ -2183,7 +2201,7 @@ h1 {
   .case-study-container-img .case-study-img {
     max-width: 400px;
     height: auto;
-    margin-left:60px;
+    margin-left: 60px;
     margin-right: 0;
   }
 
@@ -2339,7 +2357,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    height:300px;
+    height: 300px;
   }
 
   .amazon-ppc-img img {
@@ -2418,7 +2436,7 @@ h1 {
     height: 400px;
   }
   .img-wrapper img {
-    width: 100% ;
+    width: 100%;
     height: 100%;
     object-fit: cover;
   }
@@ -2503,7 +2521,7 @@ h1 {
 }
 
 @media (max-width: 1919px) and (min-width: 1440px) {
-   .scalable-amazon {
+  .scalable-amazon {
     font-size: 20px;
   }
 
@@ -2519,10 +2537,10 @@ h1 {
     height: 100%;
     object-fit: cover;
   }
-    .review-card-top {
+  .review-card-top {
     display: flex;
     align-items: center;
-    gap: 15px;           /* spacing between image and text */
+    gap: 15px; /* spacing between image and text */
   }
 
   .fake-review {
@@ -2531,7 +2549,7 @@ h1 {
     border-radius: 20px;
     position: absolute;
     bottom: 0;
-    left: -30px;             /* force card to stay left */
+    left: -30px; /* force card to stay left */
   }
 
   .case-study-container-img {
@@ -2548,15 +2566,15 @@ h1 {
     margin-top: 75px;
   }
 
-  .growth-desc{
-    width:400px;
+  .growth-desc {
+    width: 400px;
   }
 
-  .growth-percentage{
-    width:400px;
+  .growth-percentage {
+    width: 400px;
   }
 
-  .growth-percentage h2{
+  .growth-percentage h2 {
     font-size: 40px;
   }
 
@@ -2564,7 +2582,7 @@ h1 {
     font-size: 18px;
   }
 
-   .amazon-advertising-pricing {
+  .amazon-advertising-pricing {
     text-align: center;
   }
 
