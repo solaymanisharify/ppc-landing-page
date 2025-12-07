@@ -37,19 +37,31 @@
             <div class="reveneue-section">
                 <div class="item-list">
                     <div class="">
-                        <h1>2.7B+</h1>
+                        <div class="revenue-icon">
+                            <img src="/assets/images/Desktop/revenue-icon.png" alt="">
+                            <h1>2.7B+</h1>
+                        </div>
                         <p>REVENUE GENERATED</p>
                     </div>
                     <div>
-                        <h1>335M+</h1>
+                        <div class="revenue-icon">
+                            <img src="/assets/images/Desktop/ad-icon.png" alt="">
+                            <h1>335M+</h1>
+                        </div>
                         <p>ADS SPEND MANAGED</p>
                     </div>
                     <div>
-                        <h1>335M+</h1>
+                        <div class="revenue-icon">
+                            <img src="/assets/images/Desktop/brand-icon.png" alt="">
+                            <h1>335M+</h1>
+                        </div>
                         <p>BRANDS WE MANAGED</p>
                     </div>
                     <div>
-                        <h1>15+</h1>
+                        <div class="revenue-icon">
+                            <img src="/assets/images/Desktop/experience-icon.png" alt="">
+                            <h1>15+</h1>
+                        </div>
                         <p>YEARS OF EXPERIENCE</p>
                     </div>
                 </div>
@@ -130,20 +142,20 @@
                                                 <p>Golden Fox, USA</p>
                                                 <div class="review-card-rating-stars">
                                                     <div class="review-card-rating-img">
-                                                    <img src="assets/images/Desktop/full-star.png" alt="">
-                                                </div>
-                                                <div class="review-card-rating-img">
-                                                    <img src="assets/images/Desktop/full-star.png" alt="">
-                                                </div>
-                                                <div class="review-card-rating-img">
-                                                    <img src="assets/images/Desktop/full-star.png" alt="">
-                                                </div>
-                                                <div class="review-card-rating-img">
-                                                    <img src="assets/images/Desktop/full-star.png" alt="">
-                                                </div>
-                                                <div class="review-card-rating-img">
-                                                    <img src="assets/images/Desktop/full-star.png" alt="">
-                                                </div>
+                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                    </div>
+                                                    <div class="review-card-rating-img">
+                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                    </div>
+                                                    <div class="review-card-rating-img">
+                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                    </div>
+                                                    <div class="review-card-rating-img">
+                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                    </div>
+                                                    <div class="review-card-rating-img">
+                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -194,18 +206,115 @@
                         </div>
                         <div class="amazon-ppc-card-ratings">
                             <div class="amazon-ppc-card-ratings-card">
-                                <img src="assets/images/Mobile-version/Trustpiolot 1 copy.webp" alt="">
-
+                                <div class="amazon-ppc-card-ratings-img">
+                                    <img src="assets/images/Desktop/trustpilot-logo.png" alt="">
+                                </div>
+                                <div class="amazon-ppc-card-ratings-stars">
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>4.9 Stars | 141 Ratings</p>
+                                </div>
                             </div>
 
-                            <div class="amazon-ppc-card-ratings-card">
-                                <img src="assets/images/Mobile-version/Clutch 1 copy.webp" alt="">
+                           <div class="amazon-ppc-card-ratings-card">
+                                <div class="amazon-ppc-card-ratings-img">
+                                    <img src="assets/images/Desktop/clutch-logo.png" alt="">
+                                </div>
+                                <div class="amazon-ppc-card-ratings-stars">
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>4.9 Stars | 24 Ratings</p>
+                                </div>
                             </div>
                             <div class="amazon-ppc-card-ratings-card">
-                                <img src="assets/images/Mobile-version/Google 1 copy.webp" alt="">
+                                <div class="amazon-ppc-card-ratings-img">
+                                    <img src="assets/images/Desktop/google-logo.png" alt="">
+                                </div>
+                                <div class="amazon-ppc-card-ratings-stars">
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>4.7 Stars | 116 Ratings</p>
+                                </div>
                             </div>
-                            <div class="amazon-ppc-card-ratings-card">
-                                <img src="assets/images/Mobile-version/Upwork 1 copy.webp" alt="">
+                             <div class="amazon-ppc-card-ratings-card">
+                                <div class="amazon-ppc-card-ratings-img">
+                                    <img src="assets/images/Desktop/Upwork-logo.png" alt="">
+                                </div>
+                                <div class="amazon-ppc-card-ratings-stars">
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="amazon-ppc-card-ratings-description">
+                                    <div>
+                                        <!-- <img src="/assets/images/Desktop/crown.png" alt="" height="20" width="20"> -->
+                                        <p>100% Job Success</p>
+                                    </div>
+                                    <div>
+                                        <p>|</p>
+                                    </div>
+                                    <div>
+                                        <!-- <img src="/assets/images/Desktop/crown.png" alt="" height="20" width="20"> -->
+                                        <p>Top Rated</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -481,7 +590,6 @@
             </div>
         </div>
 
-        <button onclick="showAlert()">Click Me</button>
     </div>
 
     <script>
