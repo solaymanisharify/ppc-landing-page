@@ -24,6 +24,7 @@
   src: url("../fonts/SF-Pro-Display.otf") format("opentype");
   font-weight: 200;
 }
+
 body {
   background: #121921;
   font-family: Arial, sans-serif;
@@ -88,17 +89,20 @@ h1 {
   align-items: start;
   justify-content: center;
   flex-direction: column;
+  /* padding-right: 40px; */
+  padding-left: 10px;
+  margin-top: 30px;
 }
 .hero-2 img {
-  width: 805px;
-  height: 548px;
+  width: 745px;
+  height: 508px;
 }
 .launch-dominate-btn {
   background: #2266f0;
   color: #fefeff;
   opacity: 0.9;
   border: none;
-  width: 282px;
+  width: 294px;
   padding: 3px 7px;
   border-radius: 10px;
   cursor: pointer;
@@ -106,20 +110,20 @@ h1 {
   font-size: 23px;
 }
 .get-started-btn {
-  width: 220px; /* wider to match the preview */
+  width: 166px; /* wider to match the preview */
   background: #ffdc00;
   color: #000;
   font-family: sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   border: none;
-  padding: 5px 5px 5px 15px;
-  border-radius: 40px;
+  padding: 8px 5px 8px 15px;
+  border-radius: 12px;
   cursor: pointer;
 
   display: flex; /* important */
   align-items: center;
-  justify-content: space-between; /* spreads text and circle */
+  justify-content: space-around;
   margin-top: 57px;
 }
 
@@ -127,8 +131,6 @@ h1 {
   font-size: 18px;
   font-weight: 700;
   color: #000;
-  width: 32px; /* perfect circle */
-  height: 32px;
   border-radius: 50%;
 
   display: flex; /* centers arrow */
@@ -234,8 +236,9 @@ h1 {
   padding: 40px 0px;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  overflow: hidden;
   margin-top: 200px;
+  position: relative;
 }
 .listing-optimization h1 {
   font-family: "Recoleta", serif;
@@ -298,6 +301,61 @@ h1 {
 .listing-optimization-img-mobile {
   display: none;
 }
+
+.panel-wrapper {
+  position: relative;
+  height: 250px; /* enough to cover all transforms */
+}
+
+.listing-opt-bg-desktop{
+  width:1500px;
+}
+.listing-opt-bg-mobile{
+  display: none;
+}
+.campaign-optimization-container,
+.increase-sales-container,
+.keyword-research-container,
+.reduce-acos-container,
+.weekly-reporting-container {
+  position: relative;
+  transform: translateY(600px);
+  will-change: transform;
+  transition: transform 0.1s ease-out;
+}
+
+.campaign-optimization-img,
+.increase-sales-img,
+.keyword-research-img,
+.reduce-acos-img,
+.weekly-reporting-img {
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+}
+
+
+.test {
+  height: 300px;
+  width: 300px;
+  background-color: red;
+  position: absolute;
+  bottom: 0px;
+  transform: translateY(400px);
+  transition: all 0.8s ease;
+  border-radius: 0 20px 0 20px;
+  clip-path: polygon(
+    20px 0%,
+    /* top-left */ 100% 0%,
+    /* top-right */ 100% calc(100% - 20px),
+    /* bottom-right */ calc(100% - 20px) 100%,
+    /* bottom-right */ 0% 100%,
+    /* bottom-left */ 0% 20px /* top-left */
+  );
+}
+.test.slide-in {
+  transform: translateY(-1200px);
+}
 .lets-talk-btn {
   width: 167px;
   background: #ffdc00;
@@ -356,7 +414,6 @@ h1 {
   /* border-left:3px solid #526685;
   border-top:3px solid #526685; */
 }
-
 .case-study-img {
   width: 100px;
 }
@@ -421,7 +478,8 @@ h1 {
   height: auto;
 }
 .case-study-container-text {
-  width: 95%;
+  width: 100%;
+  padding-right: 20px;
 }
 .case-study-growth-image-container {
   width: 100%;
@@ -509,39 +567,39 @@ h1 {
   flex-direction: column;
   /* justify-content: space-between; */
   gap: 20px;
-  width: 120%;
-  left: -90px;
+  width: 110%;
+  left: -50px;
   height: 280px;
 }
-/* .fake-review::before {
+.fake-review::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
 
-  background: linear-gradient(to right, #2F9094 0%, #2F9094 80%, transparent 100%) top left / 55% 1px no-repeat,
-    linear-gradient(to bottom, #2F9094 0%, #2F9094 80%, transparent 100%) top left / 1px 55% no-repeat;
+  background: linear-gradient(to right, #2f9094 0%, #2f9094 80%, transparent 100%) top left / 55% 1px no-repeat,
+    linear-gradient(to bottom, #2f9094 0%, #2f9094 80%, transparent 100%) top left / 1px 55% no-repeat;
 
   width: 100%;
   height: 100%;
   border-radius: 10px;
   pointer-events: none;
-} */
+}
 
-/* .fake-review::after {
+.fake-review::after {
   content: "";
   position: absolute;
   bottom: 0;
   right: 0;
 
-  background: linear-gradient(to left, #2F9094 0%, #2F9094 80%, transparent 100%) bottom right / 55% 3px no-repeat,
-    linear-gradient(to top, #2F9094 0%, #2F9094 80%, transparent 100%) bottom right / 3px 55% no-repeat;
+  background: linear-gradient(to left, #2f9094 0%, #2f9094 80%, transparent 100%) bottom right / 55% 3px no-repeat,
+    linear-gradient(to top, #2f9094 0%, #2f9094 80%, transparent 100%) bottom right / 3px 55% no-repeat;
 
   width: 100%;
   height: 100%;
   border-radius: 10px;
   pointer-events: none;
-} */
+}
 .review-card-top {
   display: flex;
   align-items: center;
@@ -639,6 +697,8 @@ h1 {
   font-family: "Recoleta";
   font-weight: 200;
   font-size: 24px;
+  color: #131921;
+  opacity: 0.8;
 }
 .amazon-ppc {
   display: flex;
@@ -721,11 +781,11 @@ h1 {
 }
 .amazon-ppc-card {
   position: absolute;
-  top: -900px;
+  top: -950px;
   left: 0;
   width: 100%;
   height: 600px;
-  background: linear-gradient(to right, #05214b 0%, #133c9f 40%, #194cc4 70%, #36abdb 100%);
+  background: linear-gradient(to right, #05214b 0%, #133c9f 40%, #194cc4 70%, #1c55c6 100%);
   border-radius: 20px;
   z-index: 10;
 }
@@ -734,6 +794,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 30px;
 }
 .amazon-ppc-card-header span {
   color: #0fecee;
@@ -751,7 +812,7 @@ h1 {
 .amazon-ppc-card-stat {
   display: flex;
   justify-content: space-between;
-  padding: 40px 60px;
+  padding: 40px 90px;
   color: white;
 }
 .amazon-ppc-card-stat div {
@@ -785,7 +846,7 @@ h1 {
 .amazon-ppc-card-ratings {
   display: flex;
   justify-content: space-between;
-  padding: 0px 60px;
+  padding: 0px 90px;
 }
 .amazon-ppc-card-ratings p {
   font-size: 12px;
@@ -809,13 +870,13 @@ h1 {
   -webkit-backdrop-filter: blur(80px);
 }
 .amazon-ppc-card-ratings-img {
-  width: 150px;
+  width: 100px;
   height: 40px;
 }
 .amazon-ppc-card-ratings-img img {
-  width: 100%;
+  width: 100px;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .amazon-ppc-card-ratings-stars {
   display: flex;
@@ -977,13 +1038,13 @@ h1 {
   text-align: center;
 }
 .amazon-advertising header h3 {
-  font-family: sans-serif;
-  font-size: 24px;
+  font-family: "poppins-bold";
+  font-size: 32px;
   font-weight: 400;
   color: white;
   display: inline;
-  padding: 6px 16px;
-  border-radius: 20px;
+  padding: 6px 26px;
+  border-radius: 30px;
   background-color: black;
   line-height: 1.8;
   margin-top: 10px;
@@ -999,7 +1060,7 @@ h1 {
 .amazon-advertising header p {
   font-family: "Poppins";
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
   margin-top: 10px;
   padding: 0 30px;
@@ -1031,13 +1092,13 @@ h1 {
 .advertising-card-text p {
   font-family: "Poppins";
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
   color: #000000;
   opacity: 0.7;
 }
 .advertising-card img {
-  width: 650px;
+  width: 776px;
   height: auto;
 }
 
@@ -1205,7 +1266,7 @@ h1 {
 }
 .amazon-advertising-pricing img {
   height: 685px;
-  width:100%;
+  width: 100%;
 }
 .amazon-advertising-pricing-text {
   position: absolute;
@@ -1368,6 +1429,7 @@ h1 {
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-top: 0;
   }
 
   .hero-2 img {
@@ -1472,6 +1534,34 @@ h1 {
     width: 15px;
     margin-top: 0px;
   }
+
+  .listing-opt-bg-desktop {
+    display: none;
+  }
+  .listing-opt-bg-mobile {
+    display: block;
+    position: relative;
+  }
+
+  .campaign-optimization-img,
+.increase-sales-img,
+.keyword-research-img,
+.reduce-acos-img,
+.weekly-reporting-img {
+  width: 300px;
+  height: 300px;
+}
+
+.campaign-optimization-img img,
+.increase-sales-img img,
+.keyword-research-img img,
+.reduce-acos-img img,
+.weekly-reporting-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
   .case-study {
     margin-top: 10px;
@@ -1683,7 +1773,7 @@ h1 {
     font-family: "Recoleta", serif;
     font-size: 14px;
     font-weight: normal;
-    color: #404040;
+    color: #131921;
   }
 
   /* MAIN WRAPPER BECOMES COLUMN */
@@ -2536,6 +2626,25 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .listing-optimization-desc {
+    width: 450px;
+    top: 80px;
+    left: 2%;
+    height: auto;
+    position: absolute;
+    transform: none;
+    gap: 30px;
+    /* margin-bottom: 40px; */
+  }
+
+  .listing-optimization-desc h3 {
+    font-size: 32px;
+  }
+
+  .listing-optimization-desc p {
+    font-size: 20px;
   }
   .review-card-top {
     display: flex;

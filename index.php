@@ -7,11 +7,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecompclics Lamding Page</title>
+    <title>Ecomclips Landing Page</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -75,13 +78,108 @@
                             <h2>Listing Optimization</h2>
                         </div>
                         <div class="listing-optimization-desc-content">
-                            <h3>An Enhanced Amazon <br > Listing Boosts Discoverability  And Sales 4x</h3>
-                            <p>Optimized with powerful copy, keyword<br class="mobile-only-br"> integrartion, and backend enhancements.</p>
+                            <h3>An Enhanced Amazon <br> Listing Boosts Discoverability And Sales 4x</h3>
+                            <p>Optimized with powerful copy, keyword<br class="mobile-only-br"> integration, and backend enhancements.</p>
                         </div>
                         <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
                     </div>
                     <img src="assets/images/desktop/Listing-optimization.webp" alt="Hero Image" class="listing-optimization-img">
                     <img src="assets/images/Mobile-version/listing-optimization-img-mobile.png" alt="Hero Image" class="listing-optimization-img-mobile">
+                </div>
+                <div class="panel-wrapper">
+                    <div class="campaign-optimization-container">
+                        <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
+                        <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
+                        <div class="listing-optimization-desc">
+                            <div class="listing-title-div">
+                                <img src="assets/images/Desktop/star.png" alt="">
+                                <h2>Campaign Optimization</h2>
+                            </div>
+                            <div class="listing-optimization-desc-content">
+                                <h3>We monitor and <br> fine-tune bidding strategies</h3>
+                                <p>match types, and placements to optimize<br class="mobile-only-br"> every dollar spent on Amazon ads.</p>
+                            </div>
+                            <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                        </div>
+                        <div class="campaign-optimization-img">
+                            <img src="assets/images/Desktop/Campaign-optimization.png" alt="">
+                        </div>
+                    </div>
+                    <div class="increase-sales-container">
+                        <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
+                        <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
+                        <div class="listing-optimization-desc">
+                            <div class="listing-title-div">
+                                <img src="assets/images/Desktop/star.png" alt="">
+                                <h2>Increase Sales</h2>
+                            </div>
+                            <div class="listing-optimization-desc-content">
+                                <h3>Scale your<br> business with tailored campaign</h3>
+                                <p>strategies that target the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth.</p>
+                            </div>
+                            <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                        </div>
+                        <div class="increase-sales-img">
+                            <img src="assets/images/Desktop/Increase-Sales.png" alt="">
+                        </div>
+                    </div>
+                    <div class="keyword-research-container">
+                        <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
+                        <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
+                        <div class="listing-optimization-desc">
+                            <div class="listing-title-div">
+                                <img src="assets/images/Desktop/star.png" alt="">
+                                <h2>Keyword Research</h2>
+                            </div>
+                            <div class="listing-optimization-desc-content">
+                                <h3>We uncover<br> Amazon search trends</h3>
+                                <p>to find profitable keywords, driving traffic and conversions through ranking,<br class="mobile-only-br"> More visibility, relevance, and return on ad spend.</p>
+                            </div>
+                            <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                        </div>
+                        <div class="keyword-research-img">
+                            <img src="assets/images/Desktop/Keyword-research.png" alt="">
+                        </div>
+                    </div>
+                    <div class="reduce-acos-container">
+                        <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
+                        <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
+                        <div class="listing-optimization-desc">
+                            <div class="listing-title-div">
+                                <img src="assets/images/Desktop/star.png" alt="">
+                                <h2>Reduce ACOS</h2>
+                            </div>
+                            <div class="listing-optimization-desc-content">
+                                <h3>Scale your business<br> with tailored campaign strategies that target</h3>
+                                <p>the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth..</p>
+                            </div>
+                            <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                        </div>
+                        <div class="reduce-acos-img">
+                            <img src="assets/images/Desktop/Reduce-ACOS.png" alt="">
+                        </div>
+                    </div>
+                    <div class="weekly-reporting-container">
+                        <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
+                        <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
+                        <div class="listing-optimization-desc">
+                            <div class="listing-title-div">
+                                <img src="assets/images/Desktop/star.png" alt="">
+                                <h2>Weekly Reporting</h2>
+                            </div>
+                            <div class="listing-optimization-desc-content">
+                                <h3>We provide detailed<br> weekly PPC reports with actionable insights and clear metrics.</h3>
+                                <p>tKnow exactly how your ads are<br class="mobile-only-br"> performing</p>
+                            </div>
+                            <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                        </div>
+                        <div class="weekly-reporting-img">
+                            <img src="assets/images/Desktop/weekly-reporting.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="test">
+
                 </div>
             </div>
             <!-- case study -->
@@ -231,7 +329,7 @@
                                 </div>
                             </div>
 
-                           <div class="amazon-ppc-card-ratings-card">
+                            <div class="amazon-ppc-card-ratings-card">
                                 <div class="amazon-ppc-card-ratings-img">
                                     <img src="assets/images/Desktop/clutch-logo.png" alt="">
                                 </div>
@@ -274,14 +372,14 @@
                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img src="assets/images/Desktop/half-star.png" alt="">
                                     </div>
                                 </div>
                                 <div>
                                     <p>4.7 Stars | 116 Ratings</p>
                                 </div>
                             </div>
-                             <div class="amazon-ppc-card-ratings-card">
+                            <div class="amazon-ppc-card-ratings-card">
                                 <div class="amazon-ppc-card-ratings-img">
                                     <img src="assets/images/Desktop/Upwork-logo.png" alt="">
                                 </div>
@@ -593,6 +691,138 @@
     </div>
 
     <script>
+        // sliding animation
+        // Scroll-linked animation for case study section
+        function isVisibleAtLeast(el, percent = 60) {
+            const rect = el.getBoundingClientRect();
+            const winH = window.innerHeight;
+            const winW = window.innerWidth;
+
+            const visibleHeight = Math.max(0, Math.min(rect.bottom, winH) - Math.max(rect.top, 0));
+            const visibleWidth = Math.max(0, Math.min(rect.right, winW) - Math.max(rect.left, 0));
+
+            const visibleArea = visibleWidth * visibleHeight;
+            const totalArea = rect.width * rect.height;
+
+            if (totalArea === 0) return false;
+
+            return (visibleArea / totalArea) >= (percent / 100);
+        }
+
+        const container = document.querySelector('.listing-optimization');
+
+        const panels = [
+            document.querySelector('.campaign-optimization-container'),
+            document.querySelector('.increase-sales-container'),
+            document.querySelector('.keyword-research-container'),
+            document.querySelector('.reduce-acos-container'),
+            document.querySelector('.weekly-reporting-container')
+        ];
+
+        let currentY = [0, 0, 0, 0, 0];
+        const targets = [-900, -1700, -2500, -3300, -4150];
+
+        let activeIndex = -1;
+        let isHijacking = false;
+
+        function handleScroll(delta, e) {
+            const listingVisible = isVisibleAtLeast(container, 60);
+
+            if (isHijacking && listingVisible) {
+                e.preventDefault();
+            }
+
+            const speed = 3.0;
+
+            // Step 1 — Activate first panel
+            if (activeIndex === -1 && delta > 0) {
+                isHijacking = true;
+                activeIndex = 0;
+            }
+
+            // Step 2 — Move active panel
+            if (activeIndex >= 0 && activeIndex < panels.length) {
+                if (delta > 0) currentY[activeIndex] -= Math.abs(delta) * speed;
+                else currentY[activeIndex] += Math.abs(delta) * speed;
+
+                currentY[activeIndex] = Math.max(targets[activeIndex], Math.min(1200, currentY[activeIndex]));
+
+                panels[activeIndex].style.transform = `translateY(${currentY[activeIndex]}px)`;
+
+                if (currentY[activeIndex] <= targets[activeIndex] + 20 &&
+                    delta > 0 &&
+                    activeIndex < panels.length - 1) {
+                    activeIndex++;
+                }
+
+                if (delta < 0 && currentY[activeIndex] > 400) {
+                    if (activeIndex > 0) activeIndex--;
+                }
+            }
+
+            // Step 3 — End hijacking
+            if (activeIndex === panels.length - 1 &&
+                currentY[activeIndex] <= targets[activeIndex] + 20) {
+                isHijacking = false;
+            }
+
+            // Reactivate if scrolling back into section
+            if (!isHijacking && delta < 0) {
+                const lastY = currentY[currentY.length - 1];
+                if (lastY < 600) {
+                    isHijacking = true;
+                }
+            }
+
+            // Disable hijack if panels move up fully
+            if (delta < 0) {
+                const firstPanelY = currentY[0];
+                if (firstPanelY >= 580) {
+                    isHijacking = false;
+                    activeIndex = -1;
+                }
+            }
+        }
+
+        // ==========================
+        //  🖱 DESKTOP WHEEL
+        // ==========================
+        container.addEventListener("wheel", function(e) {
+            handleScroll(e.deltaY, e);
+        }, {
+            passive: false
+        });
+
+        // ==========================
+        //  📱 MOBILE TOUCH SUPPORT
+        // ==========================
+        let touchStartY = 0;
+        let touchLastY = 0;
+
+        container.addEventListener("touchstart", (e) => {
+            touchStartY = e.touches[0].clientY;
+            touchLastY = touchStartY;
+        });
+
+        container.addEventListener("touchmove", (e) => {
+            const y = e.touches[0].clientY;
+            const delta = touchLastY - y; // behaves like wheel deltaY
+            touchLastY = y;
+
+            handleScroll(delta, e);
+        }, {
+            passive: false
+        });
+
+        container.addEventListener("touchend", () => {
+            touchStartY = 0;
+            touchLastY = 0;
+        });
+
+
+
+
+
         const scrollContainer = document.querySelector(".amazon-ppc-content");
         const blocks = document.querySelectorAll(".amazon-ppc-content-text");
         const image = document.getElementById("ppcImage");
