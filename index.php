@@ -71,6 +71,7 @@
             </div>
             <div class="listing-optimization">
                 <h1>Reignite Your Bussiness With Our</h1>
+                <div class="transparent-div"></div>
                 <div class="listing-optimization-container">
                     <div class="listing-optimization-desc">
                         <div class="listing-title-div">
@@ -178,93 +179,253 @@
                         </div>
                     </div>
                 </div>
-                <div class="test">
-
-                </div>
             </div>
-            <!-- case study -->
-            <div class="case-study">
-                <div class="case-study-title">
-                    <h1>Case Study</h1>
-                    <p>The Revenue Growth Story of Ecomclips</p>
-                </div>
-                <div class="case-study-container">
-                    <div class="case-study-container-text">
-                        <div class="case-study-header">
-                            <h2>From Growth to Succcess</h2>
-                            <div class="golden-fox">
-                                <img src="assets/images/Mobile-version/goldenfox-logo 1.png" alt="Hero Image" class="">
-                            </div>
-                        </div>
-                        <div class="case-study-growth-image-container">
-                            <div>
-                                <div class="case-study-container-1">
-                                    <h1>&ldquo;Ecomclips Doubled Our Revenue!&rdquo;</h1>
-                                    <div class="case-study-line"></div>
-                                </div>
-                                <div class="growth-percentage">
-                                    <div>
-                                        <h2>237%</h2>
-                                        <p>Increase in sales</p>
-                                    </div>
-                                    <div>
-                                        <h2>63%</h2>
-                                        <p>ACOS Reduction</p>
-                                    </div>
-                                    <div>
-                                        <h2>19%</h2>
-                                        <p>Increase in CVR</p>
-                                    </div>
-                                    <div>
-                                        <h2>26%</h2>
-                                        <p>YOY Growth</p>
-                                    </div>
-                                </div>
-                                <div class="growth-desc">
-                                    <p>An enhanced Amazon listing boosts discoverability and sales 4x, optimized with powerful copy, keyword integration, and backend enhancements.</p>
-                                </div>
-                                <div class="our-impact-btn">
-                                    <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+
+        </div>
+        <!-- case study -->
+        <div class="case-study">
+            <div class="case-study-title">
+                <h1>Case Study</h1>
+                <p>The Revenue Growth Story of Ecomclips</p>
+            </div>
+            <div class="carousel-wrapper">
+                <div class="case-study-main-container">
+                    <div class="case-study-container-1 case-study-container">
+                        <div class="case-study-container-text">
+                            <div class="case-study-header">
+                                <h2>From Growth to Succcess</h2>
+                                <div class="golden-fox">
+                                    <img src="assets/images/Mobile-version/goldenfox-logo 1.png" alt="Hero Image" class="">
                                 </div>
                             </div>
-                            <div class="case-study-container-img">
-                                <img src="assets/images/desktop/Review-copy.png" alt="Hero Image" class="case-study-img">
-                                <div class="fake-review">
-                                    <div class="review-card-top">
-                                        <div class="fake-review-img">
-                                            <img src="assets/images/Desktop/fake-critics.png" alt="Hero Image" class="">
+                            <div class="case-study-growth-image-container">
+                                <div>
+                                    <div class="case-study-desc">
+                                        <h1>&ldquo;Ecomclips Doubled Our Revenue!&rdquo;</h1>
+                                        <div class="case-study-line"></div>
+                                    </div>
+                                    <div class="growth-percentage">
+                                        <div>
+                                            <h2>237%</h2>
+                                            <p>Increase in sales</p>
                                         </div>
                                         <div>
-                                            <h1>James Hawken</h1>
-                                            <div class="review-card-rating">
-                                                <p>Golden Fox, USA</p>
-                                                <div class="review-card-rating-stars">
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                            <h2>63%</h2>
+                                            <p>ACOS Reduction</p>
+                                        </div>
+                                        <div>
+                                            <h2>19%</h2>
+                                            <p>Increase in CVR</p>
+                                        </div>
+                                        <div>
+                                            <h2>26%</h2>
+                                            <p>YOY Growth</p>
+                                        </div>
+                                    </div>
+                                    <div class="growth-desc">
+                                        <p>An enhanced Amazon listing boosts discoverability and sales 4x, optimized with powerful copy, keyword integration, and backend enhancements.</p>
+                                    </div>
+                                    <div class="our-impact-btn">
+                                        <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                    </div>
+                                </div>
+                                <div class="case-study-container-img">
+                                    <img src="assets/images/desktop/Review-copy.png" alt="Hero Image" class="case-study-img">
+                                    <div class="fake-review">
+                                        <div class="review-card-top">
+                                            <div class="fake-review-img">
+                                                <img src="assets/images/Desktop/fake-critics.png" alt="Hero Image" class="">
+                                            </div>
+                                            <div>
+                                                <h1>James Hawken</h1>
+                                                <div class="review-card-rating">
+                                                    <p>Golden Fox, USA</p>
+                                                    <div class="review-card-rating-stars">
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="review-card-content">
-                                        <p>Ecomclips are fantastic! Proffessional, effiecient, and always deliver high-quality work on time. They've helped streamline my e-commerce business and exceeded my expectations. Higly recommended!</p>
+                                        <div class="review-card-content">
+                                            <p>Ecomclips are fantastic! Proffessional, effiecient, and always deliver high-quality work on time. They've helped streamline my e-commerce business and exceeded my expectations. Higly recommended!</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
+                    </div>
+                    <div class="case-study-container-2 case-study-container">
+                        <div class="case-study-container-text">
+                            <div class="case-study-header">
+                                <h2>From Growth to Succcess</h2>
+                                <div class="golden-fox">
+                                    <img src="assets/images/Desktop/woodland-logo.png" alt="Hero Image" class="">
+                                </div>
+                            </div>
+                            <div class="case-study-growth-image-container">
+                                <div>
+                                    <div class="case-study-desc">
+                                        <h1>&ldquo;Ecomclips Has Been a God Sent To Us&rdquo;</h1>
+                                        <div class="case-study-line"></div>
+                                    </div>
+                                    <div class="growth-percentage">
+                                        <div>
+                                            <h2>254%</h2>
+                                            <p>Increase in sales</p>
+                                        </div>
+                                        <div>
+                                            <h2>68%</h2>
+                                            <p>ACOS Reduction</p>
+                                        </div>
+                                        <div>
+                                            <h2>13%</h2>
+                                            <p>Increase in CVR</p>
+                                        </div>
+                                        <div>
+                                            <h2>36%</h2>
+                                            <p>YOY Growth</p>
+                                        </div>
+                                    </div>
+                                    <div class="growth-desc">
+                                        <p>An enhanced Amazon listing boosts discoverability and sales 4x, optimized with powerful copy, keyword integration, and backend enhancements.</p>
+                                    </div>
+                                    <div class="our-impact-btn">
+                                        <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                    </div>
+                                </div>
+                                <div class="case-study-container-img">
+                                    <img src="assets/images/desktop/woodland-cover.png" alt="Hero Image" class="case-study-img">
+                                    <div class="fake-review">
+                                        <div class="review-card-top">
+                                            <div class="fake-review-img">
+                                                <img src="assets/images/Desktop/woodland-critic.png" alt="Hero Image" class="">
+                                            </div>
+                                            <div>
+                                                <h1>Max Davidson</h1>
+                                                <div class="review-card-rating">
+                                                    <p>Woodland, USA</p>
+                                                    <div class="review-card-rating-stars">
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review-card-content">
+                                            <p>Ecom has been a god sent to us, we were just giving money away to google and they came and got us profitable with our ads quickly most of all they have been patience with us when we have made mistakes and having serious issues with our old site. They are good people enjoyed growing with them.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="case-study-container-3 case-study-container">
+                        <div class="case-study-container-text">
+                            <div class="case-study-header">
+                                <h2>From Growth to Succcess</h2>
+                                <div class="golden-fox">
+                                    <img src="assets/images/Desktop/umbra-logo.png" alt="Hero Image" class="">
+                                </div>
+                            </div>
+                            <div class="case-study-growth-image-container">
+                                <div>
+                                    <div class="case-study-desc">
+                                        <h1>&ldquo;150% revenue increase over the 18 months&rdquo;</h1>
+                                        <div class="case-study-line"></div>
+                                    </div>
+                                    <div class="growth-percentage">
+                                        <div>
+                                            <h2>337%</h2>
+                                            <p>Increase in sales</p>
+                                        </div>
+                                        <div>
+                                            <h2>73%</h2>
+                                            <p>ACOS Reduction</p>
+                                        </div>
+                                        <div>
+                                            <h2>16%</h2>
+                                            <p>Increase in CVR</p>
+                                        </div>
+                                        <div>
+                                            <h2>25%</h2>
+                                            <p>YOY Growth</p>
+                                        </div>
+                                    </div>
+                                    <div class="growth-desc">
+                                        <p>An enhanced Amazon listing boosts discoverability and sales 4x, optimized with powerful copy, keyword integration, and backend enhancements.</p>
+                                    </div>
+                                    <div class="our-impact-btn">
+                                        <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                    </div>
+                                </div>
+                                <div class="case-study-container-img">
+                                    <img src="assets/images/desktop/umbra.png" alt="Hero Image" class="case-study-img">
+                                    <div class="fake-review">
+                                        <div class="review-card-top">
+                                            <div class="fake-review-img">
+                                                <img src="assets/images/Desktop/umbra-critic.png" alt="Hero Image" class="">
+                                            </div>
+                                            <div>
+                                                <h1>Marlyn Costello</h1>
+                                                <div class="review-card-rating">
+                                                    <p>Umbra, USA</p>
+                                                    <div class="review-card-rating-stars">
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review-card-content">
+                                            <p>We had the pleasure of working with Ecomclips for approximately 18 months. The Ecomclips team provided great guidance and continuously worked on their on their own for improved SKU opti-mization. We utilized their services for product listing, optimiza-tion, and advertising. We realized 150% revenue increase over the 18 months were worked with them.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -447,26 +608,39 @@
                         <p>Our keyword strategy combines Broad, Phrase, and Exact match types to maximize visibility and drive conversions. This approach helps us discover valuableterms, improve ad targeting, and convert more high-intent traffic with better ROI. A complete keyword mix designed to grow your Amazon sales efficiently.</p>
                     </header>
                     <div class="timeline">
-                        <img src="assets/images//Desktop//Phrase.png" class="timeline-image-desktop" />
+                        <img src="assets/images//Desktop//Phrase.png" class="timeline-image-desktop" id="timeline-main-image" />
                         <div class="timeline-item">
                             <div class="timeline-line"></div>
-                            <div class="timeline-dot-1"></div>
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-dot-3"></div>
+                            <div class="timeline-dot-1 dot" data-image="assets/images/Desktop/Broad.webp" data-target="content-broad"></div>
+                            <div class="timeline-dot active dot" data-image="assets/images/Desktop/Phrase.png" data-target="content-phrase"></div>
+                            <div class="timeline-dot-3 dot" data-image="assets/images/Desktop/Exact.webp" data-target="content-exact"></div>
                             <div class="timeline-content">
-                                <h4 class="timeline-label">Broad</h4>
+                                <div id="content-broad">
+                                    <h4 class="timeline-label">Broad</h4>
+                                    <p class="timeline-text timeline-text-hidden">
+                                        Use Broad match to cast a wide net and uncover high-potential search terms across your niche. Capture wide traffic and discover new keyword opportunities with Broad match targeting.
+                                        View Details.
+                                    </p>
+                                </div>
 
-                                <h2>Phrase</h2>
-                                <p>
-                                    Phrase match helps to connect with shoppers using relevant keyword sequences
-                                    for better performance. Great for intent-driven traffic and increasing ad
-                                    relevance.
-                                </p>
+                                <div id="content-phrase">
+                                    <h4 class="timeline-label timeline-label-active">Phrase</h2>
+                                        <p class="timeline-text">
+                                            Phrase match helps to connect with shoppers using relevant keyword sequences
+                                            for better performance. Great for intent-driven traffic and increasing ad
+                                            relevance.
+                                        </p>
+                                </div>
 
                                 <p class="view-details">View Details →</p>
 
                                 <img src="assets/images//Mobile-version//Phrase.webp" class="timeline-image-mobile" />
-                                <h4 class="timeline-label-exact">exact</h4>
+                                <div id="content-exact">
+                                    <h4 class="timeline-label-exact">exact</h4>
+                                    <p class="timeline-text timeline-text-hidden">
+                                        Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
@@ -691,8 +865,12 @@
     </div>
 
     <script>
+        window.addEventListener('beforeunload', function() {
+            window.scrollTo(0, 0);
+        })
         // sliding animation
-        // Scroll-linked animation for case study section
+        // Scroll-linked animation for listing optimization section
+
         function isVisibleAtLeast(el, percent = 60) {
             const rect = el.getBoundingClientRect();
             const winH = window.innerHeight;
@@ -709,7 +887,8 @@
             return (visibleArea / totalArea) >= (percent / 100);
         }
 
-        const container = document.querySelector('.listing-optimization');
+        const container = document.querySelector('.transparent-div');
+        const listingSection = document.querySelector('.listing-optimization');
 
         const panels = [
             document.querySelector('.campaign-optimization-container'),
@@ -719,24 +898,47 @@
             document.querySelector('.weekly-reporting-container')
         ];
 
+        const screenWidth = window.innerWidth;
+
         let currentY = [0, 0, 0, 0, 0];
-        const targets = [-900, -1700, -2500, -3300, -4150];
+        let targets;
+
+        if (screenWidth < 768) {
+            // Mobile
+            targets = [-600, -1130, -1680, -2200, -2750];
+        } else if (screenWidth >= 768 && screenWidth <= 1024) {
+            // Tablet
+            targets = [-373, -700, -1010, -1350, -1680];
+        } else if (screenWidth > 1024 && screenWidth <= 1440) {
+            // Laptop
+            targets = [-630, -1190, -1740, -2300, -2860];
+        } else {
+            // Desktop
+            targets = [-932, -1760, -2592, -3418, -4250];
+        }
 
         let activeIndex = -1;
         let isHijacking = false;
+        let lastScrollY = window.scrollY;
+        let sectionStartScroll = 0;
+        let isInSection = false;
 
-        function handleScroll(delta, e) {
-            const listingVisible = isVisibleAtLeast(container, 60);
+        // Lock scroll position
+        function lockScroll() {
+            document.body.style.overflow = 'hidden';
+            document.body.style.height = '100vh';
+        }
 
-            if (isHijacking && listingVisible) {
-                e.preventDefault();
-            }
+        function unlockScroll() {
+            document.body.style.overflow = 'scroll';
+            document.body.style.height = '';
+        }
 
+        function handleScroll(delta) {
             const speed = 3.0;
 
             // Step 1 — Activate first panel
             if (activeIndex === -1 && delta > 0) {
-                isHijacking = true;
                 activeIndex = 0;
             }
 
@@ -747,7 +949,11 @@
 
                 currentY[activeIndex] = Math.max(targets[activeIndex], Math.min(1200, currentY[activeIndex]));
 
-                panels[activeIndex].style.transform = `translateY(${currentY[activeIndex]}px)`;
+                const scale = currentY[activeIndex] <= targets[activeIndex] + 20 ? 1.0 : 1.05;
+                const opacity = currentY[activeIndex] <= targets[activeIndex] + 200 ? 1.0 : 0;
+
+                panels[activeIndex].style.transform = `translateY(${currentY[activeIndex]}px) translateZ(100px) scale(${scale})`;
+                // panels[activeIndex].style.opacity = opacity;
 
                 if (currentY[activeIndex] <= targets[activeIndex] + 20 &&
                     delta > 0 &&
@@ -760,93 +966,261 @@
                 }
             }
 
-            // Step 3 — End hijacking
+            // Step 3 — Check if animation complete (scrolling down)
             if (activeIndex === panels.length - 1 &&
-                currentY[activeIndex] <= targets[activeIndex] + 20) {
+                currentY[activeIndex] <= targets[activeIndex] + 20 &&
+                delta > 0) {
                 isHijacking = false;
+                unlockScroll();
+                return false; // Allow normal scroll
             }
 
-            // Reactivate if scrolling back into section
-            if (!isHijacking && delta < 0) {
-                const lastY = currentY[currentY.length - 1];
-                if (lastY < 600) {
-                    isHijacking = true;
-                }
-            }
-
-            // Disable hijack if panels move up fully
+            // Check if scrolling back up and should exit
             if (delta < 0) {
                 const firstPanelY = currentY[0];
                 if (firstPanelY >= 580) {
                     isHijacking = false;
                     activeIndex = -1;
+                    unlockScroll();
+                    return false; // Allow normal scroll up
                 }
             }
+
+            return false; // Keep hijacking
         }
 
-        // ==========================
-        //  🖱 DESKTOP WHEEL
-        // ==========================
-        container.addEventListener("wheel", function(e) {
-            handleScroll(e.deltaY, e);
+
+        // Main wheel event handler
+        document.addEventListener("wheel", function(e) {
+            const rect = container.getBoundingClientRect();
+            // Trigger when container is at least 10% visible OR when approaching from top
+            const inView = rect.top <= window.innerHeight - 600 && rect.bottom >= 0;
+            // Start hijacking when container comes into view (scrolling down)
+            if (inView && !isHijacking && e.deltaY > 0 && activeIndex !== panels.length - 1) {
+                isHijacking = true;
+                lockScroll();
+                sectionStartScroll = window.scrollY;
+                e.preventDefault();
+            }
+
+            // Re-engage hijacking when scrolling back up into the section
+            // Use the SAME visibility check for consistency
+            if (inView && !isHijacking && e.deltaY < 0 && activeIndex !== 0 && activeIndex !== -1) {
+                const lastY = currentY[currentY.length - 1];
+                // Check if container is fully visible from bottom
+                const fullyVisibleFromBottom = rect.bottom <= window.innerHeight + 600 && rect.top >= 0;
+                if (lastY < 600 && fullyVisibleFromBottom) {
+                    isHijacking = true;
+                    lockScroll();
+                    e.preventDefault();
+                }
+            }
+
+            // Handle hijacked scroll
+            if (isHijacking) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                handleScroll(e.deltaY);
+
+
+            }
         }, {
-            passive: false
+            passive: false,
+            capture: true
         });
 
-        // ==========================
-        //  📱 MOBILE TOUCH SUPPORT
-        // ==========================
+        // Touch handling
         let touchStartY = 0;
         let touchLastY = 0;
 
-        container.addEventListener("touchstart", (e) => {
+        document.addEventListener("touchstart", (e) => {
             touchStartY = e.touches[0].clientY;
             touchLastY = touchStartY;
+        }, {
+            passive: false,
+            capture: true
         });
 
-        container.addEventListener("touchmove", (e) => {
+        document.addEventListener("touchmove", (e) => {
+            const rect = container.getBoundingClientRect();
+            // Trigger when container is approaching/visible from top
+            const inView = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+            if (touchStartY === 0) return;
+
             const y = e.touches[0].clientY;
-            const delta = touchLastY - y; // behaves like wheel deltaY
+            const delta = touchLastY - y;
             touchLastY = y;
 
-            handleScroll(delta, e);
-        }, {
-            passive: false
-        });
+            // Start hijacking (scrolling down)
+            if (inView && !isHijacking && delta > 0) {
+                isHijacking = true;
+                lockScroll();
+                sectionStartScroll = window.scrollY;
+            }
 
-        container.addEventListener("touchend", () => {
-            touchStartY = 0;
-            touchLastY = 0;
-        });
-
-
-
-
-
-        const scrollContainer = document.querySelector(".amazon-ppc-content");
-        const blocks = document.querySelectorAll(".amazon-ppc-content-text");
-        const image = document.getElementById("ppcImage");
-
-        scrollContainer.addEventListener("scroll", () => {
-            const scrollTop = scrollContainer.scrollTop;
-            let closestBlock = null;
-            let minDistance = Infinity;
-
-            blocks.forEach(block => {
-                const distance = Math.abs(block.offsetTop - scrollTop);
-                if (distance < minDistance) {
-                    minDistance = distance;
-                    closestBlock = block;
-                }
-            });
-
-            if (closestBlock) {
-                const newImage = closestBlock.dataset.image;
-                if (newImage && newImage !== image.src.split('/').pop()) {
-                    image.src = "assets/images/Desktop/" + newImage;
+            // Re-engage hijacking when scrolling back up
+            if (inView && !isHijacking && delta < 0) {
+                const lastY = currentY[currentY.length - 1];
+                // Check if container is fully visible from bottom
+                const fullyVisibleFromBottom = rect.bottom <= window.innerHeight && rect.top >= 0;
+                if (lastY < 600 && fullyVisibleFromBottom) {
+                    isHijacking = true;
+                    lockScroll();
                 }
             }
+
+            // Handle hijacked scroll
+            if (isHijacking) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                const shouldRelease = handleScroll(delta);
+
+                if (shouldRelease && delta > 0) {
+                    window.scrollTo(0, sectionStartScroll + listingSection.offsetHeight);
+                }
+            }
+        }, {
+            passive: false,
+            capture: true
         });
+
+        document.addEventListener("touchend", () => {
+            touchStartY = 0;
+            touchLastY = 0;
+        }, {
+            capture: true
+        });
+
+        // ----------------------------
+        // DOM references
+        // ----------------------------
+        const section = document.querySelector('.case-study');
+        const carousel = document.querySelector('.case-study-main-container');
+        const cards = document.querySelectorAll('.case-study-container');
+        const wrapper = document.querySelector('.carousel-wrapper');
+        let currentIndex = 0;
+
+        const amazonImgSection = document.querySelector('.amazon-content-img');
+        const scrollContainer = document.querySelector('.amazon-ppc-content');
+        const blocks = document.querySelectorAll('.amazon-ppc-content-text');
+        const image = document.getElementById('ppcImage');
+
+        // ----------------------------
+        // Carousel
+        // ----------------------------
+        function updateCarousel(index = currentIndex) {
+            const cardWidth = cards[0].offsetWidth;
+            carousel.style.transform = `translateX(-${index * cardWidth}px)`;
+        }
+
+        window.addEventListener('scroll', () => {
+            const rect = section.getBoundingClientRect();
+
+            // Only run carousel if Amazon section is NOT in view
+            const amazonRect = amazonImgSection.getBoundingClientRect();
+            if (amazonRect.top < window.innerHeight && amazonRect.bottom > 0) return;
+
+            const scrollStart = 0;
+            const scrollEnd = rect.height - window.innerHeight;
+
+            if (rect.top > scrollStart || rect.bottom < 0) return;
+
+            const progress = Math.min(Math.max(-rect.top / scrollEnd, 0), 1);
+            const index = Math.round(progress * (cards.length - 1));
+            updateCarousel(index);
+        });
+
+        // ----------------------------
+        // Amazon PPC Image
+        function updateContentOnScroll() {
+            const rect = amazonImgSection.getBoundingClientRect();
+            const sectionTop = window.scrollY - rect.top;
+            const sectionHeight = rect.height;
+            const scrollY = window.scrollY;
+
+            // Progress through the section
+            const progress = Math.min(Math.max((scrollY - sectionTop) / sectionHeight, 0), 1);
+
+            // Find the closest block based on progress
+            const index = Math.round(progress * (blocks.length - 1));
+            const closest = blocks[index];
+
+            if (closest) {
+                // Update image
+                const img = closest.dataset.image;
+                const current = image.src.split("/").pop();
+                if (img && img !== current) {
+                    image.src = "assets/images/Desktop/" + img;
+                }
+
+                // Update active text: highlight or show only the current block
+                blocks.forEach((block, i) => {
+                    if (i === index) {
+                        block.style.opacity = 1; // active block visible
+                        block.style.transform = "translateX(0)";
+                    } else {
+                        block.style.opacity = 0.3; // inactive block faded
+                        block.style.transform = "translateX(-20px)";
+                    }
+                });
+            }
+        }
+
+        // Listen to page scroll
+        window.addEventListener("scroll", updateContentOnScroll);
+        window.addEventListener("resize", updateContentOnScroll);
+
+
+
+        // ----------------------------
+        // Init
+        // ----------------------------
+        updateCarousel();
+        updateContentOnScroll();
+
+
+        //interactive timeline
+        const dots = document.querySelectorAll('.dot');
+        const mainImage = document.getElementById('timeline-main-image');
+        const timelineLabels = document.querySelectorAll('.timeline-label');
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                // Remove active class from all dots
+                dots.forEach(d => d.classList.remove('active'));
+
+                // Add active class to clicked dot
+                dot.classList.add('active');
+
+                // Change the main image
+                const newImage = dot.getAttribute('data-image');
+                mainImage.src = newImage;
+
+                // Hide all timeline texts
+                document.querySelectorAll('.timeline-text').forEach(text => {
+                    text.classList.add('timeline-text-hidden');
+                });
+
+                // Show the selected content
+                const targetId = dot.getAttribute('data-target');
+                const activeContent = document.querySelector(`#${targetId} .timeline-text`);
+                activeContent.classList.remove('timeline-text-hidden');
+
+                // Remove active class from all labels
+                timelineLabels.forEach(label => label.classList.remove('timeline-label-active'));
+
+                // Add active class to the label of selected content
+                const activeLabel = document.querySelector(`#${targetId} h4`);
+                if (activeLabel) {
+                    activeLabel.classList.add('timeline-label-active');
+                }
+            });
+        });
+
+
 
         // Enhanced Accordion JS - Remove border from previous item for positions 2,3,4
         document.addEventListener('DOMContentLoaded', function() {
