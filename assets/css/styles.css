@@ -974,7 +974,7 @@ h1 {
 }
 .dot {
   cursor: pointer;
-  transition: box-shadow 0.3s ease;
+  transition: transform 0.9s ease, box-shadow 0.3s ease;
 }
 
 .dot.active {
@@ -988,6 +988,11 @@ h1 {
   height: 10px;
   background: black;
   border-radius: 50%;
+  transition: margin-top 0.3s ease;
+}
+
+.timeline-dot-1.shifted {
+  margin-top: 80px;
 }
 
 .timeline-dot {
@@ -1013,7 +1018,12 @@ h1 {
 
 .timeline-content {
   padding-left: 40px;
-  max-width: 550px;
+  width: 550px;
+}
+
+.timeline-content > div {
+  position: relative;
+  transition: all 0.9s ease;
 }
 
 .timeline-label {
@@ -1021,11 +1031,12 @@ h1 {
   margin-bottom: 12px;
   font-size: 14px;
   text-align: left;
+  transition: margin 0.9s ease, font-size 0.9s ease;
 }
 
 .timeline-label-active {
   font-size: 28px;
-  margin: 55px 0 0 0;
+  margin: 0 0 0 0;
   text-align: left;
 }
 
@@ -1034,8 +1045,22 @@ h1 {
   color: #000;
   line-height: 1.5;
   text-align: left;
-  font-size: 18px;
+  font-size: 14px;
 }
+
+#content-exact {
+  position: absolute;
+  bottom: 0;
+}
+
+#content-phrase {
+  transition: transform 0.6s ease;
+  margin-top: 40px;
+}
+
+/* #content-phrase.shifted {
+  margin-top: 55px !important;
+} */
 
 .view-details {
   color: #0066ff !important;
@@ -1054,15 +1079,16 @@ h1 {
   margin-top: 20px;
   display: none;
 }
-.timeline-label-exact {
-  position: absolute;
-  left: 35px;
-  bottom: 0; /* adjust this value depending on spacing */
-  color: #777;
-  font-size: 14px;
-}
-.timeline-text-hidden {
+.timeline-text {
+  max-height: 0;
+  overflow: hidden;
   display: none;
+  transition: max-height 0.9s ease, opacity 0.9s ease;
+}
+
+.timeline-text-visible {
+  max-height: 500px;
+  display: block;
 }
 .amazon-advertising {
   position: relative;
@@ -1942,12 +1968,14 @@ h1 {
   .timeline {
     position: relative;
     padding-left: 40px;
-    height: 420px;
+    height: 520px;
+    flex-direction: column;
   }
 
   .timeline-item {
     position: relative;
     margin-bottom: 10px;
+    height: 100%;
   }
 
   .timeline-line {
@@ -1978,7 +2006,6 @@ h1 {
     background: black;
     border: none;
     border-radius: 50%;
-    box-shadow: 0 0 16px 10px rgba(0, 100, 255, 1);
   }
 
   .timeline-dot-3 {
@@ -1993,7 +2020,8 @@ h1 {
 
   .timeline-content {
     padding-left: 40px;
-    max-width: 550px;
+    max-width: 350px;
+    height: 100%;
   }
 
   .timeline-label {
@@ -2024,10 +2052,18 @@ h1 {
     display: none;
   }
   .timeline-image-mobile {
-    width: 100%;
-    border-radius: 16px;
-    margin-top: 20px;
+    display: none;
+    opacity: 0;
+    transform: scale(0.9) translateY(10px);
+    transition: all 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+ #mobile-exact-img{
+  margin-top:300px ;
+ }
+  .timeline-image-mobile.active {
     display: block;
+    opacity: 1;
+    transform: opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .amazon-advertising {
     margin-top: 40px;
@@ -2839,5 +2875,26 @@ h1 {
     width: 100%;
     max-width: 1200px;
     height: 440px;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }

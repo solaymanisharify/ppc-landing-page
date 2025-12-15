@@ -615,15 +615,15 @@
                             <div class="timeline-dot active dot" data-image="assets/images/Desktop/Phrase.png" data-target="content-phrase"></div>
                             <div class="timeline-dot-3 dot" data-image="assets/images/Desktop/Exact.webp" data-target="content-exact"></div>
                             <div class="timeline-content">
-                                <div id="content-broad">
+                                <div id="content-broad" data-margin="0 0 0 0">
                                     <h4 class="timeline-label">Broad</h4>
-                                    <p class="timeline-text timeline-text-hidden">
+                                    <p class="timeline-text">
                                         Use Broad match to cast a wide net and uncover high-potential search terms across your niche. Capture wide traffic and discover new keyword opportunities with Broad match targeting.
                                         View Details.
                                     </p>
                                 </div>
-
-                                <div id="content-phrase">
+                                <img src="assets/images/Desktop/Broad.webp" class="timeline-image-mobile" data-target="content-broad" />
+                                <div id="content-phrase" data-margin="55px 0 0 0">
                                     <h4 class="timeline-label timeline-label-active">Phrase</h2>
                                         <p class="timeline-text">
                                             Phrase match helps to connect with shoppers using relevant keyword sequences
@@ -632,15 +632,14 @@
                                         </p>
                                 </div>
 
-                                <p class="view-details">View Details →</p>
-
-                                <img src="assets/images//Mobile-version//Phrase.webp" class="timeline-image-mobile" />
+                                <img src="assets/images//Mobile-version//Phrase.webp" class="timeline-image-mobile active" data-target="content-phrase" />
                                 <div id="content-exact">
-                                    <h4 class="timeline-label-exact">exact</h4>
-                                    <p class="timeline-text timeline-text-hidden">
+                                    <h4 class="timeline-label">exact</h4>
+                                    <p class="timeline-text">
                                         Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.
                                     </p>
                                 </div>
+                                <img id="mobile-exact-img" src="assets/images//Desktop//Exact.webp" class="timeline-image-mobile" data-target="content-exact" />
                             </div>
                         </div>
 
@@ -1185,40 +1184,130 @@
         //interactive timeline
         const dots = document.querySelectorAll('.dot');
         const mainImage = document.getElementById('timeline-main-image');
-        const timelineLabels = document.querySelectorAll('.timeline-label');
+        const labels = document.querySelectorAll('.timeline-label');
 
         dots.forEach(dot => {
             dot.addEventListener('click', () => {
-                // Remove active class from all dots
                 dots.forEach(d => d.classList.remove('active'));
-
-                // Add active class to clicked dot
                 dot.classList.add('active');
 
-                // Change the main image
-                const newImage = dot.getAttribute('data-image');
-                mainImage.src = newImage;
+                mainImage.src = dot.dataset.image;
 
-                // Hide all timeline texts
                 document.querySelectorAll('.timeline-text').forEach(text => {
-                    text.classList.add('timeline-text-hidden');
+                    text.classList.remove('timeline-text-visible');
                 });
 
-                // Show the selected content
-                const targetId = dot.getAttribute('data-target');
+                labels.forEach(label => label.classList.remove('timeline-label-active'));
+
+                const targetId = dot.dataset.target;
                 const activeContent = document.querySelector(`#${targetId} .timeline-text`);
-                activeContent.classList.remove('timeline-text-hidden');
+                if (activeContent) activeContent.classList.add('timeline-text-visible');
 
-                // Remove active class from all labels
-                timelineLabels.forEach(label => label.classList.remove('timeline-label-active'));
-
-                // Add active class to the label of selected content
                 const activeLabel = document.querySelector(`#${targetId} h4`);
-                if (activeLabel) {
-                    activeLabel.classList.add('timeline-label-active');
+                if (activeLabel) activeLabel.classList.add('timeline-label-active');
+
+                // Reset all transforms
+                document.getElementById('content-broad').style.transform = '';
+                document.getElementById('content-phrase').style.transform = '';
+                document.getElementById('content-exact').style.transform = '';
+                document.querySelector('.timeline-dot-1').style.transform = '';
+                document.querySelector('.timeline-dot').style.transform = '';
+                document.querySelector('.timeline-dot-3').style.transform = '';
+
+                const width = window.innerWidth;
+                let contentOffset, dotOffset;
+
+                if (width > 1200) { // desktop
+                    contentOffset = {
+                        broad: 24,
+                        phrase: 0,
+                        exact: -80
+                    };
+                    dotOffset = {
+                        broad: 100,
+                        phrase: 0,
+                        exact: -80
+                    };
+                } else if (width > 768) { // tablet
+                    contentOffset = {
+                        broad: 18,
+                        phrase: 0,
+                        exact: -60
+                    };
+                    dotOffset = {
+                        broad: 70,
+                        phrase: 0,
+                        exact: -60
+                    };
+                } else { // mobile
+                    contentOffset = {
+                        broad: 12,
+                        phrase: 0,
+                        exact: -40
+                    };
+                    dotOffset = {
+                        broad: 50,
+                        phrase: 265,
+                        exact: -280
+                    };
                 }
+                // MOBILE IMAGE TOGGLE (only < 640px)
+                if (window.innerWidth < 640) {
+                    // hide all mobile images
+                    document.querySelectorAll('.timeline-image-mobile').forEach(img => {
+                        img.classList.remove('active');
+                    });
+
+                    // show only the image related to active content
+                    const activeBlock = document.getElementById(targetId);
+                    const mobileImg = activeBlock.nextElementSibling;
+
+                    if (mobileImg && mobileImg.classList.contains('timeline-image-mobile')) {
+                        mobileImg.classList.add('active');
+                    }
+                }
+
+
+                // Apply transforms for content
+                if (targetId === 'content-broad') {
+                    document.getElementById('content-phrase').style.transform = `translateY(${contentOffset.broad}px)`;
+                    document.querySelector('.timeline-dot').style.transform = `translateY(${dotOffset.phrase}px)`;
+                    const phraseImg = document.querySelector('.timeline-image-mobile[data-target="content-phrase"]');
+                    const phraseContent = document.getElementById('content-phrase');
+                    if (window.innerWidth < 640) {
+                        phraseImg.style.marginTop = '250px';
+                        // phraseContent.style.transform = `translateY(${contentOffset.broad * -1}px)`;
+                    }
+                } else if (targetId === 'content-phrase') {
+                    if (window.innerWidth < 640) {
+                        const phraseImg = document.querySelector('.timeline-image-mobile[data-target="content-phrase"]');
+                        const phraseContent = document.getElementById('content-phrase');
+                        if (phraseImg) {
+                            phraseImg.style.marginTop = '0px';
+                            phraseContent.style.transform = `translateY(0px)`;
+                        }
+                    }
+                    const exactImg = document.querySelector('.timeline-image-mobile[data-target="content-exact"]');
+                    if (exactImg) {
+                        exactImg.style.marginTop = '300px';
+                    }
+                } else if (targetId === 'content-exact') {
+                    // document.getElementById('content-phrase').style.transform = `translateY(${contentOffset.exact * -1}px)`;
+                    document.querySelector('.timeline-dot-3').style.transform = `translateY(${dotOffset.exact}px)`;
+                    if (window.innerWidth < 640) {
+                        document.getElementById('content-exact').style.transform = `translateY(${-200}px)`;
+                        const exactImg = document.querySelector('.timeline-image-mobile[data-target="content-exact"]');
+                        const phraseContent = document.getElementById('content-phrase');
+                        if (exactImg) {
+                            exactImg.style.marginTop = '200px';
+                        }
+                    }
+                }
+
+
             });
         });
+
 
 
 
