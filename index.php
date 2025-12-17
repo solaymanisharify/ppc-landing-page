@@ -30,7 +30,10 @@
                         launch to market domination. No matter where you are in your journey, we
                         help scale your brand profitably with data-driven, custom campaigns.
                     </p>
-                    <button class="get-started-btn">Let's Go Further <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                    <button class="get-started-btn animation-btn">
+                        <span class="btn-text">Let's Go Further</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
                 </div>
                 <div class="hero-2">
                     <img src="assets/images/Mobile-version/product-presentation.png" alt="Hero Image" class="img-cover-mobile">
@@ -70,112 +73,116 @@
                 </div>
             </div>
             <div class="listing-optimization">
-                <h1>Reignite Your Bussiness With Our</h1>
-                <div class="transparent-div"></div>
-                <div class="listing-optimization-container">
-                    <div class="listing-optimization-desc">
-                        <div class="listing-title-div">
-                            <img src="assets/images/Desktop/star.png" alt="">
-                            <h2>Listing Optimization</h2>
-                        </div>
-                        <div class="listing-optimization-desc-content">
-                            <h3>An Enhanced Amazon <br> Listing Boosts Discoverability And Sales 4x</h3>
-                            <p>Optimized with powerful copy, keyword<br class="mobile-only-br"> integration, and backend enhancements.</p>
-                        </div>
-                        <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
-                    </div>
-                    <img src="assets/images/desktop/Listing-optimization.webp" alt="Hero Image" class="listing-optimization-img">
-                    <img src="assets/images/Mobile-version/listing-optimization-img-mobile.png" alt="Hero Image" class="listing-optimization-img-mobile">
-                </div>
-                <div class="panel-wrapper">
-                    <div class="campaign-optimization-container">
-                        <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
-                        <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
-                        <div class="listing-optimization-desc">
-                            <div class="listing-title-div">
-                                <img src="assets/images/Desktop/star.png" alt="">
-                                <h2>Campaign Optimization</h2>
+                <div class="listing-spacer">
+                    <div class="listing-sticky">
+                        <h1>Reignite Your Bussiness With Our</h1>
+                        <div class="transparent-div"></div>
+                        <div class="listing-optimization-container">
+                            <div class="listing-optimization-desc">
+                                <div class="listing-title-div">
+                                    <img src="assets/images/Desktop/star.png" alt="">
+                                    <h2>Listing Optimization</h2>
+                                </div>
+                                <div class="listing-optimization-desc-content">
+                                    <h3>An Enhanced Amazon <br> Listing Boosts Discoverability And Sales 4x</h3>
+                                    <p>Optimized with powerful copy, keyword<br class="mobile-only-br"> integration, and backend enhancements.</p>
+                                </div>
+                                <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
                             </div>
-                            <div class="listing-optimization-desc-content">
-                                <h3>We monitor and <br> fine-tune bidding strategies</h3>
-                                <p>match types, and placements to optimize<br class="mobile-only-br"> every dollar spent on Amazon ads.</p>
-                            </div>
-                            <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                            <img src="assets/images/desktop/Listing-optimization.webp" alt="Hero Image" class="listing-optimization-img">
+                            <img src="assets/images/Mobile-version/listing-optimization-img-mobile.png" alt="Hero Image" class="listing-optimization-img-mobile">
                         </div>
-                        <div class="campaign-optimization-img">
-                            <img src="assets/images/Desktop/Campaign-optimization.png" alt="">
-                        </div>
-                    </div>
-                    <div class="increase-sales-container">
-                        <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
-                        <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
-                        <div class="listing-optimization-desc">
-                            <div class="listing-title-div">
-                                <img src="assets/images/Desktop/star.png" alt="">
-                                <h2>Increase Sales</h2>
+                        <div class="panel-wrapper">
+                            <div class="campaign-optimization-container">
+                                <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
+                                <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
+                                <div class="listing-optimization-desc">
+                                    <div class="listing-title-div">
+                                        <img src="assets/images/Desktop/star.png" alt="">
+                                        <h2>Campaign Optimization</h2>
+                                    </div>
+                                    <div class="listing-optimization-desc-content">
+                                        <h3>We monitor and <br> fine-tune bidding strategies</h3>
+                                        <p>match types, and placements to optimize<br class="mobile-only-br"> every dollar spent on Amazon ads.</p>
+                                    </div>
+                                    <button class="lets-talk-btn animation-btn">Let's Talk <span><span class="btn-arrow">→</span></span></button>
+                                </div>
+                                <div class="campaign-optimization-img">
+                                    <img src="assets/images/Desktop/Campaign-optimization.png" alt="">
+                                </div>
                             </div>
-                            <div class="listing-optimization-desc-content">
-                                <h3>Scale your<br> business with tailored campaign</h3>
-                                <p>strategies that target the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth.</p>
+                            <div class="increase-sales-container">
+                                <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
+                                <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
+                                <div class="listing-optimization-desc">
+                                    <div class="listing-title-div">
+                                        <img src="assets/images/Desktop/star.png" alt="">
+                                        <h2>Increase Sales</h2>
+                                    </div>
+                                    <div class="listing-optimization-desc-content">
+                                        <h3>Scale your<br> business with tailored campaign</h3>
+                                        <p>strategies that target the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth.</p>
+                                    </div>
+                                    <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                </div>
+                                <div class="increase-sales-img">
+                                    <img src="assets/images/Desktop/Increase-Sales.png" alt="">
+                                </div>
                             </div>
-                            <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
-                        </div>
-                        <div class="increase-sales-img">
-                            <img src="assets/images/Desktop/Increase-Sales.png" alt="">
-                        </div>
-                    </div>
-                    <div class="keyword-research-container">
-                        <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
-                        <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
-                        <div class="listing-optimization-desc">
-                            <div class="listing-title-div">
-                                <img src="assets/images/Desktop/star.png" alt="">
-                                <h2>Keyword Research</h2>
+                            <div class="keyword-research-container">
+                                <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
+                                <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
+                                <div class="listing-optimization-desc">
+                                    <div class="listing-title-div">
+                                        <img src="assets/images/Desktop/star.png" alt="">
+                                        <h2>Keyword Research</h2>
+                                    </div>
+                                    <div class="listing-optimization-desc-content">
+                                        <h3>We uncover<br> Amazon search trends</h3>
+                                        <p>to find profitable keywords, driving traffic and conversions through ranking,<br class="mobile-only-br"> More visibility, relevance, and return on ad spend.</p>
+                                    </div>
+                                    <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                </div>
+                                <div class="keyword-research-img">
+                                    <img src="assets/images/Desktop/Keyword-research.png" alt="">
+                                </div>
                             </div>
-                            <div class="listing-optimization-desc-content">
-                                <h3>We uncover<br> Amazon search trends</h3>
-                                <p>to find profitable keywords, driving traffic and conversions through ranking,<br class="mobile-only-br"> More visibility, relevance, and return on ad spend.</p>
+                            <div class="reduce-acos-container">
+                                <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
+                                <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
+                                <div class="listing-optimization-desc">
+                                    <div class="listing-title-div">
+                                        <img src="assets/images/Desktop/star.png" alt="">
+                                        <h2>Reduce ACOS</h2>
+                                    </div>
+                                    <div class="listing-optimization-desc-content">
+                                        <h3>Scale your business<br> with tailored campaign strategies that target</h3>
+                                        <p>the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth..</p>
+                                    </div>
+                                    <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                </div>
+                                <div class="reduce-acos-img">
+                                    <img src="assets/images/Desktop/Reduce-ACOS.png" alt="">
+                                </div>
                             </div>
-                            <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
-                        </div>
-                        <div class="keyword-research-img">
-                            <img src="assets/images/Desktop/Keyword-research.png" alt="">
-                        </div>
-                    </div>
-                    <div class="reduce-acos-container">
-                        <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
-                        <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
-                        <div class="listing-optimization-desc">
-                            <div class="listing-title-div">
-                                <img src="assets/images/Desktop/star.png" alt="">
-                                <h2>Reduce ACOS</h2>
+                            <div class="weekly-reporting-container">
+                                <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
+                                <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
+                                <div class="listing-optimization-desc">
+                                    <div class="listing-title-div">
+                                        <img src="assets/images/Desktop/star.png" alt="">
+                                        <h2>Weekly Reporting</h2>
+                                    </div>
+                                    <div class="listing-optimization-desc-content">
+                                        <h3>We provide detailed<br> weekly PPC reports with actionable insights and clear metrics.</h3>
+                                        <p>tKnow exactly how your ads are<br class="mobile-only-br"> performing</p>
+                                    </div>
+                                    <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                </div>
+                                <div class="weekly-reporting-img">
+                                    <img src="assets/images/Desktop/weekly-reporting.png" alt="">
+                                </div>
                             </div>
-                            <div class="listing-optimization-desc-content">
-                                <h3>Scale your business<br> with tailored campaign strategies that target</h3>
-                                <p>the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth..</p>
-                            </div>
-                            <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
-                        </div>
-                        <div class="reduce-acos-img">
-                            <img src="assets/images/Desktop/Reduce-ACOS.png" alt="">
-                        </div>
-                    </div>
-                    <div class="weekly-reporting-container">
-                        <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
-                        <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
-                        <div class="listing-optimization-desc">
-                            <div class="listing-title-div">
-                                <img src="assets/images/Desktop/star.png" alt="">
-                                <h2>Weekly Reporting</h2>
-                            </div>
-                            <div class="listing-optimization-desc-content">
-                                <h3>We provide detailed<br> weekly PPC reports with actionable insights and clear metrics.</h3>
-                                <p>tKnow exactly how your ads are<br class="mobile-only-br"> performing</p>
-                            </div>
-                            <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
-                        </div>
-                        <div class="weekly-reporting-img">
-                            <img src="assets/images/Desktop/weekly-reporting.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -184,247 +191,251 @@
         </div>
         <!-- case study -->
         <div class="case-study">
-            <div class="case-study-title">
-                <h1>Case Study</h1>
-                <p>The Revenue Growth Story of Ecomclips</p>
-            </div>
-            <div class="carousel-wrapper">
-                <div class="case-study-main-container">
-                    <div class="case-study-container-1 case-study-container">
-                        <div class="case-study-container-text">
-                            <div class="case-study-header">
-                                <h2>From Growth to Succcess</h2>
-                                <div class="golden-fox">
-                                    <img src="assets/images/Mobile-version/goldenfox-logo 1.png" alt="Hero Image" class="">
-                                </div>
-                            </div>
-                            <div class="case-study-growth-image-container">
-                                <div>
-                                    <div class="case-study-desc">
-                                        <h1>&ldquo;Ecomclips Doubled Our Revenue!&rdquo;</h1>
-                                        <div class="case-study-line"></div>
-                                    </div>
-                                    <div class="growth-percentage">
-                                        <div>
-                                            <h2>237%</h2>
-                                            <p>Increase in sales</p>
-                                        </div>
-                                        <div>
-                                            <h2>63%</h2>
-                                            <p>ACOS Reduction</p>
-                                        </div>
-                                        <div>
-                                            <h2>19%</h2>
-                                            <p>Increase in CVR</p>
-                                        </div>
-                                        <div>
-                                            <h2>26%</h2>
-                                            <p>YOY Growth</p>
-                                        </div>
-                                    </div>
-                                    <div class="growth-desc">
-                                        <p>An enhanced Amazon listing boosts discoverability and sales 4x, optimized with powerful copy, keyword integration, and backend enhancements.</p>
-                                    </div>
-                                    <div class="our-impact-btn">
-                                        <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
-                                    </div>
-                                </div>
-                                <div class="case-study-container-img">
-                                    <img src="assets/images/desktop/Review-copy.png" alt="Hero Image" class="case-study-img">
-                                    <div class="fake-review">
-                                        <div class="review-card-top">
-                                            <div class="fake-review-img">
-                                                <img src="assets/images/Desktop/fake-critics.png" alt="Hero Image" class="">
-                                            </div>
-                                            <div>
-                                                <h1>James Hawken</h1>
-                                                <div class="review-card-rating">
-                                                    <p>Golden Fox, USA</p>
-                                                    <div class="review-card-rating-stars">
-                                                        <div class="review-card-rating-img">
-                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                        </div>
-                                                        <div class="review-card-rating-img">
-                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                        </div>
-                                                        <div class="review-card-rating-img">
-                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                        </div>
-                                                        <div class="review-card-rating-img">
-                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                        </div>
-                                                        <div class="review-card-rating-img">
-                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="review-card-content">
-                                            <p>Ecomclips are fantastic! Proffessional, effiecient, and always deliver high-quality work on time. They've helped streamline my e-commerce business and exceeded my expectations. Higly recommended!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
-                        </div>
+            <div class="case-study-spacer">
+
+                <div class="carousel-wrapper">
+                    <div class="case-study-title">
+                        <h1>Case Study</h1>
+                        <p>The Revenue Growth Story of Ecomclips</p>
                     </div>
-                    <div class="case-study-container-2 case-study-container">
-                        <div class="case-study-container-text">
-                            <div class="case-study-header">
-                                <h2>From Growth to Succcess</h2>
-                                <div class="golden-fox">
-                                    <img src="assets/images/Desktop/woodland-logo.png" alt="Hero Image" class="">
-                                </div>
-                            </div>
-                            <div class="case-study-growth-image-container">
-                                <div>
-                                    <div class="case-study-desc">
-                                        <h1>&ldquo;Ecomclips Has Been a God Sent To Us&rdquo;</h1>
-                                        <div class="case-study-line"></div>
-                                    </div>
-                                    <div class="growth-percentage">
-                                        <div>
-                                            <h2>254%</h2>
-                                            <p>Increase in sales</p>
-                                        </div>
-                                        <div>
-                                            <h2>68%</h2>
-                                            <p>ACOS Reduction</p>
-                                        </div>
-                                        <div>
-                                            <h2>13%</h2>
-                                            <p>Increase in CVR</p>
-                                        </div>
-                                        <div>
-                                            <h2>36%</h2>
-                                            <p>YOY Growth</p>
-                                        </div>
-                                    </div>
-                                    <div class="growth-desc">
-                                        <p>An enhanced Amazon listing boosts discoverability and sales 4x, optimized with powerful copy, keyword integration, and backend enhancements.</p>
-                                    </div>
-                                    <div class="our-impact-btn">
-                                        <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                    <div class="case-study-main-container">
+                        <div class="case-study-container-1 case-study-container">
+                            <div class="case-study-container-text">
+                                <div class="case-study-header">
+                                    <h2>From Growth to Succcess</h2>
+                                    <div class="golden-fox">
+                                        <img src="assets/images/Mobile-version/goldenfox-logo 1.png" alt="Hero Image" class="">
                                     </div>
                                 </div>
-                                <div class="case-study-container-img">
-                                    <img src="assets/images/desktop/woodland-cover.png" alt="Hero Image" class="case-study-img">
-                                    <div class="fake-review">
-                                        <div class="review-card-top">
-                                            <div class="fake-review-img">
-                                                <img src="assets/images/Desktop/woodland-critic.png" alt="Hero Image" class="">
+                                <div class="case-study-growth-image-container">
+                                    <div>
+                                        <div class="case-study-desc">
+                                            <h1>&ldquo;Ecomclips Doubled Our Revenue!&rdquo;</h1>
+                                            <div class="case-study-line"></div>
+                                        </div>
+                                        <div class="growth-percentage">
+                                            <div>
+                                                <h2>237%</h2>
+                                                <p>Increase in sales</p>
                                             </div>
                                             <div>
-                                                <h1>Max Davidson</h1>
-                                                <div class="review-card-rating">
-                                                    <p>Woodland, USA</p>
-                                                    <div class="review-card-rating-stars">
-                                                        <div class="review-card-rating-img">
-                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                        </div>
-                                                        <div class="review-card-rating-img">
-                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                        </div>
-                                                        <div class="review-card-rating-img">
-                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                        </div>
-                                                        <div class="review-card-rating-img">
-                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                        </div>
-                                                        <div class="review-card-rating-img">
-                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                <h2>63%</h2>
+                                                <p>ACOS Reduction</p>
+                                            </div>
+                                            <div>
+                                                <h2>19%</h2>
+                                                <p>Increase in CVR</p>
+                                            </div>
+                                            <div>
+                                                <h2>26%</h2>
+                                                <p>YOY Growth</p>
+                                            </div>
+                                        </div>
+                                        <div class="growth-desc">
+                                            <p>An enhanced Amazon listing boosts discoverability and sales 4x, optimized with powerful copy, keyword integration, and backend enhancements.</p>
+                                        </div>
+                                        <div class="our-impact-btn">
+                                            <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="case-study-container-img">
+                                        <img src="assets/images/desktop/Review-copy.png" alt="Hero Image" class="case-study-img">
+                                        <div class="fake-review">
+                                            <div class="review-card-top">
+                                                <div class="fake-review-img">
+                                                    <img src="assets/images/Desktop/fake-critics.png" alt="Hero Image" class="">
+                                                </div>
+                                                <div>
+                                                    <h1>James Hawken</h1>
+                                                    <div class="review-card-rating">
+                                                        <p>Golden Fox, USA</p>
+                                                        <div class="review-card-rating-stars">
+                                                            <div class="review-card-rating-img">
+                                                                <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                            </div>
+                                                            <div class="review-card-rating-img">
+                                                                <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                            </div>
+                                                            <div class="review-card-rating-img">
+                                                                <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                            </div>
+                                                            <div class="review-card-rating-img">
+                                                                <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                            </div>
+                                                            <div class="review-card-rating-img">
+                                                                <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="review-card-content">
-                                            <p>Ecom has been a god sent to us, we were just giving money away to google and they came and got us profitable with our ads quickly most of all they have been patience with us when we have made mistakes and having serious issues with our old site. They are good people enjoyed growing with them.</p>
+                                            <div class="review-card-content">
+                                                <p>Ecomclips are fantastic! Proffessional, effiecient, and always deliver high-quality work on time. They've helped streamline my e-commerce business and exceeded my expectations. Higly recommended!</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="case-study-container-3 case-study-container">
-                        <div class="case-study-container-text">
-                            <div class="case-study-header">
-                                <h2>From Growth to Succcess</h2>
-                                <div class="golden-fox">
-                                    <img src="assets/images/Desktop/umbra-logo.png" alt="Hero Image" class="">
-                                </div>
-                            </div>
-                            <div class="case-study-growth-image-container">
-                                <div>
-                                    <div class="case-study-desc">
-                                        <h1>&ldquo;150% revenue increase over the 18 months&rdquo;</h1>
-                                        <div class="case-study-line"></div>
-                                    </div>
-                                    <div class="growth-percentage">
-                                        <div>
-                                            <h2>337%</h2>
-                                            <p>Increase in sales</p>
-                                        </div>
-                                        <div>
-                                            <h2>73%</h2>
-                                            <p>ACOS Reduction</p>
-                                        </div>
-                                        <div>
-                                            <h2>16%</h2>
-                                            <p>Increase in CVR</p>
-                                        </div>
-                                        <div>
-                                            <h2>25%</h2>
-                                            <p>YOY Growth</p>
-                                        </div>
-                                    </div>
-                                    <div class="growth-desc">
-                                        <p>An enhanced Amazon listing boosts discoverability and sales 4x, optimized with powerful copy, keyword integration, and backend enhancements.</p>
-                                    </div>
-                                    <div class="our-impact-btn">
-                                        <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                        <div class="case-study-container-2 case-study-container">
+                            <div class="case-study-container-text">
+                                <div class="case-study-header">
+                                    <h2>From Growth to Succcess</h2>
+                                    <div class="golden-fox">
+                                        <img src="assets/images/Desktop/woodland-logo.png" alt="Hero Image" class="">
                                     </div>
                                 </div>
-                                <div class="case-study-container-img">
-                                    <img src="assets/images/desktop/umbra.png" alt="Hero Image" class="case-study-img">
-                                    <div class="fake-review">
-                                        <div class="review-card-top">
-                                            <div class="fake-review-img">
-                                                <img src="assets/images/Desktop/umbra-critic.png" alt="Hero Image" class="">
+                                <div class="case-study-growth-image-container">
+                                    <div>
+                                        <div class="case-study-desc">
+                                            <h1>&ldquo;Ecomclips Has Been a God Sent To Us&rdquo;</h1>
+                                            <div class="case-study-line"></div>
+                                        </div>
+                                        <div class="growth-percentage">
+                                            <div>
+                                                <h2>254%</h2>
+                                                <p>Increase in sales</p>
                                             </div>
                                             <div>
-                                                <h1>Marlyn Costello</h1>
-                                                <div class="review-card-rating">
-                                                    <p>Umbra, USA</p>
-                                                    <div class="review-card-rating-stars">
-                                                        <div class="review-card-rating-img">
-                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                        </div>
-                                                        <div class="review-card-rating-img">
-                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                        </div>
-                                                        <div class="review-card-rating-img">
-                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                        </div>
-                                                        <div class="review-card-rating-img">
-                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                        </div>
-                                                        <div class="review-card-rating-img">
-                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                <h2>68%</h2>
+                                                <p>ACOS Reduction</p>
+                                            </div>
+                                            <div>
+                                                <h2>13%</h2>
+                                                <p>Increase in CVR</p>
+                                            </div>
+                                            <div>
+                                                <h2>36%</h2>
+                                                <p>YOY Growth</p>
+                                            </div>
+                                        </div>
+                                        <div class="growth-desc">
+                                            <p>An enhanced Amazon listing boosts discoverability and sales 4x, optimized with powerful copy, keyword integration, and backend enhancements.</p>
+                                        </div>
+                                        <div class="our-impact-btn">
+                                            <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="case-study-container-img">
+                                        <img src="assets/images/desktop/woodland-cover.png" alt="Hero Image" class="case-study-img">
+                                        <div class="fake-review">
+                                            <div class="review-card-top">
+                                                <div class="fake-review-img">
+                                                    <img src="assets/images/Desktop/woodland-critic.png" alt="Hero Image" class="">
+                                                </div>
+                                                <div>
+                                                    <h1>Max Davidson</h1>
+                                                    <div class="review-card-rating">
+                                                        <p>Woodland, USA</p>
+                                                        <div class="review-card-rating-stars">
+                                                            <div class="review-card-rating-img">
+                                                                <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                            </div>
+                                                            <div class="review-card-rating-img">
+                                                                <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                            </div>
+                                                            <div class="review-card-rating-img">
+                                                                <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                            </div>
+                                                            <div class="review-card-rating-img">
+                                                                <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                            </div>
+                                                            <div class="review-card-rating-img">
+                                                                <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="review-card-content">
-                                            <p>We had the pleasure of working with Ecomclips for approximately 18 months. The Ecomclips team provided great guidance and continuously worked on their on their own for improved SKU opti-mization. We utilized their services for product listing, optimiza-tion, and advertising. We realized 150% revenue increase over the 18 months were worked with them.</p>
+                                            <div class="review-card-content">
+                                                <p>Ecom has been a god sent to us, we were just giving money away to google and they came and got us profitable with our ads quickly most of all they have been patience with us when we have made mistakes and having serious issues with our old site. They are good people enjoyed growing with them.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
+                            </div>
+                        </div>
+                        <div class="case-study-container-3 case-study-container">
+                            <div class="case-study-container-text">
+                                <div class="case-study-header">
+                                    <h2>From Growth to Succcess</h2>
+                                    <div class="golden-fox">
+                                        <img src="assets/images/Desktop/umbra-logo.png" alt="Hero Image" class="">
+                                    </div>
+                                </div>
+                                <div class="case-study-growth-image-container">
+                                    <div>
+                                        <div class="case-study-desc">
+                                            <h1>&ldquo;150% revenue increase over the 18 months&rdquo;</h1>
+                                            <div class="case-study-line"></div>
+                                        </div>
+                                        <div class="growth-percentage">
+                                            <div>
+                                                <h2>337%</h2>
+                                                <p>Increase in sales</p>
+                                            </div>
+                                            <div>
+                                                <h2>73%</h2>
+                                                <p>ACOS Reduction</p>
+                                            </div>
+                                            <div>
+                                                <h2>16%</h2>
+                                                <p>Increase in CVR</p>
+                                            </div>
+                                            <div>
+                                                <h2>25%</h2>
+                                                <p>YOY Growth</p>
+                                            </div>
+                                        </div>
+                                        <div class="growth-desc">
+                                            <p>An enhanced Amazon listing boosts discoverability and sales 4x, optimized with powerful copy, keyword integration, and backend enhancements.</p>
+                                        </div>
+                                        <div class="our-impact-btn">
+                                            <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="case-study-container-img">
+                                        <img src="assets/images/desktop/umbra.png" alt="Hero Image" class="case-study-img">
+                                        <div class="fake-review">
+                                            <div class="review-card-top">
+                                                <div class="fake-review-img">
+                                                    <img src="assets/images/Desktop/umbra-critic.png" alt="Hero Image" class="">
+                                                </div>
+                                                <div>
+                                                    <h1>Marlyn Costello</h1>
+                                                    <div class="review-card-rating">
+                                                        <p>Umbra, USA</p>
+                                                        <div class="review-card-rating-stars">
+                                                            <div class="review-card-rating-img">
+                                                                <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                            </div>
+                                                            <div class="review-card-rating-img">
+                                                                <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                            </div>
+                                                            <div class="review-card-rating-img">
+                                                                <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                            </div>
+                                                            <div class="review-card-rating-img">
+                                                                <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                            </div>
+                                                            <div class="review-card-rating-img">
+                                                                <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="review-card-content">
+                                                <p>We had the pleasure of working with Ecomclips for approximately 18 months. The Ecomclips team provided great guidance and continuously worked on their on their own for improved SKU opti-mization. We utilized their services for product listing, optimiza-tion, and advertising. We realized 150% revenue increase over the 18 months were worked with them.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -587,11 +598,11 @@
                                 <h1>Launch</h1>
                                 <p>Every brand is unique - that’s why we tailor your PPC launch plan to your specific goals, audience, and product positioning. - Listing Optimization - Initial Keyword Research - Auto & Manual Campaign Setup - Maximize Impression - Harvesting & Data Collection</p>
                             </div>
-                            <div class="amazon-ppc-content-text" data-image="Broad.webp">
+                            <div class="amazon-ppc-content-text" data-image="Optimize.webp">
                                 <h1>Optimize</h1>
                                 <p>Every Amazon business performs differently — and so should your ad strategy. You need tailored adjustments of - Review & Refine Keywords - Adjust Bids & Budgets - Campaign Segmentation - Brand Awareness - Monitor & Report Performance</p>
                             </div>
-                            <div class="amazon-ppc-content-text" data-image="Exact.webp">
+                            <div class="amazon-ppc-content-text" data-image="dominate.webp">
                                 <h1>Dominate</h1>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, dolorum porro! Libero sint, assumenda fuga, voluptatem tempore laborum recusandae distinctio quia voluptate aliquid placeat soluta! Nihil exercitationem id cum</p>
                             </div>
@@ -611,9 +622,9 @@
                         <img src="assets/images//Desktop//Phrase.png" class="timeline-image-desktop" id="timeline-main-image" />
                         <div class="timeline-item">
                             <div class="timeline-line"></div>
-                            <div class="timeline-dot-1 dot" data-image="assets/images/Desktop/Broad.webp" data-target="content-broad"></div>
-                            <div class="timeline-dot active dot" data-image="assets/images/Desktop/Phrase.png" data-target="content-phrase"></div>
-                            <div class="timeline-dot-3 dot" data-image="assets/images/Desktop/Exact.webp" data-target="content-exact"></div>
+                            <div class="timeline-dot-1 dot" data-image="assets/images/Desktop/Broad.webp" data-target="content-broad" data-index="0"></div>
+                            <div class="timeline-dot active dot" data-image="assets/images/Desktop/Phrase.png" data-target="content-phrase" data-index="1"></div>
+                            <div class="timeline-dot-3 dot" data-image="assets/images/Desktop/Exact.webp" data-target="content-exact" data-index="2"></div>
                             <div class="timeline-content">
                                 <div id="content-broad" data-margin="0 0 0 0">
                                     <h4 class="timeline-label">Broad</h4>
@@ -622,7 +633,7 @@
                                         View Details.
                                     </p>
                                 </div>
-                                <img src="assets/images/Desktop/Broad.webp" class="timeline-image-mobile" data-target="content-broad" />
+                                <img src="assets/images/Desktop/Broad.webp" id="mobile-broad-img" class="timeline-image-mobile" data-target="content-broad" />
                                 <div id="content-phrase" data-margin="55px 0 0 0">
                                     <h4 class="timeline-label timeline-label-active">Phrase</h2>
                                         <p class="timeline-text">
@@ -632,14 +643,14 @@
                                         </p>
                                 </div>
 
-                                <img src="assets/images//Mobile-version//Phrase.webp" class="timeline-image-mobile active" data-target="content-phrase" />
+                                <img src="assets/images//Mobile-version//Phrase.webp" id="mobile-phrase-img" class="timeline-image-mobile active" data-target="content-phrase" />
                                 <div id="content-exact">
                                     <h4 class="timeline-label">exact</h4>
                                     <p class="timeline-text">
                                         Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.
                                     </p>
                                 </div>
-                                <img id="mobile-exact-img" src="assets/images//Desktop//Exact.webp" class="timeline-image-mobile" data-target="content-exact" />
+                                <img id="mobile-exact-img" src="assets/images//Desktop//Exact.webp" id="mobile-exact-img" class="timeline-image-mobile" data-target="content-exact" />
                             </div>
                         </div>
 
@@ -925,12 +936,10 @@
         // Lock scroll position
         function lockScroll() {
             document.body.style.overflow = 'hidden';
-            document.body.style.height = '100vh';
         }
 
         function unlockScroll() {
             document.body.style.overflow = 'scroll';
-            document.body.style.height = '';
         }
 
         function handleScroll(delta) {
@@ -1110,40 +1119,35 @@
         // ----------------------------
         // Carousel
         // ----------------------------
-        function updateCarousel(index = currentIndex) {
-            const cardWidth = cards[0].offsetWidth;
-            carousel.style.transform = `translateX(-${index * cardWidth}px)`;
+        if (window.innerWidth > 640) {
+            function updateCarousel(index) {
+                const cardWidth = cards[0].offsetWidth + 20; // include gap
+                carousel.style.transform = `translateX(-${index * cardWidth}px)`;
+            }
+
+            window.addEventListener('scroll', () => {
+                const rect = section.getBoundingClientRect();
+                const scrollLength = section.offsetHeight - window.innerHeight;
+
+                if (rect.top > 0 || rect.bottom < window.innerHeight) return;
+
+                const progress = Math.min(Math.max(-rect.top / scrollLength, 0), 1);
+                const index = Math.round(progress * (cards.length - 1));
+
+                updateCarousel(index);
+            });
         }
 
-        window.addEventListener('scroll', () => {
-            const rect = section.getBoundingClientRect();
-
-            // Only run carousel if Amazon section is NOT in view
-            const amazonRect = amazonImgSection.getBoundingClientRect();
-            if (amazonRect.top < window.innerHeight && amazonRect.bottom > 0) return;
-
-            const scrollStart = 0;
-            const scrollEnd = rect.height - window.innerHeight;
-
-            if (rect.top > scrollStart || rect.bottom < 0) return;
-
-            const progress = Math.min(Math.max(-rect.top / scrollEnd, 0), 1);
-            const index = Math.round(progress * (cards.length - 1));
-            updateCarousel(index);
-        });
 
         // ----------------------------
         // Amazon PPC Image
         function updateContentOnScroll() {
-            const rect = amazonImgSection.getBoundingClientRect();
+            const rect = scrollContainer.getBoundingClientRect();
             const sectionTop = window.scrollY - rect.top;
             const sectionHeight = rect.height;
             const scrollY = window.scrollY;
 
-            // Progress through the section
             const progress = Math.min(Math.max((scrollY - sectionTop) / sectionHeight, 0), 1);
-
-            // Find the closest block based on progress
             const index = Math.round(progress * (blocks.length - 1));
             const closest = blocks[index];
 
@@ -1155,23 +1159,21 @@
                     image.src = "assets/images/Desktop/" + img;
                 }
 
-                // Update active text: highlight or show only the current block
+                // Update active block
                 blocks.forEach((block, i) => {
                     if (i === index) {
-                        block.style.opacity = 1; // active block visible
+                        block.style.opacity = 1;
                         block.style.transform = "translateX(0)";
                     } else {
-                        block.style.opacity = 0.3; // inactive block faded
+                        block.style.opacity = 0.3;
                         block.style.transform = "translateX(-20px)";
                     }
                 });
             }
         }
 
-        // Listen to page scroll
         window.addEventListener("scroll", updateContentOnScroll);
         window.addEventListener("resize", updateContentOnScroll);
-
 
 
         // ----------------------------
@@ -1182,12 +1184,16 @@
 
 
         //interactive timeline
+        let currentIdx = 1;
         const dots = document.querySelectorAll('.dot');
         const mainImage = document.getElementById('timeline-main-image');
         const labels = document.querySelectorAll('.timeline-label');
 
         dots.forEach(dot => {
             dot.addEventListener('click', () => {
+                const dotsArr = Array.from(dots);
+                const newIndex = Number(dot.dataset.index);
+
                 dots.forEach(d => d.classList.remove('active'));
                 dot.classList.add('active');
 
@@ -1201,6 +1207,13 @@
 
                 const targetId = dot.dataset.target;
                 const activeContent = document.querySelector(`#${targetId} .timeline-text`);
+                if (activeContent) {
+                    if (newIndex > currentIdx) activeContent.classList.add('from-bottom');
+                    else activeContent.classList.add('from-top');
+                    void activeContent.offsetHeight;
+                    activeContent.classList.add('timeline-text-visible');
+                }
+
                 if (activeContent) activeContent.classList.add('timeline-text-visible');
 
                 const activeLabel = document.querySelector(`#${targetId} h4`);
@@ -1225,7 +1238,7 @@
                     };
                     dotOffset = {
                         broad: 100,
-                        phrase: 0,
+                        phrase: 90,
                         exact: -80
                     };
                 } else if (width > 768) { // tablet
@@ -1242,7 +1255,7 @@
                 } else { // mobile
                     contentOffset = {
                         broad: 12,
-                        phrase: 0,
+                        phrase: -22,
                         exact: -40
                     };
                     dotOffset = {
@@ -1251,21 +1264,43 @@
                         exact: -280
                     };
                 }
-                // MOBILE IMAGE TOGGLE (only < 640px)
                 if (window.innerWidth < 640) {
-                    // hide all mobile images
+
                     document.querySelectorAll('.timeline-image-mobile').forEach(img => {
-                        img.classList.remove('active');
+                        // remove previous state
+                        img.classList.remove('active', 'from-bottom', 'from-top');
+
+                        // reset clip-path for future animation
+                        img.style.webkitClipPath = '';
+                        img.style.clipPath = '';
                     });
 
-                    // show only the image related to active content
                     const activeBlock = document.getElementById(targetId);
                     const mobileImg = activeBlock.nextElementSibling;
 
                     if (mobileImg && mobileImg.classList.contains('timeline-image-mobile')) {
+
+                        // decide direction
+                        if (newIndex > currentIdx) {
+                            // opening from bottom → top
+                            mobileImg.classList.add('from-bottom');
+                        } else if (newIndex < currentIdx) {
+                            // opening from top → bottom
+                            mobileImg.classList.add('from-top');
+                        }
+                        // else, same item clicked, default top → bottom
+                        else {
+                            mobileImg.classList.add('from-top');
+                        }
+
+                        // FORCE REPAINT
+                        void mobileImg.offsetWidth;
+
+                        // show image
                         mobileImg.classList.add('active');
                     }
                 }
+                currentIdx = newIndex;
 
 
                 // Apply transforms for content
@@ -1284,7 +1319,7 @@
                         const phraseContent = document.getElementById('content-phrase');
                         if (phraseImg) {
                             phraseImg.style.marginTop = '0px';
-                            phraseContent.style.transform = `translateY(0px)`;
+                            phraseContent.style.transform = `translateY( ${contentOffset.phrase}px)`;
                         }
                     }
                     const exactImg = document.querySelector('.timeline-image-mobile[data-target="content-exact"]');
@@ -1294,6 +1329,7 @@
                 } else if (targetId === 'content-exact') {
                     // document.getElementById('content-phrase').style.transform = `translateY(${contentOffset.exact * -1}px)`;
                     document.querySelector('.timeline-dot-3').style.transform = `translateY(${dotOffset.exact}px)`;
+                    document.getElementById('content-exact').style.transform = `translateY(${0}px)`;
                     if (window.innerWidth < 640) {
                         document.getElementById('content-exact').style.transform = `translateY(${-200}px)`;
                         const exactImg = document.querySelector('.timeline-image-mobile[data-target="content-exact"]');
@@ -1303,8 +1339,6 @@
                         }
                     }
                 }
-
-
             });
         });
 

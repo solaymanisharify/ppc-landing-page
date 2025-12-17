@@ -111,37 +111,118 @@ h1 {
   font-size: 23px;
 }
 .get-started-btn {
-  width: 166px; /* wider to match the preview */
+  width: 196px;
   background: #ffdc00;
   color: #000;
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   border: none;
-  padding: 8px 5px 8px 15px;
-  border-radius: 12px;
+  padding: 4px 5px 4px 15px;
+  border: 2px solid transparent;
+  border-radius: 32px;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
 
-  display: flex; /* important */
+  display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 57px;
 }
 
-.get-started-btn span {
-  font-size: 18px;
-  font-weight: 700;
-  color: #000;
-  border-radius: 50%;
-
-  display: flex; /* centers arrow */
-  align-items: center;
-  justify-content: center;
+.btn-text {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
 }
 
-.get-started-btn:hover {
+.btn-arrow {
+  font-size: 18px;
+  font-weight: 700;
+  color: transparent;
+  border-radius: 50%;
+  background: black;
+  padding: 5px;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.btn-arrow::before {
+  content: "→";
+  position: absolute;
   color: #fff;
-  background: #000;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-arrow::after {
+  content: "→";
+  position: absolute;
+  color: #fff;
+  transform: translateX(-150%);
+  opacity: 0;
+  transition: transform 0.3s ease 0.3s, opacity 0.3s ease 0.3s; 
+}
+
+.get-started-btn:hover .btn-arrow::before {
+  transform: translateX(150%);
+  opacity: 0;
+}
+
+.get-started-btn:hover .btn-arrow::after {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.btn-arrow::before {
+  transition: transform 0.3s ease 0.1s, opacity 0.1s ease 0.1s;
+}
+
+.get-started-btn:hover .btn-arrow::before {
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.btn-arrow::after {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.get-started-btn:hover .btn-arrow::after {
+  transition: transform 0.3s ease 0.1s, opacity 0.3s ease 0.1s;
+}
+.get-started-btn:hover .btn-arrow::after {
+  transform: translateX(0);
+  opacity: 1;
+  color: #fff;
+}
+.get-started-btn::before {
+  content: "";
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  width: 28px;
+  height: 28px;
+  background: black;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.get-started-btn:hover .btn-text {
+  color: #fff;
+}
+
+.get-started-btn:hover::before {
+  transform: translateY(-50%) scale(20);
+  border-color: #ffdc00;
 }
 .scalable-amazon {
   color: #fefeff;
@@ -242,6 +323,17 @@ h1 {
   cursor: pointer;
   transform-style: preserve-3d;
 }
+/* .listing-spacer {
+  height: calc(100vh + 5 * 100vh);
+}
+
+.listing-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+} */
+
 .transparent-div {
   position: absolute;
   top: 200px;
@@ -376,11 +468,11 @@ h1 {
 .case-study {
   width: 100%;
   padding: 40px 0px;
+  position: relative;
   /* height: 100vh; */
   /* overflow: hidden; */
 }
 .case-study-title {
-  padding: 0 220px;
   margin-bottom: 40px;
 }
 .case-study-title h1 {
@@ -401,11 +493,17 @@ h1 {
   margin-top: 0;
   opacity: 0.9;
 }
+.case-study-spacer {
+  height: calc(100vh + 2 * 70vh); /* scroll length */
+}
+
 .carousel-wrapper {
   padding-left: 220px;
   padding-bottom: 100px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  position: sticky;
+  top: 120px; /* below title */
   overflow: hidden;
 }
 
@@ -742,6 +840,7 @@ h1 {
   gap: 10px;
   max-height: 500px; /* only enough to show two items */
   overflow-y: scroll;
+  position:relative;
   scrollbar-width: none;
   padding-bottom: 300px;
 }
@@ -791,8 +890,12 @@ h1 {
   margin-bottom: 10px;
 }
 .amazon-ppc-img {
-  position: relative;
+  position: sticky; /* or relative if inside flex */
+  top: 0; /* adjust so it stays in view */
+  z-index: 1;
+  width: auto; /* or desired width */
 }
+
 .radial {
   width: 600px;
   height: 600px;
@@ -1051,6 +1154,7 @@ h1 {
 #content-exact {
   position: absolute;
   bottom: 0;
+  transform: translateY(30px);
 }
 
 #content-phrase {
@@ -1080,15 +1184,32 @@ h1 {
   display: none;
 }
 .timeline-text {
-  max-height: 0;
+  display: block; /* IMPORTANT */
   overflow: hidden;
-  display: none;
-  transition: max-height 0.9s ease, opacity 0.9s ease;
+  opacity: 0;
+  max-height: 0;
+
+  -webkit-clip-path: inset(0 0 100% 0);
+  clip-path: inset(0 0 100% 0);
+
+  transition: -webkit-clip-path 0.6s ease, clip-path 0.6s ease, opacity 0.4s ease;
+}
+
+.timeline-text.from-top {
+  -webkit-clip-path: inset(0 0 100% 0);
+  clip-path: inset(0 0 100% 0);
+}
+
+.timeline-text.from-bottom {
+  -webkit-clip-path: inset(100% 0 0 0);
+  clip-path: inset(100% 0 0 0);
 }
 
 .timeline-text-visible {
-  max-height: 500px;
-  display: block;
+  opacity: 1;
+  max-height: fit-content;
+  -webkit-clip-path: inset(0 0 0 0) !important;
+  clip-path: inset(0 0 0 0) !important;
 }
 .amazon-advertising {
   position: relative;
@@ -1468,27 +1589,40 @@ h1 {
   }
 
   .get-started-btn {
-    width: auto;
-    background: #ffdc00;
-    font-size: 12px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
+    width: 160px;          /* smaller button */
+    font-size: 12px;       /* smaller text */
+    font-weight: 700;
     border-radius: 8px;
     margin-top: 20px;
+    padding: 4px 10px;     /* adjust padding */
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 2px 5px 2px 5px;
-    gap: 10px;
+    gap: 8px;              /* smaller gap */
+    overflow: hidden;
   }
 
-  /* .get-started-btn span img{
-    width:50px;
-    height:20px;
-  } */
-
-  .get-started-btn span {
-    height: 24px;
-    width: 24px;
+  .btn-text {
+    font-size: 12px;
   }
+
+  .btn-arrow {
+    width: 28px;           /* smaller circle */
+    height: 28px;
+    font-size: 14px;
+    padding: 0;            /* inner padding smaller */
+  }
+
+  .get-started-btn::before {
+    width: 20px;            /* smaller ripple */
+    height: 20px;
+  }
+
+  .btn-arrow::before,
+  .btn-arrow::after {
+    font-size: 14px;        /* arrow size smaller */
+  }
+  
 
   /* IMAGE SECTION (RIGHT SIDE) */
   .hero-2 {
@@ -1634,7 +1768,7 @@ h1 {
   }
 
   .case-study-title {
-    padding: 0 40px;
+    padding: 0 ;
     margin-bottom: 20px;
   }
 
@@ -1664,25 +1798,37 @@ h1 {
   }
   .carousel-wrapper {
     width: 100%;
-    overflow: hidden;
-    padding: 0 40px;
+    position: static;  /* remove sticky */
+    height: auto;      /* allow wrapper to expand */
+    overflow: visible; /* show all children */
+    padding: 0 20px;  
+}
+
+  .case-study-spacer {
+    height:auto;
   }
   .case-study-main-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-  .case-study-container {
+    display: flex;
+    flex-direction: column; /* vertical stack */
+    gap: 100px;
     width: 100%;
+    transform: none !important; /* remove any desktop translateX */
+}
+
+ .case-study-container {
+    width: 100%;
+    min-width: auto;       /* no more desktop width limits */
     position: relative;
     padding: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
     border-radius: 20px;
     display: block;
-    align-items: flex-start; /* Stretches children to full width */
-    margin-top: 12px;
+    margin-bottom: 20px;   /* space between cards */
     background: linear-gradient(to bottom right, #05214b 0%, #133c9f 40%, #194cc4 70%, #36abdb 100%);
-  }
+    transform: none !important;
+    opacity: 1 !important; /* make sure visible */
+}
+
 
   .golden-fox img {
     width: 70px;
@@ -2042,31 +2188,84 @@ h1 {
     font-size: 10px;
   }
 
+  .timeline-text {
+    display: block; /* IMPORTANT */
+    overflow: hidden;
+    opacity: 0;
+
+    -webkit-clip-path: inset(0 0 100% 0);
+    clip-path: inset(0 0 100% 0);
+
+    transition: -webkit-clip-path 0.6s ease, clip-path 0.6s ease, opacity 0.4s ease;
+  }
+
+  .timeline-text.from-top {
+    -webkit-clip-path: inset(0 0 100% 0);
+    clip-path: inset(0 0 100% 0);
+  }
+
+  .timeline-text.from-bottom {
+    -webkit-clip-path: inset(100% 0 0 0);
+    clip-path: inset(100% 0 0 0);
+  }
+
+  .timeline-text-visible {
+    opacity: 1;
+
+    -webkit-clip-path: inset(0 0 0 0) !important;
+    clip-path: inset(0 0 0 0) !important;
+  }
+
   .view-details {
     color: #0066ff;
     font-weight: 100;
     text-align: left;
     font-size: 12px;
   }
+  #content-phrase {
+    transform: translateY(-22px); /* initial position */
+  }
+  #content-exact {
+    transform: translateY(32px); /* initial position */
+  }
   .timeline-image-desktop {
     display: none;
   }
   .timeline-image-mobile {
-    display: none;
+    display: block;
+    /* overflow: hidden; */
+    max-height: 0;
     opacity: 0;
-    transform: scale(0.9) translateY(10px);
-    transition: all 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+    /* -webkit-clip-path: inset(0 0 100% 0);
+    clip-path: inset(0 0 100% 0); */
+
+    transform: scale(0.98);
+
+    transition: -webkit-clip-path 0.7s ease, clip-path 0.7s ease, opacity 0.5s ease, transform 0.7s ease;
   }
- #mobile-exact-img{
-  margin-top:300px ;
- }
+  #mobile-exact-img {
+    margin-top: 300px;
+  }
+  .timeline-image-mobile.from-bottom {
+    -webkit-clip-path: inset(100% 0 0 0);
+    clip-path: inset(100% 0 0 0);
+  }
+  .timeline-image-mobile.from-top {
+    -webkit-clip-path: inset(0 0 100% 0); /* start from top */
+    clip-path: inset(0 0 100% 0);
+  }
   .timeline-image-mobile.active {
     display: block;
+    max-height: 500px;
     opacity: 1;
-    transform: opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+
+    -webkit-clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
+
+    transform: scale(1);
   }
   .amazon-advertising {
-    margin-top: 40px;
+    margin-top: 60px;
     padding-bottom: 100px;
   }
   .amazon-advertising header {
@@ -2095,6 +2294,7 @@ h1 {
     color: #082c6b;
     font-weight: 400;
     font-size: 20px;
+    margin-top: 20px;
   }
   .amazon-advertising header p {
     font-family: sans-serif;
