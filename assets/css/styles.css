@@ -119,16 +119,20 @@ h1 {
   font-weight: 700;
   border: none;
   padding: 4px 5px 4px 15px;
-  border: 2px solid transparent;
   border-radius: 32px;
-  cursor: pointer;
-  overflow: hidden;
   position: relative;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 57px;
+}
+
+.animation-btn{
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+  cursor: pointer;
 }
 
 .btn-text {
@@ -144,7 +148,6 @@ h1 {
   border-radius: 50%;
   background: black;
   padding: 5px;
-  position: relative;
   z-index: 3;
   overflow: hidden;
   width: 38px;
@@ -172,12 +175,12 @@ h1 {
   transition: transform 0.3s ease 0.3s, opacity 0.3s ease 0.3s; 
 }
 
-.get-started-btn:hover .btn-arrow::before {
+.animation-btn:hover .btn-arrow::before {
   transform: translateX(150%);
   opacity: 0;
 }
 
-.get-started-btn:hover .btn-arrow::after {
+.animation-btn:hover .btn-arrow::after {
   transform: translateX(0);
   opacity: 1;
 }
@@ -186,7 +189,7 @@ h1 {
   transition: transform 0.3s ease 0.1s, opacity 0.1s ease 0.1s;
 }
 
-.get-started-btn:hover .btn-arrow::before {
+.animation-btn:hover .btn-arrow::before {
   transition: transform 0.1s ease, opacity 0.1s ease;
 }
 
@@ -194,15 +197,15 @@ h1 {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.get-started-btn:hover .btn-arrow::after {
+.animation-btn:hover .btn-arrow::after {
   transition: transform 0.3s ease 0.1s, opacity 0.3s ease 0.1s;
 }
-.get-started-btn:hover .btn-arrow::after {
+.animation-btn:hover .btn-arrow::after {
   transform: translateX(0);
   opacity: 1;
   color: #fff;
 }
-.get-started-btn::before {
+.animation-btn::before {
   content: "";
   position: absolute;
   right: 8px;
@@ -216,11 +219,11 @@ h1 {
   z-index: 1;
 }
 
-.get-started-btn:hover .btn-text {
+.animation-btn:hover .btn-text {
   color: #fff;
 }
 
-.get-started-btn:hover::before {
+.animation-btn:hover::before {
   transform: translateY(-50%) scale(20);
   border-color: #ffdc00;
 }
@@ -341,7 +344,7 @@ h1 {
   width: 100%;
   height: 750px;
   background-color: rgba(0, 0, 0, 0);
-  z-index: 10;
+  z-index: 0;
   cursor: pointer;
 }
 .listing-optimization h1 {
@@ -467,7 +470,7 @@ h1 {
 
 .case-study {
   width: 100%;
-  padding: 40px 0px;
+  padding: 60px 0px;
   position: relative;
   /* height: 100vh; */
   /* overflow: hidden; */
@@ -504,7 +507,7 @@ h1 {
   height: 100vh;
   position: sticky;
   top: 120px; /* below title */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .case-study-main-container {
@@ -682,7 +685,7 @@ h1 {
 }
 .case-study-container-img {
   position: relative;
-  bottom: -100px;
+  bottom: -200px;
 }
 .fake-review {
   position: absolute;
@@ -697,6 +700,10 @@ h1 {
   width: 110%;
   left: -50px;
   height: 280px;
+}
+
+.fake-review-3 {
+  bottom:110px;
 }
 .fake-review::before {
   content: "";
@@ -834,6 +841,9 @@ h1 {
   justify-content: space-between;
   position: relative;
 }
+.amazon-ppc-wrapper {
+    position: relative;
+}
 .amazon-ppc-content {
   display: flex;
   flex-direction: column;
@@ -848,17 +858,24 @@ h1 {
   display: flex;
   width: 100%;
 }
-.amazon-ppc-content::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
+.fade-top,
+.fade-bottom {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    pointer-events: none;
+    z-index: 10;
+}
 
-  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+.fade-top {
+    top: 0;
+    background: linear-gradient(to bottom, #fff 0%, rgba(255,255,255,0) 100%);
+}
 
-  pointer-events: none;
+.fade-bottom {
+    bottom: 0;
+    background: linear-gradient(to top, #fff 0%, rgba(255,255,255,0) 100%);
 }
 
 .amazon-ppc-content-text {
@@ -870,18 +887,7 @@ h1 {
   font-family: "inter";
   line-height: 1.9;
 }
-.amazon-ppc-content::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
 
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-
-  pointer-events: none;
-}
 .amazon-ppc-content h1 {
   font-family: "Recoleta", serif;
   font-size: 30px;
@@ -908,7 +914,7 @@ h1 {
   filter: blur(40px);
 }
 .amazon-ppc-img img {
-  width: 800px;
+  width: 700px;
   height: auto;
 }
 .amazon-ppc-card {
@@ -1175,6 +1181,7 @@ h1 {
   width: 50%;
   border-radius: 16px;
   margin-top: 20px;
+  transition: width 0.4s ease;
 }
 
 .timeline-image-mobile {
@@ -1853,6 +1860,9 @@ h1 {
     bottom: -130px;
     gap: 5px;
   }
+  .fake-review-3 {
+  bottom: -130px;
+}
   .fake-review-img {
     width: 40px;
     height: 40px;
@@ -2950,9 +2960,9 @@ h1 {
     height: 400px;
   }
   .hero-2 img {
-    width: 100%;
+    width: 500px;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .campaign-optimization-img,

@@ -87,7 +87,7 @@
                                     <h3>An Enhanced Amazon <br> Listing Boosts Discoverability And Sales 4x</h3>
                                     <p>Optimized with powerful copy, keyword<br class="mobile-only-br"> integration, and backend enhancements.</p>
                                 </div>
-                                <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
                             </div>
                             <img src="assets/images/desktop/Listing-optimization.webp" alt="Hero Image" class="listing-optimization-img">
                             <img src="assets/images/Mobile-version/listing-optimization-img-mobile.png" alt="Hero Image" class="listing-optimization-img-mobile">
@@ -105,7 +105,7 @@
                                         <h3>We monitor and <br> fine-tune bidding strategies</h3>
                                         <p>match types, and placements to optimize<br class="mobile-only-br"> every dollar spent on Amazon ads.</p>
                                     </div>
-                                    <button class="lets-talk-btn animation-btn">Let's Talk <span><span class="btn-arrow">→</span></span></button>
+                                    <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
                                 </div>
                                 <div class="campaign-optimization-img">
                                     <img src="assets/images/Desktop/Campaign-optimization.png" alt="">
@@ -123,7 +123,7 @@
                                         <h3>Scale your<br> business with tailored campaign</h3>
                                         <p>strategies that target the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth.</p>
                                     </div>
-                                    <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                    <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
                                 </div>
                                 <div class="increase-sales-img">
                                     <img src="assets/images/Desktop/Increase-Sales.png" alt="">
@@ -141,7 +141,7 @@
                                         <h3>We uncover<br> Amazon search trends</h3>
                                         <p>to find profitable keywords, driving traffic and conversions through ranking,<br class="mobile-only-br"> More visibility, relevance, and return on ad spend.</p>
                                     </div>
-                                    <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                    <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
                                 </div>
                                 <div class="keyword-research-img">
                                     <img src="assets/images/Desktop/Keyword-research.png" alt="">
@@ -159,7 +159,7 @@
                                         <h3>Scale your business<br> with tailored campaign strategies that target</h3>
                                         <p>the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth..</p>
                                     </div>
-                                    <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                    <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
                                 </div>
                                 <div class="reduce-acos-img">
                                     <img src="assets/images/Desktop/Reduce-ACOS.png" alt="">
@@ -177,7 +177,7 @@
                                         <h3>We provide detailed<br> weekly PPC reports with actionable insights and clear metrics.</h3>
                                         <p>tKnow exactly how your ads are<br class="mobile-only-br"> performing</p>
                                     </div>
-                                    <button class="lets-talk-btn">Let's Talk <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                    <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
                                 </div>
                                 <div class="weekly-reporting-img">
                                     <img src="assets/images/Desktop/weekly-reporting.png" alt="">
@@ -369,7 +369,7 @@
                                 <div class="case-study-growth-image-container">
                                     <div>
                                         <div class="case-study-desc">
-                                            <h1>&ldquo;150% revenue increase over the 18 months&rdquo;</h1>
+                                            <h1>&ldquo;150<span class="percentage">%</span> revenue increase over the 18 months&rdquo;</h1>
                                             <div class="case-study-line"></div>
                                         </div>
                                         <div class="growth-percentage">
@@ -399,7 +399,7 @@
                                     </div>
                                     <div class="case-study-container-img">
                                         <img src="assets/images/desktop/umbra.png" alt="Hero Image" class="case-study-img">
-                                        <div class="fake-review">
+                                        <div class="fake-review fake-review-3">
                                             <div class="review-card-top">
                                                 <div class="fake-review-img">
                                                     <img src="assets/images/Desktop/umbra-critic.png" alt="Hero Image" class="">
@@ -593,7 +593,9 @@
                             <h1>Amazon PPC for Every Phase</h1>
                             <h3>Custom Strategies to our Growth</h3>
                         </div>
-                        <div class="amazon-ppc-content">
+                        <div class="amazon-ppc-wrapper">
+                            <div class="fade-top"></div>
+                            <div class="amazon-ppc-content">
                             <div class="amazon-ppc-content-text" data-image="Launch.webp">
                                 <h1>Launch</h1>
                                 <p>Every brand is unique - that’s why we tailor your PPC launch plan to your specific goals, audience, and product positioning. - Listing Optimization - Initial Keyword Research - Auto & Manual Campaign Setup - Maximize Impression - Harvesting & Data Collection</p>
@@ -606,6 +608,8 @@
                                 <h1>Dominate</h1>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, dolorum porro! Libero sint, assumenda fuga, voluptatem tempore laborum recusandae distinctio quia voluptate aliquid placeat soluta! Nihil exercitationem id cum</p>
                             </div>
+                        </div>
+                        <div class="fade-bottom"></div>
                         </div>
                         <div class="amazon-ppc-img">
                             <div class="radial"></div>
@@ -1141,33 +1145,40 @@
 
         // ----------------------------
         // Amazon PPC Image
+
         function updateContentOnScroll() {
-            const rect = scrollContainer.getBoundingClientRect();
-            const sectionTop = window.scrollY - rect.top;
+            const rect = amazonImgSection.getBoundingClientRect();
+            const sectionTop = window.scrollY + rect.top;
             const sectionHeight = rect.height;
+
+            // Calculate scroll progress relative to the section
             const scrollY = window.scrollY;
-
-            const progress = Math.min(Math.max((scrollY - sectionTop) / sectionHeight, 0), 1);
+            const progress = Math.min(Math.max((scrollY - sectionTop + window.innerHeight / 2) / sectionHeight, 0), 1);
             const index = Math.round(progress * (blocks.length - 1));
-            const closest = blocks[index];
+            const activeBlock = blocks[index];
 
-            if (closest) {
-                // Update image
-                const img = closest.dataset.image;
+            if (activeBlock) {
+                // Update image if changed
+                const img = activeBlock.dataset.image;
                 const current = image.src.split("/").pop();
                 if (img && img !== current) {
                     image.src = "assets/images/Desktop/" + img;
                 }
 
-                // Update active block
+                // Highlight active block
                 blocks.forEach((block, i) => {
                     if (i === index) {
                         block.style.opacity = 1;
-                        block.style.transform = "translateX(0)";
                     } else {
-                        block.style.opacity = 0.3;
-                        block.style.transform = "translateX(-20px)";
+                        // block.style.opacity = 0.3;
                     }
+                });
+
+                // Scroll the inner container so the active block is vertically centered
+                const scrollTop = activeBlock.offsetTop - scrollContainer.clientHeight / 2 + activeBlock.clientHeight / 2;
+                scrollContainer.scrollTo({
+                    top: scrollTop,
+                    behavior: 'smooth' // or 'auto' if you don't want smooth
                 });
             }
         }
@@ -1198,6 +1209,8 @@
                 dot.classList.add('active');
 
                 mainImage.src = dot.dataset.image;
+
+
 
                 document.querySelectorAll('.timeline-text').forEach(text => {
                     text.classList.remove('timeline-text-visible');
