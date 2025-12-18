@@ -44,6 +44,8 @@ h1 {
   /* max-width: 1200px; */
   width: 100%;
   background: #121921;
+  scrollbar-width: none;
+  /* overflow: hidden; */
 }
 .first-container {
   padding: 130px 220px;
@@ -363,6 +365,7 @@ h1 {
 }
 .listing-optimization-container {
   width: 100%;
+  height:auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -402,6 +405,7 @@ h1 {
 }
 .listing-optimization-img {
   width: 100%;
+  height: auto;
   object-fit: cover;
   display: block;
 }
@@ -429,6 +433,7 @@ h1 {
 .reduce-acos-container,
 .weekly-reporting-container {
   position: relative;
+  height:auto;
   transform: translateY(600px) scaleX(1.05);
   will-change: transform;
   transition: transform 0.3s ease-out;
@@ -447,15 +452,15 @@ h1 {
 }
 
 .lets-talk-btn {
-  width: 167px;
+  width: 177px;
   background: #ffdc00;
   color: #000;
   font-size: 24px;
   font-family: "inter";
   font-weight: 700;
   border: none;
-  padding: 10px 2px;
-  border-radius: 15px;
+  padding: 6px 2px 6px 15px;
+  border-radius: 32px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -507,7 +512,8 @@ h1 {
   height: 100vh;
   position: sticky;
   top: 120px; /* below title */
-  /* overflow: hidden; */
+  overflow: hidden;
+  scrollbar-width: none;
 }
 
 .case-study-main-container {
@@ -525,7 +531,7 @@ h1 {
 .case-study-container {
   min-width: 80%;
   flex-shrink: 0;
-  height: 100%;
+  height: 80%;
 }
 .case-study-container-1,
 .case-study-container-2,
@@ -584,7 +590,7 @@ h1 {
   font-weight: 300;
 }
 .case-study-header h2 {
-  font-size: 23px;
+  font-size: 18px;
   font-weight: 400;
 }
 .case-study-desc h2 {
@@ -597,7 +603,7 @@ h1 {
   color: #fafbff;
   opacity: 0.9;
   font-family: "Recoleta", serif;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 300;
   margin: 0;
   width: 466px;
@@ -638,7 +644,7 @@ h1 {
   background: linear-gradient(to bottom, #41d3d9 0%, #38bfe3 40%, #2da9ee 60%, #1f8afd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 200;
   margin-bottom: 0px;
 }
@@ -691,7 +697,7 @@ h1 {
 }
 .case-study-container-img {
   position: relative;
-  bottom: -200px;
+  bottom: -100px;
 }
 .fake-review {
   position: absolute;
@@ -758,6 +764,7 @@ h1 {
 }
 .review-card-top h1 {
   color: #fff;
+  font-size: 24px;
 }
 .review-card-top p,
 .review-card-content p {
