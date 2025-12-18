@@ -89,7 +89,7 @@
                                 </div>
                                 <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
                             </div>
-                            <img src="assets/images/desktop/Listing-optimization.webp" alt="Hero Image" class="listing-optimization-img">
+                            <img src="assets/images/Desktop/Listing-optimization.webp" alt="Hero Image" class="listing-optimization-img">
                             <img src="assets/images/Mobile-version/listing-optimization-img-mobile.png" alt="Hero Image" class="listing-optimization-img-mobile">
                         </div>
                         <div class="panel-wrapper">
