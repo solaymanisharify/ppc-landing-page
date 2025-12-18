@@ -37,7 +37,7 @@
                 </div>
                 <div class="hero-2">
                     <img src="assets/images/Mobile-version/product-presentation.png" alt="Hero Image" class="img-cover-mobile">
-                    <img src="assets/images/desktop/Cover.webp" alt="Hero Image" class="img-cover">
+                    <img src="assets/images/Desktop/Cover.webp" alt="Hero Image" class="img-cover">
                 </div>
             </div>
             <div class="reveneue-section">
@@ -205,7 +205,7 @@
                                 <div class="case-study-header">
                                     <h2>From Growth to Succcess</h2>
                                     <div class="golden-fox">
-                                        <img src="assets/images/Mobile-version/goldenfox-logo 1.png" alt="Hero Image" class="">
+                                        <img src="assets/images/Mobile-version/goldenfox-logo.png" alt="Hero Image" class="">
                                     </div>
                                 </div>
                                 <div class="case-study-growth-image-container">
@@ -240,7 +240,7 @@
                                         </div>
                                     </div>
                                     <div class="case-study-container-img">
-                                        <img src="assets/images/desktop/Review-copy.png" alt="Hero Image" class="case-study-img">
+                                        <img src="assets/images/Desktop/Review-copy.png" alt="Hero Image" class="case-study-img">
                                         <div class="fake-review">
                                             <div class="review-card-top">
                                                 <div class="fake-review-img">
@@ -319,7 +319,7 @@
                                         </div>
                                     </div>
                                     <div class="case-study-container-img">
-                                        <img src="assets/images/desktop/woodland-cover.png" alt="Hero Image" class="case-study-img">
+                                        <img src="assets/images/Desktop/woodland-cover.png" alt="Hero Image" class="case-study-img">
                                         <div class="fake-review">
                                             <div class="review-card-top">
                                                 <div class="fake-review-img">
@@ -398,7 +398,7 @@
                                         </div>
                                     </div>
                                     <div class="case-study-container-img">
-                                        <img src="assets/images/desktop/umbra.png" alt="Hero Image" class="case-study-img">
+                                        <img src="assets/images/Desktop/umbra.png" alt="Hero Image" class="case-study-img">
                                         <div class="fake-review fake-review-3">
                                             <div class="review-card-top">
                                                 <div class="fake-review-img">
@@ -623,7 +623,7 @@
                         <p>Our keyword strategy combines Broad, Phrase, and Exact match types to maximize visibility and drive conversions. This approach helps us discover valuableterms, improve ad targeting, and convert more high-intent traffic with better ROI. A complete keyword mix designed to grow your Amazon sales efficiently.</p>
                     </header>
                     <div class="timeline">
-                        <img src="assets/images//Desktop//Phrase.png" class="timeline-image-desktop" id="timeline-main-image" />
+                        <img src="assets/images/Desktop/Phrase.png" class="timeline-image-desktop" id="timeline-main-image" />
                         <div class="timeline-item">
                             <div class="timeline-line"></div>
                             <div class="timeline-dot-1 dot" data-image="assets/images/Desktop/Broad.webp" data-target="content-broad" data-index="0"></div>
@@ -647,14 +647,14 @@
                                         </p>
                                 </div>
 
-                                <img src="assets/images//Mobile-version//Phrase.webp" id="mobile-phrase-img" class="timeline-image-mobile active" data-target="content-phrase" />
+                                <img src="assets/images/Mobile-version//Phrase.webp" id="mobile-phrase-img" class="timeline-image-mobile active" data-target="content-phrase" />
                                 <div id="content-exact">
                                     <h4 class="timeline-label">exact</h4>
                                     <p class="timeline-text">
                                         Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.
                                     </p>
                                 </div>
-                                <img id="mobile-exact-img" src="assets/images//Desktop//Exact.webp" id="mobile-exact-img" class="timeline-image-mobile" data-target="content-exact" />
+                                <img id="mobile-exact-img" src="assets/images/Desktop/Exact.webp" id="mobile-exact-img" class="timeline-image-mobile" data-target="content-exact" />
                             </div>
                         </div>
 
@@ -676,7 +676,7 @@
                                 <h2>Sponsored Brands</h2>
                                 <p>For Sponsored Brands, we design captivating creatives to boost your Amazon store's visibility and brand awarness. Our campaigns are tailored to attract new-to-brand customers, expanding your audience while strengthening recognition and engagement in competitive marketplaces.</p>
                             </div>
-                            <img src="assets/images/Mobile-version/Sponsored-Brands.webp" alt="">
+                            <img src="assets/images/Desktop/Sponsored-Brands.webp" alt="">
                         </div>
                         <div class="advertising-card">
                             <div class="advertising-card-text advertising-card-text-left">
@@ -685,17 +685,17 @@
                                     Manual Campaigns: With our precise targeting and keyword bidding we ensure your ads rank higher and convert better.
                                 </p>
                             </div>
-                            <img src="assets/images/Mobile-version/Sponsored-product.webp" alt="">
+                            <img src="assets/images/Desktop/Sponsored-Product.webp" alt="">
                         </div>
                         <div class="advertising-card advertising-card-right">
-                            <img src="assets/images/Mobile-version/Sponsored-video.webp" alt="">
+                            <img src="assets/images/Desktop/Sponsored-Video.webp" alt="">
                             <div class="advertising-card-text advertising-card-text-right">
                                 <h2>Sponsored Video</h2>
                                 <p>Helping brands stand out in search results and increase click-through rates. We create and manage high impact video campaigns that showcase your product's value, high-light key features, and drive direct conversions.</p>
                             </div>
                         </div>
                         <div class="advertising-card advertising-card-right">
-                            <img src="assets/images/Mobile-version/Sponsored-TV.webp" alt="">
+                            <img src="assets/images/Desktop/Sponsored-TV.webp" alt="">
                             <div class="advertising-card-text advertising-card-text-right">
                                 <h2>Sponsored TV</h2>
                                 <p>Reach millions of viewers in Fire TV and Prime Video with Sponsored TV. We help you reach Amazon shoppers while they're watching contenton Fire TV and Prime Video, boosting brand visibility and recognition.</p>
@@ -1006,7 +1006,7 @@
         document.addEventListener("wheel", function(e) {
             const rect = container.getBoundingClientRect();
             // Trigger when container is at least 10% visible OR when approaching from top
-            const inView = rect.top <= window.innerHeight - 600 && rect.bottom >= 0;
+            const inView = isVisibleAtLeast(listingSection, 60);
             // Start hijacking when container comes into view (scrolling down)
             if (inView && !isHijacking && e.deltaY > 0 && activeIndex !== panels.length - 1) {
                 isHijacking = true;

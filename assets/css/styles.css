@@ -118,7 +118,7 @@ h1 {
   font-size: 16px;
   font-weight: 700;
   border: none;
-  padding: 4px 5px 4px 15px;
+  padding: 4px 0px 4px 15px;
   border-radius: 32px;
   position: relative;
 
@@ -128,7 +128,7 @@ h1 {
   margin-top: 57px;
 }
 
-.animation-btn{
+.animation-btn {
   position: relative;
   overflow: hidden;
   border: 2px solid transparent;
@@ -172,7 +172,7 @@ h1 {
   color: #fff;
   transform: translateX(-150%);
   opacity: 0;
-  transition: transform 0.3s ease 0.3s, opacity 0.3s ease 0.3s; 
+  transition: transform 0.3s ease 0.3s, opacity 0.3s ease 0.3s;
 }
 
 .animation-btn:hover .btn-arrow::before {
@@ -198,7 +198,7 @@ h1 {
 }
 
 .animation-btn:hover .btn-arrow::after {
-  transition: transform 0.3s ease 0.1s, opacity 0.3s ease 0.1s;
+  transition: transform 0.5s ease 0.1s, opacity 0.3s ease 0.1s;
 }
 .animation-btn:hover .btn-arrow::after {
   transform: translateX(0);
@@ -215,7 +215,7 @@ h1 {
   height: 28px;
   background: black;
   border-radius: 50%;
-  transition: transform 0.3s ease;
+  transition: transform 0.8s ease;
   z-index: 1;
 }
 
@@ -459,7 +459,7 @@ h1 {
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 55px;
 }
 .lets-talk-btn img {
@@ -497,7 +497,7 @@ h1 {
   opacity: 0.9;
 }
 .case-study-spacer {
-  height: calc(100vh + 2 * 70vh); /* scroll length */
+  height: calc(100vh +  70vh); /* scroll length */
 }
 
 .carousel-wrapper {
@@ -538,6 +538,7 @@ h1 {
   background: linear-gradient(to right, #05214b 0%, #133c9f 40%, #194cc4 70%, #36abdb 100%);
   padding: 40px;
   border-radius: 30px;
+  /* overflow: hidden; */
   /* border-left:3px solid #526685;
   border-top:3px solid #526685; */
 }
@@ -553,16 +554,21 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-
-  background: linear-gradient(to right, #526685 0%, #526685 80%, transparent 100%) top left / 55% 3px no-repeat,
-    linear-gradient(to bottom, #526685 0%, #526685 80%, transparent 100%) top left / 3px 55% no-repeat;
-
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
+  width: 55%;
+  height: 55%;
   pointer-events: none;
-  overflow-x: hidden !important;
+  border-radius: 30px 0 0 0; /* Only round the top-left corner */
+
+  border-top: 3px solid #526685;
+  border-left: 3px solid #526685;
+
+  /* Create the fade effect with mask */
+   mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%); 
+   mask-composite: intersect;
+  -webkit-mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
+  -webkit-mask-composite: source-in;
 }
+
 .case-study-header {
   width: 100%;
   display: flex;
@@ -703,21 +709,26 @@ h1 {
 }
 
 .fake-review-3 {
-  bottom:110px;
+  bottom: 110px;
 }
 .fake-review::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-
-  background: linear-gradient(to right, #2f9094 0%, #2f9094 80%, transparent 100%) top left / 55% 1px no-repeat,
-    linear-gradient(to bottom, #2f9094 0%, #2f9094 80%, transparent 100%) top left / 1px 55% no-repeat;
-
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+  width: 55%;
+  height: 55%;
   pointer-events: none;
+  border-radius: 25px 0 0 0; /* Only round the top-left corner */
+
+  border-top: 2px solid #2f9094;
+  border-left: 2px solid #2f9094;
+
+  /* Create the fade effect with mask */
+  mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
+  -webkit-mask-composite: source-in;
 }
 
 .fake-review::after {
@@ -725,15 +736,21 @@ h1 {
   position: absolute;
   bottom: 0;
   right: 0;
-
-  background: linear-gradient(to left, #2f9094 0%, #2f9094 80%, transparent 100%) bottom right / 55% 3px no-repeat,
-    linear-gradient(to top, #2f9094 0%, #2f9094 80%, transparent 100%) bottom right / 3px 55% no-repeat;
-
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+  width: 55%;
+  height: 55%;
   pointer-events: none;
+  border-radius: 0 0 25px 0; /* Only round the bottom-right corner */
+
+  border-bottom: 2px solid #2f9094;
+  border-right: 2px solid #2f9094;
+
+  /* Create the fade effect with mask */
+  mask: linear-gradient(to left, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to top, #fff 0%, #fff 80%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask: linear-gradient(to left, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to top, #fff 0%, #fff 80%, transparent 100%);
+  -webkit-mask-composite: source-in;
 }
+
 .review-card-top {
   display: flex;
   align-items: center;
@@ -842,7 +859,7 @@ h1 {
   position: relative;
 }
 .amazon-ppc-wrapper {
-    position: relative;
+  position: relative;
 }
 .amazon-ppc-content {
   display: flex;
@@ -850,7 +867,7 @@ h1 {
   gap: 10px;
   max-height: 500px; /* only enough to show two items */
   overflow-y: scroll;
-  position:relative;
+  position: relative;
   scrollbar-width: none;
   padding-bottom: 300px;
 }
@@ -860,22 +877,22 @@ h1 {
 }
 .fade-top,
 .fade-bottom {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 150px;
-    pointer-events: none;
-    z-index: 10;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  pointer-events: none;
+  z-index: 10;
 }
 
 .fade-top {
-    top: 0;
-    background: linear-gradient(to bottom, #fff 0%, rgba(255,255,255,0) 100%);
+  top: 0;
+  background: linear-gradient(to bottom, #fff 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .fade-bottom {
-    bottom: 0;
-    background: linear-gradient(to top, #fff 0%, rgba(255,255,255,0) 100%);
+  bottom: 0;
+  background: linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .amazon-ppc-content-text {
@@ -1596,16 +1613,16 @@ h1 {
   }
 
   .get-started-btn {
-    width: 160px;          /* smaller button */
-    font-size: 12px;       /* smaller text */
+    width: 160px; /* smaller button */
+    font-size: 12px; /* smaller text */
     font-weight: 700;
     border-radius: 8px;
     margin-top: 20px;
-    padding: 4px 10px;     /* adjust padding */
+    padding: 4px 0px 4px 10px; /* adjust padding */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 8px;              /* smaller gap */
+    gap: 8px; /* smaller gap */
     overflow: hidden;
   }
 
@@ -1614,22 +1631,21 @@ h1 {
   }
 
   .btn-arrow {
-    width: 28px;           /* smaller circle */
+    width: 28px; /* smaller circle */
     height: 28px;
     font-size: 14px;
-    padding: 0;            /* inner padding smaller */
+    padding: 0; /* inner padding smaller */
   }
 
   .get-started-btn::before {
-    width: 20px;            /* smaller ripple */
+    width: 20px; /* smaller ripple */
     height: 20px;
   }
 
   .btn-arrow::before,
   .btn-arrow::after {
-    font-size: 14px;        /* arrow size smaller */
+    font-size: 14px; /* arrow size smaller */
   }
-  
 
   /* IMAGE SECTION (RIGHT SIDE) */
   .hero-2 {
@@ -1775,7 +1791,7 @@ h1 {
   }
 
   .case-study-title {
-    padding: 0 ;
+    padding: 0;
     margin-bottom: 20px;
   }
 
@@ -1805,14 +1821,14 @@ h1 {
   }
   .carousel-wrapper {
     width: 100%;
-    position: static;  /* remove sticky */
-    height: auto;      /* allow wrapper to expand */
+    position: static; /* remove sticky */
+    height: auto; /* allow wrapper to expand */
     overflow: visible; /* show all children */
-    padding: 0 20px;  
-}
+    padding: 0 20px;
+  }
 
   .case-study-spacer {
-    height:auto;
+    height: auto;
   }
   .case-study-main-container {
     display: flex;
@@ -1820,22 +1836,21 @@ h1 {
     gap: 100px;
     width: 100%;
     transform: none !important; /* remove any desktop translateX */
-}
+  }
 
- .case-study-container {
+  .case-study-container {
     width: 100%;
-    min-width: auto;       /* no more desktop width limits */
+    min-width: auto; /* no more desktop width limits */
     position: relative;
     padding: 20px;
     padding-bottom: 40px;
     border-radius: 20px;
     display: block;
-    margin-bottom: 20px;   /* space between cards */
+    margin-bottom: 20px; /* space between cards */
     background: linear-gradient(to bottom right, #05214b 0%, #133c9f 40%, #194cc4 70%, #36abdb 100%);
     transform: none !important;
     opacity: 1 !important; /* make sure visible */
-}
-
+  }
 
   .golden-fox img {
     width: 70px;
@@ -1861,8 +1876,8 @@ h1 {
     gap: 5px;
   }
   .fake-review-3 {
-  bottom: -130px;
-}
+    bottom: -130px;
+  }
   .fake-review-img {
     width: 40px;
     height: 40px;
