@@ -1006,7 +1006,7 @@
         document.addEventListener("wheel", function(e) {
             const rect = container.getBoundingClientRect();
             // Trigger when container is at least 10% visible OR when approaching from top
-            const inView = isVisibleAtLeast(listingSection, 80);
+            const inView = isVisibleAtLeast(listingSection, 60);
             // Start hijacking when container comes into view (scrolling down)
             if (inView && !isHijacking && e.deltaY > 0 && activeIndex !== panels.length - 1) {
                 isHijacking = true;
