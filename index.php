@@ -923,10 +923,13 @@
         } else if (screenWidth >= 768 && screenWidth <= 1024) {
             // Tablet
             targets = [-373, -700, -1010, -1350, -1680];
-        } else if (screenWidth > 1024 && screenWidth <= 1440) {
+        } else if (screenWidth > 1024 && screenWidth < 1440) {
             // Laptop
             targets = [-630, -1190, -1740, -2300, -2860];
-        } else {
+        } else if (screenWidth >= 1440 && screenWidth < 1920) {
+            targets = [-630, -1190, -1740, -2300, -2860];
+        }
+         else {
             // Desktop
             targets = [-932, -1760, -2592, -3418, -4250];
         }

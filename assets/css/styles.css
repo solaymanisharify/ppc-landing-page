@@ -44,16 +44,19 @@ h1 {
   /* max-width: 1200px; */
   width: 100%;
   background: #121921;
+  scrollbar-width: none;
 }
 .first-container {
   padding: 130px 220px;
   background: linear-gradient(to bottom, #1f3c5a 0%, #184f88 15%, #121921 25%, #121921 60%, #121921 100%);
 }
 .hero-container {
+  max-width: 90rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 53px;
+  margin:0 auto;
   padding-bottom: 30px;
 }
 .mobile-only-br {
@@ -71,6 +74,7 @@ h1 {
   flex-direction: column;
   font-family: "Recoleta", serif;
   gap: 18px;
+  width:40%;
 }
 .hero-1 h1 {
   font-family: "Recoleta", serif;
@@ -93,10 +97,13 @@ h1 {
   /* padding-right: 40px; */
   padding-left: 10px;
   margin-top: 30px;
+  width:60%;
+
 }
 .hero-2 img {
-  max-width: 745px;
-  max-height: 508px;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
 }
 .launch-dominate-btn {
   background: #2266f0;
@@ -244,6 +251,7 @@ h1 {
 }
 .reveneue-section {
   /* background: #000; */
+  max-width: 90rem;
   padding: 40px 0px;
   text-align: center;
   font-family: "Recoleta", serif;
@@ -251,7 +259,7 @@ h1 {
   font-size: 24px;
   display: flex;
   color: white;
-  margin-top: 111px;
+  margin: 111px auto 0px auto;
 }
 .revenue-icon {
   display: flex;
@@ -314,14 +322,14 @@ h1 {
   opacity: 0.9;
 }
 .listing-optimization {
-  /* max-width: 100%; */
+  max-width:90rem;
   padding: 40px 0px;
   display: flex;
   flex-direction: column;
   /* overflow-x: visible;
   overflow-y: hidden; */
   overflow: hidden;
-  margin-top: 200px;
+  margin: 200px auto 0px auto;
   position: relative;
   cursor: pointer;
   transform-style: preserve-3d;
@@ -454,8 +462,8 @@ h1 {
   font-family: "inter";
   font-weight: 700;
   border: none;
-  padding: 10px 2px;
-  border-radius: 15px;
+  padding: 6px 2px 6px 15px;
+  border-radius: 32px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -497,7 +505,7 @@ h1 {
   opacity: 0.9;
 }
 .case-study-spacer {
-  height: calc(100vh +  70vh); /* scroll length */
+  height: calc(100vh + 70vh); /* scroll length */
 }
 
 .carousel-wrapper {
@@ -507,7 +515,7 @@ h1 {
   height: 100vh;
   position: sticky;
   top: 120px; /* below title */
-  /* overflow: hidden; */
+  scrollbar-width: none;
 }
 
 .case-study-main-container {
@@ -563,8 +571,8 @@ h1 {
   border-left: 3px solid #526685;
 
   /* Create the fade effect with mask */
-   mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%); 
-   mask-composite: intersect;
+  mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
+  mask-composite: intersect;
   -webkit-mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
   -webkit-mask-composite: source-in;
 }
@@ -829,6 +837,8 @@ h1 {
   margin-top: 400px;
 }
 .amazon-container {
+  max-width: 90rem;
+  margin: 0 auto;
   margin-top: 400px;
 }
 .amazon-container-header {
@@ -1359,9 +1369,10 @@ h1 {
 }
 
 .amazon-ppc-question {
+  max-width: 90rem;
   min-height: 600px;
-  margin-top: 500px;
-  padding: 0 220px;
+  margin: 500px auto 0 auto;
+  /* padding: 0 220px; */
 }
 .ppc-question-header h1 {
   font-size: 62px;
@@ -1472,8 +1483,8 @@ h1 {
 
 .amazon-advertising-pricing {
   position: relative;
-  margin-top: 146px;
-  padding: 0 220px;
+  max-width: 90rem;
+  margin: 146px auto 0 auto;
 }
 .amazon-advertising-pricing img {
   height: 685px;
@@ -2484,25 +2495,35 @@ h1 {
   }
 
   .get-started-btn {
-    width: auto;
-    font-size: 14px;
-    margin: 0;
+    width: 170px;
+    font-size: 12px;
+    margin: 10px 0 0 0;
     gap: 10px;
+    padding: 2px 4px 2px 10px ;
+  }
+
+   .launch-dominate-btn {
+    font-size: 12px;
+    padding: 4px 14px;
+    width: auto;
+    border-radius: 8px;
+    font-weight: 300;
   }
 
   .hero-1 {
     margin-top: 20px;
+    gap:6px;
   }
 
+  .hero-1 h1 {
+    font-size: 20px;
+    margin-top:8px;
+  }
   .hero-1 p {
-    font-size: 14px;
+    font-size: 10px;
     margin: 0;
   }
 
-  .hero-2 img {
-    width: 350px;
-    height: auto;
-  }
 
   .scalable-amazon {
     font-size: 20px;
@@ -2666,6 +2687,8 @@ h1 {
     bottom: -150px;
     gap: 5px;
   }
+
+ 
   .fake-review-img {
     width: 50px !important;
     height: 50px !important;
@@ -2970,14 +2993,19 @@ h1 {
   .scalable-amazon span {
     font-size: 48px;
   }
-  .hero-2 {
-    width: 800px;
-    height: 400px;
+  .hero-1{
+    gap:12px;
   }
   .hero-2 img {
-    width: 500px;
+    width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+  }
+
+  .get-started-btn {
+    width:170px;
+    font-size: 14px;
+    margin-top: 20px;
   }
 
   .campaign-optimization-img,
@@ -3031,6 +3059,10 @@ h1 {
     bottom: 0;
     left: -30px; /* force card to stay left */
   }
+
+   .fake-review-3 {
+  bottom: 80px;
+}
 
   .case-study-container-img {
     position: relative;
