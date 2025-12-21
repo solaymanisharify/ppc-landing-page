@@ -56,7 +56,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   gap: 53px;
-  margin:0 auto;
+  margin: 0 auto;
   padding-bottom: 30px;
 }
 .mobile-only-br {
@@ -74,7 +74,7 @@ h1 {
   flex-direction: column;
   font-family: "Recoleta", serif;
   gap: 18px;
-  width:40%;
+  width: 40%;
 }
 .hero-1 h1 {
   font-family: "Recoleta", serif;
@@ -97,11 +97,10 @@ h1 {
   /* padding-right: 40px; */
   padding-left: 10px;
   margin-top: 30px;
-  width:60%;
-
+  width: 60%;
 }
 .hero-2 img {
-  width:100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -322,7 +321,7 @@ h1 {
   opacity: 0.9;
 }
 .listing-optimization {
-  max-width:90rem;
+  max-width: 90rem;
   padding: 40px 0px;
   display: flex;
   flex-direction: column;
@@ -1494,7 +1493,7 @@ h1 {
 .amazon-advertising-pricing-text {
   position: absolute;
   top: 100px;
-  left: 300px;
+  left: 100px;
 }
 .amazon-advertising-pricing-header h1 {
   font-size: 75px;
@@ -2503,10 +2502,10 @@ h1 {
     font-size: 12px;
     margin: 10px 0 0 0;
     gap: 10px;
-    padding: 2px 4px 2px 10px ;
+    padding: 2px 4px 2px 10px;
   }
 
-   .launch-dominate-btn {
+  .launch-dominate-btn {
     font-size: 12px;
     padding: 4px 14px;
     width: auto;
@@ -2516,18 +2515,17 @@ h1 {
 
   .hero-1 {
     margin-top: 20px;
-    gap:6px;
+    gap: 6px;
   }
 
   .hero-1 h1 {
     font-size: 20px;
-    margin-top:8px;
+    margin-top: 8px;
   }
   .hero-1 p {
     font-size: 10px;
     margin: 0;
   }
-
 
   .scalable-amazon {
     font-size: 20px;
@@ -2692,7 +2690,6 @@ h1 {
     gap: 5px;
   }
 
- 
   .fake-review-img {
     width: 50px !important;
     height: 50px !important;
@@ -2929,7 +2926,7 @@ h1 {
   }
 
   .amazon-ppc-question {
-    margin-top: 300px;
+    margin: 300px auto 0 auto;
   }
 
   .ppc-question-header h1 {
@@ -2997,8 +2994,8 @@ h1 {
   .scalable-amazon span {
     font-size: 48px;
   }
-  .hero-1{
-    gap:12px;
+  .hero-1 {
+    gap: 12px;
   }
   .hero-2 img {
     width: 100%;
@@ -3007,7 +3004,7 @@ h1 {
   }
 
   .get-started-btn {
-    width:170px;
+    width: 170px;
     font-size: 14px;
     margin-top: 20px;
   }
@@ -3064,9 +3061,10 @@ h1 {
     left: -30px; /* force card to stay left */
   }
 
-   .fake-review-3 {
-  bottom: 80px;
-}
+  .fake-review-3 {
+    bottom: 80px;
+  }
+
 
   .case-study-container-img {
     position: relative;
@@ -3074,6 +3072,20 @@ h1 {
     margin-left: 0;
   }
 
+  .case-study-spacer{
+    height:auto;
+  }
+  .case-study-container {
+  height: 700px;
+  }
+
+  .case-study-main-container {
+    height: 700px;
+  }
+
+  .carousel-wrapper {
+    height:auto;
+  }
   .case-study-container-img .case-study-img {
     width: 380px;
     height: 200px;
@@ -3098,14 +3110,33 @@ h1 {
     font-size: 18px;
   }
 
+  .amazon-ppc-question {
+    max-width: 90rem;
+    min-height: 600px;
+    margin: 500px auto 0 auto;
+    padding: 0 220px;
+  }
+
+  .accordion {
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+
   .amazon-advertising-pricing {
     text-align: center;
+    max-width: 90rem;
+    margin: 146px auto 0 auto;
+  }
+
+  .amazon-advertising-pricing-img {
+    max-width: 90rem;
+    padding: 0 220px;
   }
 
   .amazon-advertising-pricing-text {
     position: absolute;
     top: 70px;
-    left: 280px;
+    left: 270px;
     margin-bottom: 40px;
   }
 
