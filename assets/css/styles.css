@@ -25,6 +25,12 @@
   font-weight: 200;
 }
 
+@font-face {
+  font-family: "poppins-bold";
+  src: url("Poppins-Bold.ttf");
+}
+
+
 body {
   background: #121921;
   font-family: Arial, sans-serif;
@@ -35,6 +41,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 
 h1 {
   color: blue;
@@ -47,7 +54,7 @@ h1 {
   scrollbar-width: none;
 }
 .first-container {
-  padding: 130px 220px 0 220px;
+  padding: 110px 220px 0 220px;
   background: linear-gradient(to bottom, #1f3c5a 0%, #184f88 15%, #121921 25%, #121921 60%, #121921 100%);
 }
 .hero-container {
@@ -325,8 +332,8 @@ h1 {
   padding: 40px 0px;
   display: flex;
   flex-direction: column;
-  /* overflow-x: visible;
-  overflow-y: hidden; */
+  overflow-x: visible;
+  overflow-y: hidden;
   overflow: hidden;
   margin: 180px auto 0px auto;
   position: relative;
@@ -335,9 +342,9 @@ h1 {
 }
 /* .listing-spacer {
   height: calc(100vh + 5 * 100vh);
-}
+} */
 
-.listing-sticky {
+/* .listing-sticky {
   position: sticky;
   top: 0;
   height: 100vh;
@@ -373,7 +380,7 @@ h1 {
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .listing-optimization-desc {
   position: absolute;
@@ -482,6 +489,7 @@ h1 {
   position: relative;
   /* height: 100vh; */
   /* overflow: hidden; */
+  scrollbar-width: none;
 }
 .case-study-title {
   width: 90rem;
@@ -506,7 +514,10 @@ h1 {
   opacity: 0.9;
 }
 .case-study-spacer {
-  height: calc(100vh + 70vh); /* scroll length */
+  height: calc(100vh + 200vh); /* scroll length */
+  /* overflow: hidden; */
+  position: relative;
+  scrollbar-width: none;
 }
 
 .carousel-wrapper {
@@ -515,8 +526,15 @@ h1 {
   width: 100%;
   height: 100vh;
   position: sticky;
-  top: 120px; /* below title */
+  top: 0px; /* below title */
   scrollbar-width: none;
+  overflow: hidden;
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+  display: none;                   /* Chrome, Safari, new Edge */
+  width: 0;
+  height: 0;
 }
 
 .case-study-main-container {
@@ -528,13 +546,13 @@ h1 {
   gap: 20px;
   /* overflow-x: hidden; */
   scrollbar-width: none;
-  transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 1.4s ease-in-out;
   will-change: transform;
 }
 .case-study-container {
-  min-width: 80%;
+  max-width: 80%;
   flex-shrink: 0;
-  height: 100%;
+  height: 80%;
 }
 .case-study-container-1,
 .case-study-container-2,
@@ -606,7 +624,7 @@ h1 {
   color: #fafbff;
   opacity: 0.9;
   font-family: "Recoleta", serif;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 300;
   margin: 0;
   width: 466px;
@@ -620,7 +638,7 @@ h1 {
 }
 .golden-fox img {
   width: 150px;
-  height: auto;
+  height: 50px;
 }
 .case-study-container-text {
   width: 100%;
@@ -647,7 +665,7 @@ h1 {
   background: linear-gradient(to bottom, #41d3d9 0%, #38bfe3 40%, #2da9ee 60%, #1f8afd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 200;
   margin-bottom: 0px;
 }
@@ -691,11 +709,11 @@ h1 {
 }
 .case-study-container-img .case-study-img {
   width: 60%;
-  height: 295px;
+  height: 230px;
   border-radius: 10px;
   display: block;
   margin-right: 0px;
-  margin: 0 0px 0 230px;
+  margin: 0 0px 0 160px;
 }
 .case-study-container-img {
   position: relative;
@@ -703,21 +721,21 @@ h1 {
 }
 .fake-review {
   position: absolute;
-  bottom: 30px;
+  bottom: 50px;
   background-color: #031d42;
   border-radius: 25px;
-  padding: 60px 20px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
   gap: 20px;
   width: 80%;
-  left: 140px;
-  height: 280px;
+  left: 100px;
+
 }
 
 .fake-review-3 {
-  bottom: 110px;
+  bottom: 40px;
 }
 .fake-review::before {
   content: "";
@@ -788,7 +806,7 @@ h1 {
   object-position: right;
 }
 .fake-review-img h1 {
-  font-size: 24px;
+  font-size: 18px;
   color: #fff;
 }
 /* .fake-review-img p {
@@ -807,7 +825,7 @@ h1 {
   gap: 18px;
 }
 .review-card-rating p {
-  font-size: 14px;
+  font-size: 12px;
 }
 .review-card-rating-stars {
   display: flex;
@@ -1174,6 +1192,7 @@ h1 {
   font-size: 28px;
   margin: 0 0 0 0;
   text-align: left;
+  color: #000;
 }
 
 .timeline-content p {
@@ -1259,7 +1278,7 @@ h1 {
   text-align: center;
 }
 .amazon-advertising header h3 {
-  font-family: "poppins-bold";
+  font-family: "Poppins";
   font-size: 32px;
   font-weight: 400;
   color: white;
@@ -1302,17 +1321,17 @@ h1 {
   width: 40%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
 }
 .advertising-card-text h2 {
   font-family: "Recoleta", serif;
-  font-size: 36px;
+  font-size: 44px;
   font-weight: 400;
   color: #082c6b;
 }
 .advertising-card-text p {
   font-family: "Poppins";
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   color: #000000;
@@ -1406,6 +1425,7 @@ h1 {
 
 .accordion-header h1 {
   margin: 0;
+  font-family: "recoleta";
   font-size: 36px;
   color: #00fffc;
   font-weight: normal;
@@ -1469,6 +1489,7 @@ h1 {
 
 .accordion-content p {
   font-size: 24px;
+  font-family: "Poppins";
   margin: 0;
   color: #fff;
   padding: 0 20px;
@@ -2986,13 +3007,13 @@ h1 {
   }
 }
 
-@media (max-width: 1919px) and (min-width: 1440px) {
+@media (max-width: 1600px) and (min-width: 1440px) {
   .scalable-amazon {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .scalable-amazon span {
-    font-size: 48px;
+    font-size: 60px;
   }
   .hero-1 {
     gap: 12px;
@@ -3077,11 +3098,8 @@ h1 {
   }
 
   .case-study-spacer {
-    height: auto;
-  }
-  .case-study-container {
-    width: 1000px;
-    height: 730px;
+    position: relative;
+    height: calc(100vh + 200vh);
   }
 
   /* .case-study-main-container {
@@ -3089,15 +3107,19 @@ h1 {
   } */
 
   .carousel-wrapper {
-    height: auto;
+    position: sticky;
+    top: 0;
+    height: 100vh;
   }
   .case-study-container-img .case-study-img {
-    width: 80%;
+    width: 70%;
     height: 200px;
     margin-left: 70px;
     margin-right: 0;
     margin-top: 25px;
   }
+
+
 
   .golden-fox img {
     width: 150px;
@@ -3110,10 +3132,11 @@ h1 {
 
   .growth-percentage {
     width: 400px;
+    padding-bottom: 5px;
   }
 
   .growth-percentage h2 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .growth-percentage {
@@ -3297,6 +3320,25 @@ h1 {
     width: 350px;
   }
 
+  .campaign-optimization-img,
+  .increase-sales-img,
+  .keyword-research-img,
+  .reduce-acos-img,
+  .weekly-reporting-img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .campaign-optimization-img img,
+  .increase-sales-img img,
+  .keyword-research-img img,
+  .reduce-acos-img img,
+  .weekly-reporting-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
   .lets-talk-btn {
     width: 127px;
     margin-bottom: 20px;
@@ -3333,10 +3375,10 @@ h1 {
   .case-study-spacer {
     height: auto;
   }
-  .case-study-container {
+  /* .case-study-container {
     width: 1000px;
     height: 730px;
-  }
+  } */
 
   /* .case-study-main-container {
     height: 700px;
@@ -3451,7 +3493,7 @@ h1 {
   .accordion-content p {
     font-size: 16px;
   }
- .amazon-advertising-pricing {
+  .amazon-advertising-pricing {
     text-align: center;
     max-width: 90rem;
     margin: 146px auto 0 auto;

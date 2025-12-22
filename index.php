@@ -76,7 +76,7 @@
                 <div class="listing-spacer">
                     <div class="listing-sticky">
                         <h1>Reignite Your Bussiness With Our</h1>
-                        <!-- <div class="transparent-div"></div> -->
+                        <div class="transparent-div"></div>
                         <div class="listing-optimization-container">
                             <div class="listing-optimization-desc">
                                 <div class="listing-title-div">
@@ -92,7 +92,7 @@
                             <img src="assets/images/Desktop/Listing-optimization.webp" alt="Hero Image" class="listing-optimization-img">
                             <img src="assets/images/Mobile-version/listing-optimization-img-mobile.png" alt="Hero Image" class="listing-optimization-img-mobile">
                         </div>
-                        <!-- <div class="panel-wrapper">
+                        <div class="panel-wrapper">
                             <div class="campaign-optimization-container">
                                 <img src="assets/images/Desktop/listing_opt_bg_desktop.png" class="listing-opt-bg-desktop" alt="">
                                 <img src="assets/images/Desktop/listing_opt_bg_mobile.png" class="listing-opt-bg-mobile" alt="">
@@ -175,7 +175,7 @@
                                     </div>
                                     <div class="listing-optimization-desc-content">
                                         <h3>We provide detailed<br> weekly PPC reports with actionable insights and clear metrics.</h3>
-                                        <p>tKnow exactly how your ads are<br class="mobile-only-br"> performing</p>
+                                        <p>Know exactly how your ads are<br class="mobile-only-br"> performing</p>
                                     </div>
                                     <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
                                 </div>
@@ -183,7 +183,7 @@
                                     <img src="assets/images/Desktop/weekly-reporting.png" alt="">
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -649,7 +649,7 @@
 
                                 <img src="assets/images/Mobile-version//Phrase.webp" id="mobile-phrase-img" class="timeline-image-mobile active" data-target="content-phrase" />
                                 <div id="content-exact">
-                                    <h4 class="timeline-label">exact</h4>
+                                    <h4 class="timeline-label">Exact</h4>
                                     <p class="timeline-text">
                                         Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.
                                     </p>
@@ -901,218 +901,220 @@
             return (visibleArea / totalArea) >= (percent / 100);
         }
 
-        // const container = document.querySelector('.transparent-div');
-        // const listingSection = document.querySelector('.listing-optimization');
+       const container = document.querySelector('.transparent-div');
+        const listingSection = document.querySelector('.listing-optimization');
 
-        // const panels = [
-        //     document.querySelector('.campaign-optimization-container'),
-        //     document.querySelector('.increase-sales-container'),
-        //     document.querySelector('.keyword-research-container'),
-        //     document.querySelector('.reduce-acos-container'),
-        //     document.querySelector('.weekly-reporting-container')
-        // ];
+        const panels = [
+            document.querySelector('.campaign-optimization-container'),
+            document.querySelector('.increase-sales-container'),
+            document.querySelector('.keyword-research-container'),
+            document.querySelector('.reduce-acos-container'),
+            document.querySelector('.weekly-reporting-container')
+        ];
 
-        // const screenWidth = window.innerWidth;
+        const screenWidth = window.innerWidth;
 
-        // let currentY = [0, 0, 0, 0, 0];
-        // let targets;
+        let currentY = [0, 0, 0, 0, 0];
+        let targets;
 
-        // if (screenWidth < 768) {
-        //     // Mobile
-        //     targets = [-600, -1130, -1680, -2200, -2750];
-        // } else if (screenWidth >= 768 && screenWidth <= 1024) {
-        //     // Tablet
-        //     targets = [-373, -700, -1010, -1350, -1680];
-        // } else if (screenWidth > 1024 && screenWidth < 1440) {
-        //     // Laptop
-        //     targets = [-630, -1190, -1740, -2300, -2860];
-        // } else if (screenWidth >= 1440 && screenWidth < 1920) {
-        //     targets = [-630, -1190, -1740, -2300, -2860];
-        // }
-        //  else {
-        //     // Desktop
-        //     targets = [-932, -1760, -2592, -3418, -4250];
-        // }
+        if (screenWidth < 768) {
+            // Mobile
+            targets = [-600, -1130, -1680, -2200, -2750];
+        } else if (screenWidth >= 768 && screenWidth <= 1024) {
+            // Tablet
+            targets = [-373, -700, -1010, -1350, -1680];
+        } else if (screenWidth > 1024 && screenWidth < 1440) {
+            // Laptop
+            targets = [-450, -860, -1270, -1680, -2090];
+        } else if (screenWidth >= 1440 && screenWidth < 1559) {
+            targets = [-630, -1190, -1690, -2300, -2860];
+        } else if (screenWidth >= 1559 && screenWidth < 1920) {
+            targets = [-700, -1330, -1960, -2550, -3180];
+        }
+         else {
+            // Desktop
+            targets = [-900, -1710, -2500, -3318, -4090];
+        }
 
-        // let activeIndex = -1;
-        // let isHijacking = false;
-        // let lastScrollY = window.scrollY;
-        // let sectionStartScroll = 0;
-        // let isInSection = false;
+        let activeIndex = -1;
+        let isHijacking = false;
+        let lastScrollY = window.scrollY;
+        let sectionStartScroll = 0;
+        let isInSection = false;
 
-        // // Lock scroll position
-        // function lockScroll() {
-        //     document.body.style.overflow = 'hidden';
-        // }
+        // Lock scroll position
+        function lockScroll() {
+            document.body.style.overflow = 'hidden';
+        }
 
-        // function unlockScroll() {
-        //     document.body.style.overflow = 'scroll';
-        // }
+        function unlockScroll() {
+            document.body.style.overflow = 'scroll';
+        }
 
-        // function handleScroll(delta) {
-        //     const speed = 3.0;
+        function handleScroll(delta) {
+            const speed = 3.0;
 
-        //     // Step 1 — Activate first panel
-        //     if (activeIndex === -1 && delta > 0) {
-        //         activeIndex = 0;
-        //     }
+            // Step 1 — Activate first panel
+            if (activeIndex === -1 && delta > 0) {
+                activeIndex = 0;
+            }
 
-        //     // Step 2 — Move active panel
-        //     if (activeIndex >= 0 && activeIndex < panels.length) {
-        //         if (delta > 0) currentY[activeIndex] -= Math.abs(delta) * speed;
-        //         else currentY[activeIndex] += Math.abs(delta) * speed;
+            // Step 2 — Move active panel
+            if (activeIndex >= 0 && activeIndex < panels.length) {
+                if (delta > 0) currentY[activeIndex] -= Math.abs(delta) * speed;
+                else currentY[activeIndex] += Math.abs(delta) * speed;
 
-        //         currentY[activeIndex] = Math.max(targets[activeIndex], Math.min(1200, currentY[activeIndex]));
+                currentY[activeIndex] = Math.max(targets[activeIndex], Math.min(1200, currentY[activeIndex]));
 
-        //         const scale = currentY[activeIndex] <= targets[activeIndex] + 20 ? 1.0 : 1.05;
-        //         const opacity = currentY[activeIndex] <= targets[activeIndex] + 200 ? 1.0 : 0;
+                const scale = currentY[activeIndex] <= targets[activeIndex] + 20 ? 1.0 : 1.05;
+                const opacity = currentY[activeIndex] <= targets[activeIndex] + 200 ? 1.0 : 0;
 
-        //         panels[activeIndex].style.transform = `translateY(${currentY[activeIndex]}px) translateZ(100px) scale(${scale})`;
-        //         // panels[activeIndex].style.opacity = opacity;
+                panels[activeIndex].style.transform = `translateY(${currentY[activeIndex]}px) translateZ(100px) scale(${scale})`;
+                // panels[activeIndex].style.opacity = opacity;
 
-        //         if (currentY[activeIndex] <= targets[activeIndex] + 20 &&
-        //             delta > 0 &&
-        //             activeIndex < panels.length - 1) {
-        //             activeIndex++;
-        //         }
+                if (currentY[activeIndex] <= targets[activeIndex] + 20 &&
+                    delta > 0 &&
+                    activeIndex < panels.length - 1) {
+                    activeIndex++;
+                }
 
-        //         if (delta < 0 && currentY[activeIndex] > 400) {
-        //             if (activeIndex > 0) activeIndex--;
-        //         }
-        //     }
+                if (delta < 0 && currentY[activeIndex] > 400) {
+                    if (activeIndex > 0) activeIndex--;
+                }
+            }
 
-        //     // Step 3 — Check if animation complete (scrolling down)
-        //     if (activeIndex === panels.length - 1 &&
-        //         currentY[activeIndex] <= targets[activeIndex] + 20 &&
-        //         delta > 0) {
-        //         isHijacking = false;
-        //         unlockScroll();
-        //         return false; // Allow normal scroll
-        //     }
+            // Step 3 — Check if animation complete (scrolling down)
+            if (activeIndex === panels.length - 1 &&
+                currentY[activeIndex] <= targets[activeIndex] + 20 &&
+                delta > 0) {
+                isHijacking = false;
+                unlockScroll();
+                return false; // Allow normal scroll
+            }
 
-        //     // Check if scrolling back up and should exit
-        //     if (delta < 0) {
-        //         const firstPanelY = currentY[0];
-        //         if (firstPanelY >= 580) {
-        //             isHijacking = false;
-        //             activeIndex = -1;
-        //             unlockScroll();
-        //             return false; // Allow normal scroll up
-        //         }
-        //     }
+            // Check if scrolling back up and should exit
+            if (delta < 0) {
+                const firstPanelY = currentY[0];
+                if (firstPanelY >= 580) {
+                    isHijacking = false;
+                    activeIndex = -1;
+                    unlockScroll();
+                    return false; // Allow normal scroll up
+                }
+            }
 
-        //     return false; // Keep hijacking
-        // }
-
-
-        // // Main wheel event handler
-        // document.addEventListener("wheel", function(e) {
-        //     const rect = container.getBoundingClientRect();
-        //     // Trigger when container is at least 10% visible OR when approaching from top
-        //     const inView = isVisibleAtLeast(listingSection, 80);
-        //     // Start hijacking when container comes into view (scrolling down)
-        //     if (inView && !isHijacking && e.deltaY > 0 && activeIndex !== panels.length - 1) {
-        //         isHijacking = true;
-        //         lockScroll();
-        //         sectionStartScroll = window.scrollY;
-        //         e.preventDefault();
-        //     }
-
-        //     // Re-engage hijacking when scrolling back up into the section
-        //     // Use the SAME visibility check for consistency
-        //     if (inView && !isHijacking && e.deltaY < 0 && activeIndex !== 0 && activeIndex !== -1) {
-        //         const lastY = currentY[currentY.length - 1];
-        //         // Check if container is fully visible from bottom
-        //         const fullyVisibleFromBottom = rect.bottom <= window.innerHeight + 600 && rect.top >= 0;
-        //         if (lastY < 600 && fullyVisibleFromBottom) {
-        //             isHijacking = true;
-        //             lockScroll();
-        //             e.preventDefault();
-        //         }
-        //     }
-
-        //     // Handle hijacked scroll
-        //     if (isHijacking) {
-        //         e.preventDefault();
-        //         e.stopPropagation();
-
-        //         handleScroll(e.deltaY);
+            return false; // Keep hijacking
+        }
 
 
-        //     }
-        // }, {
-        //     passive: false,
-        //     capture: true
-        // });
+        // Main wheel event handler
+        document.addEventListener("wheel", function(e) {
+            const rect = container.getBoundingClientRect();
+            // Trigger when container is at least 10% visible OR when approaching from top
+            const inView = isVisibleAtLeast(listingSection, 80);
+            // Start hijacking when container comes into view (scrolling down)
+            if (inView && !isHijacking && e.deltaY > 0 && activeIndex !== panels.length - 1) {
+                isHijacking = true;
+                lockScroll();
+                sectionStartScroll = window.scrollY;
+                e.preventDefault();
+            }
 
-        // // Touch handling
-        // let touchStartY = 0;
-        // let touchLastY = 0;
+            // Re-engage hijacking when scrolling back up into the section
+            // Use the SAME visibility check for consistency
+            if (inView && !isHijacking && e.deltaY < 0 && activeIndex !== 0 && activeIndex !== -1) {
+                const lastY = currentY[currentY.length - 1];
+                // Check if container is fully visible from bottom
+                const fullyVisibleFromBottom = rect.bottom <= window.innerHeight + 600 && rect.top >= 0;
+                if (lastY < 600 && fullyVisibleFromBottom) {
+                    isHijacking = true;
+                    lockScroll();
+                    e.preventDefault();
+                }
+            }
 
-        // document.addEventListener("touchstart", (e) => {
-        //     touchStartY = e.touches[0].clientY;
-        //     touchLastY = touchStartY;
-        // }, {
-        //     passive: false,
-        //     capture: true
-        // });
+            // Handle hijacked scroll
+            if (isHijacking) {
+                e.preventDefault();
+                e.stopPropagation();
 
-        // document.addEventListener("touchmove", (e) => {
-        //     const rect = container.getBoundingClientRect();
-        //     // Trigger when container is approaching/visible from top
-        //     const inView = rect.top <= window.innerHeight && rect.bottom >= 0;
+                handleScroll(e.deltaY);
 
-        //     if (touchStartY === 0) return;
 
-        //     const y = e.touches[0].clientY;
-        //     const delta = touchLastY - y;
-        //     touchLastY = y;
+            }
+        }, {
+            passive: false,
+            capture: true
+        });
 
-        //     // Start hijacking (scrolling down)
-        //     if (inView && !isHijacking && delta > 0) {
-        //         isHijacking = true;
-        //         lockScroll();
-        //         sectionStartScroll = window.scrollY;
-        //     }
+        // Touch handling
+        let touchStartY = 0;
+        let touchLastY = 0;
 
-        //     // Re-engage hijacking when scrolling back up
-        //     if (inView && !isHijacking && delta < 0) {
-        //         const lastY = currentY[currentY.length - 1];
-        //         // Check if container is fully visible from bottom
-        //         const fullyVisibleFromBottom = rect.bottom <= window.innerHeight && rect.top >= 0;
-        //         if (lastY < 600 && fullyVisibleFromBottom) {
-        //             isHijacking = true;
-        //             lockScroll();
-        //         }
-        //     }
+        document.addEventListener("touchstart", (e) => {
+            touchStartY = e.touches[0].clientY;
+            touchLastY = touchStartY;
+        }, {
+            passive: false,
+            capture: true
+        });
 
-        //     // Handle hijacked scroll
-        //     if (isHijacking) {
-        //         e.preventDefault();
-        //         e.stopPropagation();
+        document.addEventListener("touchmove", (e) => {
+            const rect = container.getBoundingClientRect();
+            // Trigger when container is approaching/visible from top
+            const inView = rect.top <= window.innerHeight && rect.bottom >= 0;
 
-        //         const shouldRelease = handleScroll(delta);
+            if (touchStartY === 0) return;
 
-        //         if (shouldRelease && delta > 0) {
-        //             window.scrollTo(0, sectionStartScroll + listingSection.offsetHeight);
-        //         }
-        //     }
-        // }, {
-        //     passive: false,
-        //     capture: true
-        // });
+            const y = e.touches[0].clientY;
+            const delta = touchLastY - y;
+            touchLastY = y;
 
-        // document.addEventListener("touchend", () => {
-        //     touchStartY = 0;
-        //     touchLastY = 0;
-        // }, {
-        //     capture: true
-        // });
+            // Start hijacking (scrolling down)
+            if (inView && !isHijacking && delta > 0) {
+                isHijacking = true;
+                lockScroll();
+                sectionStartScroll = window.scrollY;
+            }
+
+            // Re-engage hijacking when scrolling back up
+            if (inView && !isHijacking && delta < 0) {
+                const lastY = currentY[currentY.length - 1];
+                // Check if container is fully visible from bottom
+                const fullyVisibleFromBottom = rect.bottom <= window.innerHeight && rect.top >= 0;
+                if (lastY < 600 && fullyVisibleFromBottom) {
+                    isHijacking = true;
+                    lockScroll();
+                }
+            }
+
+            // Handle hijacked scroll
+            if (isHijacking) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                const shouldRelease = handleScroll(delta);
+
+                if (shouldRelease && delta > 0) {
+                    window.scrollTo(0, sectionStartScroll + listingSection.offsetHeight);
+                }
+            }
+        }, {
+            passive: false,
+            capture: true
+        });
+
+        document.addEventListener("touchend", () => {
+            touchStartY = 0;
+            touchLastY = 0;
+        }, {
+            capture: true
+        });
 
         // ----------------------------
         // DOM references
         // ----------------------------
-        const section = document.querySelector('.case-study');
+        const section = document.querySelector('.case-study-spacer');
         const carousel = document.querySelector('.case-study-main-container');
         const cards = document.querySelectorAll('.case-study-container');
         const wrapper = document.querySelector('.carousel-wrapper');
@@ -1128,8 +1130,8 @@
         // ----------------------------
         if (window.innerWidth > 640) {
             function updateCarousel(index) {
-                const cardWidth = cards[0].offsetWidth + 20; // include gap
-                carousel.style.transform = `translateX(-${index * cardWidth}px)`;
+                const cardWidth = cards[0].offsetWidth + 20 ; // include gap
+                carousel.style.transform = `translateX(-${index * (cardWidth * 0.8)}px)`;
             }
 
             window.addEventListener('scroll', () => {
@@ -1137,8 +1139,8 @@
                 const scrollLength = section.offsetHeight - window.innerHeight;
 
                 if (rect.top > 0 || rect.bottom < window.innerHeight) return;
-
-                const progress = Math.min(Math.max(-rect.top / scrollLength, 0), 1);
+                
+                const progress = Math.min(Math.max((-rect.top / scrollLength), 0), 1);
                 const index = Math.round(progress * (cards.length - 1));
 
                 updateCarousel(index);
