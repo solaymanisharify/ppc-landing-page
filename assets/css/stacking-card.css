@@ -1,0 +1,347 @@
+.panel__options h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.bg-blue {
+  background: url("../images/Desktop/card-bg.png");
+  background-size: 100%; /* Reduced from cover to 90% width and height */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-purple {
+  background: url("../images/Desktop/Listing-optimization.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.bg-skyblue-light {
+  background: #bce5f6;
+}
+
+.bg-orange-light {
+  background: #fcd1a6;
+}
+
+.bg-green-light {
+  background: #b5e5b8;
+}
+
+.bg-light {
+  background: #fefdf6 !important;
+}
+
+.btn-primary {
+  background: #3065fa;
+}
+.btn-primary:hover {
+  background: #3065fa;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #101828;
+  position: relative;
+  z-index: 1;
+}
+.btn-secondary:hover {
+  color: #101828;
+  background: #fff;
+}
+
+.btn-black-shadow::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 8px;
+  transition: box-shadow 0.2s linear;
+}
+.btn-black-shadow:hover::before {
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.8);
+}
+
+.btn-blue-shadow::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px rgba(47, 121, 227, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 8px;
+  transition: box-shadow 0.2s linear;
+}
+.btn-blue-shadow:hover::before {
+  box-shadow: 6px 6px 0px rgba(47, 121, 227, 0.8);
+}
+
+.container {
+  max-width: 100rem;
+}
+
+.btn {
+  padding: 0.625rem 1.875rem;
+  border: none;
+  font-weight: 600;
+  position: relative;
+}
+
+.btn-large {
+  padding: 1.125rem 3.125rem;
+  font-size: 1.125rem;
+}
+
+.btn-outline {
+  border: 1px solid #101828;
+}
+.btn-outline:hover {
+  border: 1px solid #101828;
+}
+
+.spacer-y {
+  padding: 7.5rem 0;
+}
+
+.spacer-top {
+  padding-top: 7.5rem;
+}
+
+.spacer-bottom {
+  padding-bottom: 7.5rem;
+}
+
+.spacer-md {
+  padding: 3.75rem 0px;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.font-20 {
+  font-size: 1.25rem;
+}
+
+.font-18 {
+  font-size: 1.125rem;
+}
+
+
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* PANELS */
+.panel {
+  position: relative;
+  z-index: 9;
+}
+
+.panel__options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.panel__options span {
+  font-size: 14px;
+}
+.panel__options span:first-child:hover {
+  color: #9a93f4;
+}
+.panel__options span:nth-child(2):hover {
+  color: #bce5f6;
+}
+.panel__options span:nth-child(3):hover {
+  color: #fcd1a6;
+}
+.panel__options span:last-child:hover {
+  color: #b5e5b8;
+}
+
+.panel__stack {
+  --spacer: 10px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+  justify-items: center;
+  overflow-y: visible;
+}
+.panel__stack .panel__card {
+  grid-area: 1/1/2/2/2;
+  border-radius: 30px;
+  padding: 1rem;
+  position: absolute;
+  height: 800px;
+  width: 100%;
+  will-change: transform;
+}
+.panel__stack .panel__card:first-child {
+  top: calc(var(--spacer) * 1);
+  z-index: 1;
+  transform: scale(1);
+}
+.panel__stack .panel__card:nth-child(2) {
+  top: calc(var(--spacer) * 1);
+  padding: 100px;
+  overflow: hidden;
+  z-index: 2;
+  transform: scale(1.05);
+  transform-origin: top center;
+}
+.panel__stack .panel__card:nth-child(3) {
+  top: calc(var(--spacer) * 1);
+  z-index: 3;
+  transform: scale(1.05);
+  transform-origin: top center;
+}
+.panel__stack .panel__card:nth-child(4) {
+  top: calc(var(--spacer) * 1);
+  z-index: 4;
+  transform: scale(1.05);
+  transform-origin: top center;
+}
+.panel__stack .panel__card:last-child {
+  top: calc(var(--spacer) * 1);
+  z-index: 5;
+  transform: scale(1.05);
+  transform-origin: top center;
+}
+.panel__stack .panel__card ul {
+  margin: 0;
+  padding-right: 30px;
+}
+.panel__stack .panel__card ul li {
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  padding-left: 27px;
+}
+.panel__stack .panel__card ul li::before {
+  content: url(../images/listing-icon.svg);
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+.panel__stack .panel__card ul li:last-child {
+  margin-bottom: 0;
+}
+.panel__stack .panel__card .green-bullets li::before {
+  content: url(../images/green-list-icon.svg);
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+.panel__stack .panel__card .orange-bullets li::before {
+  content: url(../images/orange-list-icon.svg);
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+
+.panel__content {
+  width: 48%;
+}
+
+.panel__image {
+  width: 52%;
+}
+.panel__image img {
+  max-height: 30rem;
+}
+
+.sticky-notes {
+  width: 209px;
+  padding: 10px 15px;
+  position: absolute;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: -70px;
+  bottom: 30px;
+}
+.sticky-notes .draw-line {
+  position: absolute;
+  top: -70px;
+  left: -80px;
+}
+
+.sticky-notes__items {
+  gap: 10px;
+}
+.sticky-notes__items div {
+  padding: 10px 30px;
+  border-radius: 8px;
+}
+.sticky-notes__items div:first-child {
+  background-color: #fad1d1;
+  color: #d92d20;
+}
+.sticky-notes__items div:nth-child(2) {
+  background-color: #f4fad1;
+  color: #f79009;
+}
+.sticky-notes__items div:last-child {
+  background-color: #d1fadf;
+  color: #039855;
+}
+
+.sticky-card .checkbox {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border: 1px solid #d0d5dd;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.sticky-cards__items {
+  gap: 10px;
+}
+
+.sticky-card.sticky-card-left {
+  bottom: 50px;
+  left: -100px;
+  top: initial;
+}
+
+.panel__card--one .panel__card__img {
+  background-color: #a9a3ff;
+}
+
+.panel__card--two .panel__card__img {
+  background-color: #d1f2ff;
+}
+
+.panel__card--three .panel__card__img {
+  background-color: #ffc183;
+}
+
+.panel__card--four .panel__card__img {
+  background-color: #98d89c;
+}

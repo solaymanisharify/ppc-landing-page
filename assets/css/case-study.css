@@ -1,0 +1,70 @@
+/* Parent container - provides scroll height */
+.sticky-parent {
+  height: 400vh;
+  position: relative;
+}
+
+/* Sticky container for title and cards */
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Fixed title at top */
+.case-study-titles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 20px 200px;
+}
+
+/* Horizontal scrolling container */
+.horizontal {
+  display: flex;
+  height: 100%;
+  gap: 40px;
+  padding: 0 120px;
+  padding-top: 150px;
+  width: max-content;
+  will-change: transform;
+  align-items: flex-start;
+}
+
+.case-study-container-1 {
+ margin-left: 90px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 620px) {
+  .case-study-title {
+    padding: 60px 20px 40px;
+  }
+
+  .case-study-title h1 {
+    font-size: 2rem;
+  }
+
+  .case-study-title p {
+    font-size: 1rem;
+  }
+
+  .horizontal {
+    padding: 0 20px;
+    padding-top: 200px;
+    gap: 20px;
+  }
+
+  .case-study-container-1,
+  .case-study-container-2,
+  .case-study-container-3 {
+    min-width: 90vw;
+    height: calc(100vh - 240px);
+    padding: 30px 120px;
+  }
+}
