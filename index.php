@@ -286,7 +286,7 @@
                         <div class="case-study-header">
                             <h2>From Growth to Succcess</h2>
                             <div class="golden-fox">
-                                <img src="assets/images/Desktop/woodland-logo.png" alt="Hero Image" class="">
+                                <img id="woodland-logo" src="assets/images/Desktop/woodland-logo.png" alt="Hero Image" class="">
                             </div>
                         </div>
                         <div class="case-study-growth-image-container">
@@ -321,7 +321,7 @@
                                 </div>
                             </div>
                             <div class="case-study-container-img">
-                                <img src="assets/images/Desktop/woodland-cover.png" alt="Hero Image" class="case-study-img">
+                                <img id="" src="assets/images/Desktop/woodland-cover.png" alt="Hero Image" class="case-study-img">
                                 <div class="fake-review">
                                     <div class="review-card-top">
                                         <div class="fake-review-img">
@@ -365,7 +365,7 @@
                         <div class="case-study-header">
                             <h2>From Growth to Succcess</h2>
                             <div class="golden-fox">
-                                <img src="assets/images/Desktop/umbra-logo.png" alt="Hero Image" class="">
+                                <img id="umbra-logo" src="assets/images/Desktop/umbra-logo.png" alt="Hero Image" class="">
                             </div>
                         </div>
                         <div class="case-study-growth-image-container">
@@ -880,7 +880,7 @@
 
         let sm = gsap.matchMedia();
 
-        sm.add("(min-width: 1130px)", () => {
+        sm.add("(min-width: 330px)", () => {
             gsap.registerPlugin(ScrollToPlugin);
 
             /* CARD ANIMATION */

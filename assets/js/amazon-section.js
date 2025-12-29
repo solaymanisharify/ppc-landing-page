@@ -111,7 +111,7 @@ dots.forEach((dot) => {
         phrase: 90,
         exact: -80,
       };
-    } else if (width > 768) {
+    } else if (width >= 768) {
       // tablet
       contentOffset = {
         broad: 18,

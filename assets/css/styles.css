@@ -1,6 +1,3 @@
-
-
-
 @font-face {
   font-family: "Recoleta";
   src: url("../fonts/Recoleta-RegularDEMO.otf") format("opentype");
@@ -28,30 +25,30 @@
   font-weight: 200;
 }
 .case-study {
-    overflow: hidden; /* Prevents horizontal scrollbar on body */
-    width: 100%;
-    position: relative;
+  overflow: hidden; /* Prevents horizontal scrollbar on body */
+  width: 100%;
+  position: relative;
 }
 
 .case-study-main-container {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 300vw; /* Total width: 100vw * number of cards */
-    height: 100vh; /* Optional: adjust if you want it shorter/taller */
-    align-items: center;    /* important for horizontal scroll */
+  display: flex;
+  flex-wrap: nowrap;
+  width: 300vw; /* Total width: 100vw * number of cards */
+  height: 100vh; /* Optional: adjust if you want it shorter/taller */
+  align-items: center; /* important for horizontal scroll */
 }
 
 .case-study-container {
-   width: 100vw; /* Each card occupies exactly one screen width */
-    flex-shrink: 0;
+  width: 100vw; /* Each card occupies exactly one screen width */
+  flex-shrink: 0;
 }
 
 .case-study-container.active {
-    transform: scale(1.03);  /* subtle highlight for current card */
+  transform: scale(1.03); /* subtle highlight for current card */
 }
 
 .carousel-wrapper {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 body {
@@ -80,7 +77,6 @@ h1 {
   background: linear-gradient(to bottom, #1f3c5a 0%, #184f88 15%, #121921 25%, #121921 60%, #121921 100%);
 }
 
-
 .hero-container {
   max-width: 90rem;
   display: flex;
@@ -91,7 +87,7 @@ h1 {
   padding-bottom: 30px;
 }
 
-.stacky-card{
+.stacky-card {
   width: 100%;
   /* background: red; */
   display: flex;
@@ -289,7 +285,8 @@ h1 {
 .reveneue-section {
   /* background: #000; */
 
-  width: 100%;
+  max-width: 90rem;
+  margin: 200px auto 0 auto;
   text-align: center;
   justify-content: space-between;
   font-family: "Recoleta", serif;
@@ -297,7 +294,7 @@ h1 {
   font-size: 24px;
   display: flex;
   color: white;
-  margin-top: 300px;
+  margin-top: 200px;
 }
 .revenue-icon {
   display: flex;
@@ -797,7 +794,6 @@ h1 {
   height: 280px;
 }
 
-
 .fake-review-3 {
   bottom: 10px;
 }
@@ -920,7 +916,8 @@ h1 {
   margin-top: 400px;
 }
 .amazon-container {
-  margin-top: 400px;
+  max-width: 90rem;
+  margin: 400px auto 0 auto;
 }
 .amazon-container-header {
   margin-bottom: 40px;
@@ -1451,8 +1448,8 @@ h1 {
 
 .amazon-ppc-question {
   min-height: 600px;
-  margin-top: 500px;
-  padding: 0 220px;
+  max-width: 90rem;
+  margin: 500px auto 0 auto;
 }
 .ppc-question-header h1 {
   font-size: 62px;
@@ -1563,8 +1560,8 @@ h1 {
 
 .amazon-advertising-pricing {
   position: relative;
-  margin-top: 146px;
-  padding: 0 220px;
+  max-width: 90rem;
+  margin: 0 auto;
 }
 .amazon-advertising-pricing img {
   height: 685px;
@@ -1573,7 +1570,7 @@ h1 {
 .amazon-advertising-pricing-text {
   position: absolute;
   top: 100px;
-  left: 300px;
+  left: 100px;
 }
 .amazon-advertising-pricing-header h1 {
   font-size: 75px;
@@ -1942,6 +1939,11 @@ h1 {
     transform: none !important;
     opacity: 1 !important; /* make sure visible */
   }
+  .case-study-container-1,
+  .case-study-container-2,
+  .case-study-container-3 {
+    width: 90vw;
+  }
 
   .golden-fox img {
     width: 70px;
@@ -2133,6 +2135,9 @@ h1 {
     background: linear-gradient(to bottom, #05214b 0%, #133c9f 40%, #194cc4 70%, #36abdb 100%);
   }
 
+  .amazon-ppc-card-header {
+    padding-top : 10px;
+  }
   .amazon-ppc-card-header h1 {
     font-size: 18px;
     padding: 20px 10px;
@@ -2458,7 +2463,7 @@ h1 {
   .amazon-ppc-strategy {
     width: 100%;
     height: 200px;
-    bottom: -180px;
+    bottom: -150px;
     margin-bottom: 40px;
     pointer-events: auto;
   }
@@ -2508,11 +2513,12 @@ h1 {
     font-size: 10px;
   }
   .amazon-advertising-pricing {
+    max-width: 400px;
     margin-top: 20px;
     padding: 0 0px;
   }
   .amazon-advertising-pricing-text {
-    top: 50px;
+    top: 30px;
     left: 40px;
   }
   .amazon-advertising-pricing-header h1 {
@@ -2633,9 +2639,9 @@ h1 {
   }
 
   .listing-optimization-desc {
-    width: 250px;
-    top: 80px;
-    left: 2%;
+    width: 350px;
+    top: 20px;
+    left: 4%;
     height: auto;
     position: absolute;
     transform: none;
@@ -2712,7 +2718,7 @@ h1 {
     flex-direction: column;
     width: 70%;
     padding: 20px;
-    height: 820px;
+    height: 720px;
   }
 
   .carousel-wrapper {
@@ -2738,6 +2744,13 @@ h1 {
     margin-right: 0;
   }
 
+  #woodland-logo {
+    height: 30px;
+  }
+
+  #umbra-logo {
+    height: 30px;
+  }
   .case-study-container h1 {
     font-size: 36px;
     width: auto;
@@ -2745,7 +2758,7 @@ h1 {
 
   .case-study-growth-image-container {
     flex-direction: column;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-left: 10px;
   }
 
@@ -2754,30 +2767,62 @@ h1 {
     width: 100%;
     left: 0;
     height: auto;
-    bottom: -150px;
+    bottom: -20px;
     gap: 5px;
   }
+  .fake-review-3 {
+    bottom: -20px;
+  }
   .fake-review-img {
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px;
+    height: 40px;
   }
-
   .fake-review-img img {
-    object-position: left top;
+    object-position: left top !important;
+  }
+  .review-card-top {
+    gap: 10px;
+  }
+  .review-card-top h1 {
+    padding: 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  .review-card-rating {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .review-card-rating-stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    /* padding: 0; */
+  }
+  .review-card-rating p {
+    font-size: 8px;
   }
 
-  .review-card-top h1 {
-    font-size: 18px !important;
+  .review-card-rating-img {
+    width: 10px;
+    height: 10px;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .review-card-top p {
-    font-size: 10px;
+
+  .review-card-rating-img img {
+    width: 10px;
+    height: 10px;
+    object-fit: contain;
   }
 
   .review-card-content {
-    margin: 10px 0 0 0;
+    margin: 5px 0 0 0;
   }
   .review-card-content p {
-    font-size: 14px;
+    font-size: 10px;
     text-align: left;
   }
 
@@ -2846,13 +2891,13 @@ h1 {
   }
   .amazon-ppc-card-header h1 {
     font-size: 36px;
-    padding-bottom: 10px;
+    padding: 10px 40px 0 0;
   }
   .amazon-ppc-card-ratings {
     gap: 10px;
   }
   .amazon-ppc-card-stat {
-    padding: 20px 60px;
+    padding: 10px 60px;
   }
   .amazon-ppc-card-stat h2 {
     font-size: 40px;
@@ -2873,6 +2918,9 @@ h1 {
     max-width: 1024px;
   }
 
+  .amazon-ppc-wrapper {
+    width: 80%;
+  }
   .amazon-ppc-content {
     width: 50%;
     max-height: 400px;
@@ -2910,7 +2958,49 @@ h1 {
     align-items: center;
     gap: 40px;
   }
+.timeline-item {
+    position: relative;
+    padding-bottom: 160px;
+  }
+.timeline-line {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 2px;
+    height: 100%;
+    border-left: 2px dotted #d2d2d2;
+  }
 
+  .timeline-dot-1 {
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+  }
+
+  .timeline-dot {
+    position: absolute;
+    left: 5px;
+    top: 70px;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border: none;
+    border-radius: 50%;
+  }
+
+  .timeline-dot-3 {
+    position: absolute;
+    left: 5px;
+    bottom: 0px;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+  }
   .timeline-item {
     width: 100%;
     max-width: 600px;
@@ -2920,8 +3010,11 @@ h1 {
   .timeline-content {
     padding-left: 36px;
   }
-  .timeline-content p {
+  .timeline-content h4 {
     font-size: 16px;
+  }
+  .timeline-content p {
+    font-size: 12px;
   }
 
   .timeline-image-desktop {
@@ -3053,7 +3146,7 @@ h1 {
   }
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1900px) and (min-width: 1025px) {
   .scalable-amazon {
     font-size: 20px;
   }

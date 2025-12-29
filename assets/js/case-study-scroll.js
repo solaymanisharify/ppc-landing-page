@@ -13,7 +13,7 @@
           const scrollProgress = -parentRect.top / (parentRect.height - window.innerHeight);
 
           // Calculate max scroll distance
-          const maxScroll = horizontal.scrollWidth - sticky.clientWidth;
+          const maxScroll = horizontal.scrollWidth - sticky.clientWidth - 70;
 
           // Apply horizontal transform
           const scrollAmount = scrollProgress * maxScroll;
