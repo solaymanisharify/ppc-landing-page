@@ -82,7 +82,7 @@
             <section class="panel spacer-y">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 case-study-title">
+                        <div class="col-md-12 optimization-container">
                             <h1>Reignite Your Bussiness With Our</h1>
 
                             <div class="panel__stack">
@@ -108,7 +108,7 @@
                                             <h2>Campaign Optimization</h2>
                                         </div>
                                         <div class="listing-optimization-desc-content">
-                                            <h3>We monitor and <br> fine-tune bidding strategies</h3>
+                                            <h3>We monitor and <br>Fine-tune bidding strategies</h3>
                                             <p>match types, and placements to optimize<br class="mobile-only-br"> every dollar spent on Amazon ads.</p>
                                         </div>
                                         <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
@@ -151,7 +151,7 @@
                                         <img src="assets/images/Desktop/Keyword-research.png" alt="">
                                     </div>
                                 </div>
-                                <div class="panel__card panel__card--four bg-blue">
+                                <div class="panel__card panel__card--five bg-blue">
                                     <div class="listing-optimization-desc">
                                         <div class="listing-title-div">
                                             <img src="assets/images/Desktop/star.png" alt="">
@@ -167,7 +167,7 @@
                                         <img src="assets/images/Desktop/Reduce-ACOS.png" alt="">
                                     </div>
                                 </div>
-                                <div class="panel__card panel__card--five bg-blue">
+                                <div class="panel__card panel__card--six bg-blue">
                                     <div class="listing-optimization-desc">
                                         <div class="listing-title-div">
                                             <img src="assets/images/Desktop/star.png" alt="">
@@ -916,7 +916,7 @@
                 scale: 1,
                 transformOrigin: "top center"
             });
-            gsap.set([".panel__card--two", ".panel__card--three", ".panel__card--four", ".panel__card--five"], {
+            gsap.set([".panel__card--two", ".panel__card--three", ".panel__card--four", ".panel__card--five", ".panel__card--six"], {
                 scale: 1.05,
                 transformOrigin: "top center"
             });
@@ -1017,6 +1017,28 @@
                 duration: 0.5,
                 transformOrigin: "top center"
             }, "-=0.5");
+
+            // SIXTH CARD ANIMATION
+tl.set(".panel__options > span:nth-child(5)", {
+  borderBottom: "1px solid transparent"
+});
+
+tl.set(".panel__options > span:nth-child(6)", {
+  borderBottom: "1px solid #667085"
+});
+
+tl.from(".panel__card--six", {
+  y: () => window.innerHeight,
+  scale: 1.05,
+  duration: 1
+});
+
+tl.to(".panel__card--six", {
+  scale: 1,
+  duration: 0.5,
+  transformOrigin: "top center"
+}, "-=0.5");
+
 
             // Navigation function
             function gotSeek(id) {

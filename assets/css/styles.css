@@ -1636,7 +1636,6 @@ h1 {
   .main-container {
     padding: 10px 0px;
     /* width: 100%; */
-    text-align: center;
     gap: 40px;
     /* Smoother vertical gradient like screenshot */
     background: linear-gradient(to bottom, #1f3c5a 0%, #184f88 20%, #121921 25%, #121921 60%, #121921 100%);
@@ -2611,7 +2610,7 @@ h1 {
 
   /* Stats Section */
   .reveneue-section {
-    margin: 0px;
+    margin-top: 60px;
   }
   .revenue-icon img {
     width: 40px;
@@ -2684,8 +2683,8 @@ h1 {
   .keyword-research-img,
   .reduce-acos-img,
   .weekly-reporting-img {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: auto;
   }
 
   .campaign-optimization-img img,
@@ -2693,7 +2692,7 @@ h1 {
   .weekly-reporting-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   /* Case Study */
@@ -2702,7 +2701,7 @@ h1 {
   }
 
   .case-study-title {
-    padding: 0 40px;
+    /* padding: 0 40px; */
     margin-bottom: 20px;
   }
 
@@ -3164,24 +3163,24 @@ h1 {
     object-fit: contain;
   }
 
-  .campaign-optimization-img,
+  /* .campaign-optimization-img,
   .increase-sales-img,
   .keyword-research-img,
   .reduce-acos-img,
   .weekly-reporting-img {
-    width: 800px;
-    height: 800px;
+    width: 400px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .campaign-optimization-img img {
-    width: 800px;
-    height: 800px;
+    width: 400px;
+    height: 400px;
     object-fit: contain;
     object-position: center;
-  }
+  } */
 
   .listing-optimization-desc {
     width: 450px;
