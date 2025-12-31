@@ -62,6 +62,7 @@ body {
   box-sizing: border-box;
 }
 
+
 h1 {
   color: blue;
 }
@@ -74,15 +75,18 @@ h1 {
 }
 .first-container {
   padding: 110px 220px 0 220px;
+  padding: 110px 220px 0 220px;
   background: linear-gradient(to bottom, #1f3c5a 0%, #184f88 15%, #121921 25%, #121921 60%, #121921 100%);
 }
 
 .hero-container {
   max-width: 90rem;
+  max-width: 90rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 53px;
+  margin: 0 auto;
   margin: 0 auto;
   padding-bottom: 30px;
 }
@@ -111,6 +115,7 @@ h1 {
   flex-direction: column;
   font-family: "Recoleta", serif;
   gap: 18px;
+  width: 40%;
 }
 .hero-1 h1 {
   font-family: "Recoleta", serif;
@@ -133,10 +138,12 @@ h1 {
   /* padding-right: 40px; */
   padding-left: 10px;
   margin-top: 30px;
+  width: 60%;
 }
 .hero-2 img {
-  max-width: 745px;
-  max-height: 508px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .launch-dominate-btn {
   background: #2266f0;
@@ -286,7 +293,7 @@ h1 {
   /* background: #000; */
 
   max-width: 90rem;
-  margin: 200px auto 0 auto;
+  margin: 140px auto 0 auto;
   text-align: center;
   justify-content: space-between;
   font-family: "Recoleta", serif;
@@ -294,7 +301,6 @@ h1 {
   font-size: 24px;
   display: flex;
   color: white;
-  margin-top: 200px;
 }
 .revenue-icon {
   display: flex;
@@ -359,9 +365,9 @@ h1 {
 
 /* .listing-spacer {
   height: calc(100vh + 5 * 100vh);
-}
+} */
 
-.listing-sticky {
+/* .listing-sticky {
   position: sticky;
   top: 0;
   height: 100vh;
@@ -412,7 +418,7 @@ h1 {
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .listing-optimization-desc {
   position: absolute;
@@ -448,7 +454,6 @@ h1 {
 }
 .listing-optimization-img {
   width: 100%;
-  height: auto;
   object-fit: cover;
   display: block;
 }
@@ -539,6 +544,7 @@ h1 {
   /* font-weight: 700; */
   border: none;
   padding: 6px 2px 6px 15px;
+  border: 2px solid #ffdc00;
   border-radius: 32px;
   cursor: pointer;
   display: flex;
@@ -558,8 +564,10 @@ h1 {
   position: relative;
   /* height: 100vh; */
   /* overflow: hidden; */
+  scrollbar-width: none;
 }
 .case-study-title {
+  width: 90rem;
   margin-bottom: 40px;
 }
 .case-study-title h1 {
@@ -590,13 +598,19 @@ h1 {
   width: 100%;
   height: 100vh;
   position: sticky;
-  top: 120px; /* below title */
-  overflow: hidden;
+  top: 0px; /* below title */
   scrollbar-width: none;
+  overflow: hidden;
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+  display: none;                   /* Chrome, Safari, new Edge */
+  width: 0;
+  height: 0;
 }
 
 .case-study-main-container {
-  width: 100%;
+  width: 90rem;
   height: 100%;
   /* margin-right: clamp(-220px, -6vw, -80px);  */
   position: relative;
@@ -604,11 +618,11 @@ h1 {
   gap: 20px;
   /* overflow-x: hidden; */
   scrollbar-width: none;
-  transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 1.4s ease-in-out;
   will-change: transform;
 }
 .case-study-container {
-  min-width: 80%;
+  max-width: 80%;
   flex-shrink: 0;
   height: 80%;
 }
@@ -651,6 +665,8 @@ h1 {
   /* Create the fade effect with mask */
   mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
   mask-composite: intersect;
+  mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
+  mask-composite: intersect;
   -webkit-mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
   -webkit-mask-composite: source-in;
 }
@@ -670,7 +686,7 @@ h1 {
   font-weight: 300;
 }
 .case-study-header h2 {
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 400;
 }
 .case-study-desc h2 {
@@ -697,7 +713,7 @@ h1 {
 }
 .golden-fox img {
   width: 150px;
-  height: auto;
+  height: 50px;
 }
 .case-study-container-text {
   width: 70vw;
@@ -724,7 +740,7 @@ h1 {
   background: linear-gradient(to bottom, #41d3d9 0%, #38bfe3 40%, #2da9ee 60%, #1f8afd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 200;
   margin-bottom: 0px;
 }
@@ -767,31 +783,30 @@ h1 {
   margin-top: 5px;
 }
 .case-study-container-img .case-study-img {
-  width: 80%;
-  width: 600px;
-  height: 295px;
+  width: 60%;
+  height: 230px;
   border-radius: 10px;
   display: block;
-  margin-right: 30px;
-  margin: 0 30px 0 0;
+  margin-right: 0px;
+  margin: 0 0px 0 160px;
 }
 .case-study-container-img {
   position: relative;
-  bottom: -100px;
+  bottom: -200px;
 }
 .fake-review {
   position: absolute;
-  bottom: 30px;
+  bottom: 50px;
   background-color: #031d42;
   border-radius: 25px;
-  padding: 60px 20px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
   gap: 20px;
-  width: 110%;
-  left: -50px;
-  height: 280px;
+  width: 80%;
+  left: 100px;
+
 }
 
 .fake-review-3 {
@@ -844,7 +859,6 @@ h1 {
 }
 .review-card-top h1 {
   color: #fff;
-  font-size: 24px;
 }
 .review-card-top p,
 .review-card-content p {
@@ -867,7 +881,7 @@ h1 {
   object-position: right;
 }
 .fake-review-img h1 {
-  font-size: 24px;
+  font-size: 18px;
   color: #fff;
 }
 /* .fake-review-img p {
@@ -886,7 +900,7 @@ h1 {
   gap: 18px;
 }
 .review-card-rating p {
-  font-size: 14px;
+  font-size: 12px;
 }
 .review-card-rating-stars {
   display: flex;
@@ -1252,6 +1266,7 @@ h1 {
   font-size: 28px;
   margin: 0 0 0 0;
   text-align: left;
+  color: #000;
 }
 
 .timeline-content p {
@@ -1337,7 +1352,7 @@ h1 {
   text-align: center;
 }
 .amazon-advertising header h3 {
-  font-family: "poppins-bold";
+  font-family: "Poppins";
   font-size: 32px;
   font-weight: 400;
   color: white;
@@ -1380,17 +1395,17 @@ h1 {
   width: 40%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
 }
 .advertising-card-text h2 {
   font-family: "Recoleta", serif;
-  font-size: 36px;
+  font-size: 44px;
   font-weight: 400;
   color: #082c6b;
 }
 .advertising-card-text p {
   font-family: "Poppins";
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   color: #000000;
@@ -1447,6 +1462,7 @@ h1 {
 }
 
 .amazon-ppc-question {
+  max-width: 90rem;
   min-height: 600px;
   max-width: 90rem;
   margin: 500px auto 0 auto;
@@ -1483,6 +1499,7 @@ h1 {
 
 .accordion-header h1 {
   margin: 0;
+  font-family: "recoleta";
   font-size: 36px;
   color: #00fffc;
   font-weight: normal;
@@ -1546,6 +1563,7 @@ h1 {
 
 .accordion-content p {
   font-size: 24px;
+  font-family: "Poppins";
   margin: 0;
   color: #fff;
   padding: 0 20px;
@@ -1570,6 +1588,7 @@ h1 {
 .amazon-advertising-pricing-text {
   position: absolute;
   top: 100px;
+  left: 100px;
   left: 100px;
 }
 .amazon-advertising-pricing-header h1 {
@@ -1875,6 +1894,7 @@ h1 {
   .case-study {
     margin-top: 10px;
     padding: 0;
+    overflow: hidden;
   }
 
   .case-study-title {
@@ -2467,20 +2487,22 @@ h1 {
     pointer-events: auto;
   }
   .amazon-ppc-strategy-img {
-    height: 200px;
+    height: 0px;
   }
   .img-wrapper img {
     width: 95%;
     height: 100%;
     object-fit: cover;
+    overflow: hidden;
   }
   .img-wrapper {
     position: absolute;
     height: 200px;
-    top: -80px;
+    top: -100px;
     left: 10px;
     right: 0;
     pointer-events: none !important;
+    overflow: hidden;
   }
   .amazon-ppc-question {
     min-height: 480px;
@@ -2527,7 +2549,7 @@ h1 {
     font-size: 12px;
   }
   .amazon-advertising-pricing-content {
-    margin-top: 18px;
+    margin-top: 4px;
     gap: 2px;
   }
   .amazon-advertising-pricing-content h2 {
@@ -2540,7 +2562,7 @@ h1 {
     font-size: 12px;
   }
   .amazon-advertising-pricing-content button {
-    font-size: 12px;
+    font-size: 10px;
     padding: 2px 4px;
   }
   .amazon-advertising-pricing-img img {
@@ -2580,24 +2602,33 @@ h1 {
   }
 
   .get-started-btn {
-    width: auto;
-    font-size: 14px;
-    margin: 0;
+    width: 170px;
+    font-size: 12px;
+    margin: 10px 0 0 0;
     gap: 10px;
+    padding: 2px 4px 2px 10px;
+  }
+
+  .launch-dominate-btn {
+    font-size: 12px;
+    padding: 4px 14px;
+    width: auto;
+    border-radius: 8px;
+    font-weight: 300;
   }
 
   .hero-1 {
     margin-top: 20px;
+    gap: 6px;
   }
 
+  .hero-1 h1 {
+    font-size: 20px;
+    margin-top: 8px;
+  }
   .hero-1 p {
-    font-size: 14px;
+    font-size: 10px;
     margin: 0;
-  }
-
-  .hero-2 img {
-    width: 350px;
-    height: auto;
   }
 
   .scalable-amazon {
@@ -3085,7 +3116,7 @@ h1 {
   }
 
   .amazon-ppc-question {
-    margin-top: 300px;
+    margin: 300px auto 0 auto;
   }
 
   .ppc-question-header h1 {
@@ -3147,18 +3178,17 @@ h1 {
 
 @media (max-width: 1900px) and (min-width: 1025px) {
   .scalable-amazon {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .scalable-amazon span {
-    font-size: 48px;
+    font-size: 60px;
   }
-  .hero-2 {
-    width: 800px;
-    height: 400px;
+  .hero-1 {
+    gap: 12px;
   }
   .hero-2 img {
-    width: 500px;
+    width: 100%;
     height: 100%;
     object-fit: contain;
   }
@@ -3200,6 +3230,10 @@ h1 {
   .listing-optimization-desc p {
     font-size: 20px;
   }
+
+  .lets-talk-btn {
+    margin-top: 45px;
+  }
   .review-card-top {
     display: flex;
     align-items: center;
@@ -3207,12 +3241,17 @@ h1 {
   }
 
   .fake-review {
-    max-width: 500px;
-    padding: 20px;
+    width: 100%;
+    height: 240px;
+    padding: 10px 20px;
     border-radius: 20px;
     position: absolute;
-    bottom: 0;
-    left: -30px; /* force card to stay left */
+    bottom: 100px;
+    left: 0px; /* force card to stay left */
+  }
+
+  .fake-review-3 {
+    bottom: 160px;
   }
 
   .case-study-container-img {
@@ -3221,12 +3260,33 @@ h1 {
     margin-left: 0;
   }
 
+  .case-study-spacer {
+    position: relative;
+    height: calc(100vh + 200vh);
+  }
+
+  /* .case-study-main-container {
+    height: 700px;
+  } */
+
+  .carousel-wrapper {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
   .case-study-container-img .case-study-img {
-    width: 380px;
+    width: 70%;
     height: 200px;
-    margin-left: 0;
+    margin-left: 70px;
     margin-right: 0;
-    margin-top: 75px;
+    margin-top: 25px;
+  }
+
+
+
+  .golden-fox img {
+    width: 150px;
+    height: 50px;
   }
 
   .growth-desc {
@@ -3235,24 +3295,49 @@ h1 {
 
   .growth-percentage {
     width: 400px;
+    padding-bottom: 5px;
   }
 
   .growth-percentage h2 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .growth-percentage {
     font-size: 18px;
   }
 
+  .advertising-card img {
+    width: 576px;
+    height: auto;
+  }
+
+  .amazon-ppc-question {
+    max-width: 90rem;
+    min-height: 600px;
+    margin: 500px auto 0 auto;
+    padding: 0 220px;
+  }
+
+  .accordion {
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+
   .amazon-advertising-pricing {
     text-align: center;
+    max-width: 90rem;
+    margin: 146px auto 0 auto;
+  }
+
+  .amazon-advertising-pricing-img {
+    max-width: 90rem;
+    padding: 0 220px;
   }
 
   .amazon-advertising-pricing-text {
     position: absolute;
     top: 70px;
-    left: 280px;
+    left: 270px;
     margin-bottom: 40px;
   }
 
@@ -3305,5 +3390,307 @@ h1 {
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (max-width: 1439px) and (min-width: 1020px) {
+  .scalable-amazon {
+    font-size: 18px;
+  }
+
+  .scalable-amazon span {
+    font-size: 40px;
+  }
+  .hero-1 {
+    gap: 10px;
+    width: 50%;
+  }
+  .hero-1 p {
+    font-size: 12px;
+  }
+  .hero-2 {
+    width: 80%;
+  }
+  .hero-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .get-started-btn {
+    width: 170px;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 1px 2px 1px 7px;
+  }
+
+  .btn-arrow {
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  .reveneue-section {
+    margin: 0px;
+  }
+  .revenue-icon img {
+    width: 40px;
+    height: 40px;
+  }
+  .revenue-icon h1 {
+    font-size: 28px;
+  }
+
+  .item-list p {
+    font-size: 12px;
+  }
+  .item-list {
+    gap: 10px;
+  }
+
+  .listing-optimization {
+    margin: 60px auto 0 auto;
+  }
+
+  .listing-optimization h1 {
+    font-size: 36px;
+  }
+
+  .listing-optimization-desc h2 {
+    font-family: "Recoleta", serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+  }
+  .listing-optimization-desc h3 {
+    font-family: "Recoleta", serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+  }
+  .listing-optimization-desc p {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    margin-top: 20px;
+  }
+  .listing-optimization-img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .listing-optimization-desc {
+    height: 370px;
+    width: 350px;
+  }
+
+  .campaign-optimization-img,
+  .increase-sales-img,
+  .keyword-research-img,
+  .reduce-acos-img,
+  .weekly-reporting-img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .campaign-optimization-img img,
+  .increase-sales-img img,
+  .keyword-research-img img,
+  .reduce-acos-img img,
+  .weekly-reporting-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .lets-talk-btn {
+    width: 127px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 2px 2px 2px 7px;
+    border-radius: 32px;
+  }
+  .review-card-top {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* spacing between image and text */
+  }
+
+  .fake-review {
+    width: 100%;
+    height: 240px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 100px;
+    left: 0px; /* force card to stay left */
+  }
+
+  .fake-review-3 {
+    bottom: 160px;
+  }
+
+  .case-study-container-img {
+    position: relative;
+    right: 0 !important;
+    margin-left: 0;
+  }
+
+  .case-study-spacer {
+    height: auto;
+  }
+  /* .case-study-container {
+    width: 1000px;
+    height: 730px;
+  } */
+
+  /* .case-study-main-container {
+    height: 700px;
+  } */
+
+  .carousel-wrapper {
+    height: auto;
+  }
+  .case-study-container-img .case-study-img {
+    width: 80%;
+    height: 200px;
+    margin-left: 70px;
+    margin-right: 0;
+    margin-top: 25px;
+  }
+
+  .golden-fox img {
+    width: 150px;
+    height: 50px;
+  }
+
+  .growth-desc {
+    width: 400px;
+  }
+
+  .growth-percentage {
+    width: 400px;
+  }
+
+  .growth-percentage h2 {
+    font-size: 40px;
+  }
+
+  .growth-percentage {
+    font-size: 18px;
+  }
+
+  .amazon-ppc-card h1 {
+    font-size: 36px;
+  }
+
+  .amazon-ppc-card-stat h2 {
+    font-size: 48px;
+  }
+  .amazon-ppc-card-ratings {
+    gap: 10px;
+  }
+  .amazon-ppc-img img {
+    width: 400px;
+  }
+
+  .timeline-item {
+    height: 300px;
+  }
+
+  .amazon-advertising header h1 {
+    font-size: 40px;
+  }
+
+  .advertising-card img {
+    width: 376px;
+    height: auto;
+  }
+
+  .amazon-ppc-strategy {
+    position: absolute;
+    height: 560px;
+    bottom: -350px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #05214b 0%, #133c9f 40%, #194cc4 70%, #36abdb 100%);
+    border-radius: 20px;
+    z-index: 10;
+    margin-top: 253px;
+  }
+
+  .amazon-ppc-strategy h1 {
+    font-size: 38px;
+    padding: 30px;
+  }
+  .amazon-ppc-strategy-img {
+    position: relative;
+    height: 520px;
+    /* padding: 0 60px 60px 0px; */
+  }
+
+  .img-wrapper {
+    position: absolute;
+    top: -200px;
+    left: 60px;
+    right: 0;
+  }
+  .img-wrapper img {
+    width: 95%;
+    height: 520px;
+    overflow: hidden;
+    /* height:676px; */
+  }
+
+  .amazon-ppc-question {
+    max-width: 90rem;
+    min-height: 600px;
+    margin: 500px auto 0 auto;
+    padding: 0 220px;
+  }
+  .ppc-question-header h1 {
+    font-size: 40px;
+  }
+  .accordion-header h1 {
+    font-size: 26px;
+  }
+  .accordion-content p {
+    font-size: 16px;
+  }
+  .amazon-advertising-pricing {
+    text-align: center;
+    max-width: 90rem;
+    margin: 146px auto 0 auto;
+  }
+
+  .amazon-advertising-pricing-img {
+    max-width: 90rem;
+    padding: 0 220px;
+  }
+
+  .amazon-advertising-pricing-text {
+    position: absolute;
+    top: 70px;
+    left: 270px;
+    margin-bottom: 40px;
+  }
+
+  .amazon-advertising-pricing-header h1,
+  .amazon-advertising-pricing-content h1 {
+    font-size: 36px;
+  }
+
+  .amazon-advertising-pricing-header p,
+  .amazon-advertising-pricing-content h2 {
+    font-size: 18px;
+  }
+
+  .amazon-advertising-pricing-content p {
+    font-size: 16px;
+  }
+
+  .amazon-advertising-pricing-content button {
+    padding: 5px 10px;
+    font-size: 16px;
   }
 }
