@@ -4,7 +4,7 @@
 }
 
 .bg-blue {
-  background: url("../images/Desktop/card-bg.png");
+  background: url("../images/Desktop/card-bg-new.webp");
   background-size: 100%; /* Reduced from cover to 90% width and height */
   background-position: center;
   background-repeat: no-repeat;
@@ -233,9 +233,15 @@
   transform: scale(1.05);
   transform-origin: top center;
 }
+.panel__stack .panel__card:nth-child(5) {
+ top: calc(var(--spacer) * 1);
+  z-index: 5;
+  transform: scale(1.05);
+  transform-origin: top center;
+}
 .panel__stack .panel__card:last-child {
   top: calc(var(--spacer) * 1);
-  z-index: 5;
+  z-index: 6;
   transform: scale(1.05);
   transform-origin: top center;
 }
@@ -491,7 +497,7 @@
 
   /* ---------- BACKGROUNDS ---------- */
   .bg-blue {
-    background-image: url("../images/Desktop/card-bg.png");
+    background-image: url("../images/Desktop/card-bg-new.webp");
     background-size: contain;
     background-position: center;
   }
@@ -622,14 +628,14 @@
     max-width: 80%;
     height: auto;
   }
-  .panel__image,
+  /* .panel__image,
   .campaign-optimization-img,
   .increase-sales-img,
   .keyword-research-img,
   .reduce-acos-img,
   .weekly-reporting-img {
     left: 180px;
-  }
+  } */
 
   .listing-title-div {
     margin-top: 50px;
@@ -666,7 +672,7 @@
     margin-top: 100px;
   }
   .bg-blue {
-  background: url("../images/Desktop/card-bg.png");
+  background: url("../images/Desktop/card-bg-new.webp");
   background-size: contain;
   background-size: 100%; /* Reduced from cover to 90% width and height */
   background-position: center;
@@ -709,7 +715,7 @@
   .reduce-acos-img img,
   .weekly-reporting-img img {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
   }
 
   .panel__image,
@@ -726,6 +732,12 @@
     margin-top: 30px;
   }
 
+  .listing-optimization-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+  }
   .listing-optimization-desc-content {
     width: 80%;
   }
@@ -739,7 +751,7 @@
   }
 
   .lets-talk-btn {
-    margin-top: 60px;
+    /* margin-top: 60px; */
     padding-left: 6px;
     min-width: 110px;
     max-width: 150px;

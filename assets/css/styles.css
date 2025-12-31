@@ -75,7 +75,6 @@ h1 {
 }
 .first-container {
   padding: 110px 220px 0 220px;
-  padding: 110px 220px 0 220px;
   background: linear-gradient(to bottom, #1f3c5a 0%, #184f88 15%, #121921 25%, #121921 60%, #121921 100%);
 }
 
@@ -497,7 +496,7 @@ h1 {
   position: absolute;
   right: 0;
   top: 0;
-  width: 800px;
+  max-width: 800px;
   height: 800px;
   display: flex;
   align-items: end;
@@ -505,32 +504,32 @@ h1 {
   /* background: #000; */
 }
 .campaign-optimization-img img {
-  width: 700px;
-  height: 700px;
+  max-width: 700px;
+  max-height: 700px;
   object-fit: contain;
   object-position: center;
 }
 .increase-sales-img img {
-  width: 650px;
-  height: 650px;
+  max-width: 650px;
+  max-height: 650px;
   object-fit: contain;
   object-position: center;
 }
 .keyword-research-img img {
-  width: 850px;
-  height: 750px;
+  max-width: 850px;
+  max-height: 750px;
   object-fit: contain;
   object-position: center;
 }
 .reduce-acos-img img {
-  width: 700px;
-  height: 700px;
+  max-width: 700px;
+  max-height: 700px;
   object-fit: contain;
   object-position: center;
 }
 .weekly-reporting-img img {
-  width: 650px;
-  height: 650px;
+  max-width: 650px;
+  max-height: 650px;
   object-fit: contain;
   object-position: center;
 }
@@ -1651,7 +1650,7 @@ h1 {
 }
 
 /* MOBILE VERSION */
-@media (max-width: 640px) {
+@media (max-width: 767px) {
   .main-container {
     padding: 10px 0px;
     /* width: 100%; */
@@ -1924,7 +1923,7 @@ h1 {
     margin-bottom: 5px;
   }
   .case-study-header h2 {
-    font-size: 10px !important;
+    font-size: 20px !important;
   }
   .carousel-wrapper {
     width: 100%;
@@ -1943,6 +1942,10 @@ h1 {
     gap: 100px;
     width: 100%;
     transform: none !important; /* remove any desktop translateX */
+  }
+
+  .case-study-container-text {
+    width: 100%;
   }
 
   .case-study-container {
@@ -2123,7 +2126,7 @@ h1 {
   .amazon-container-header-mobile h1 {
     font-family: "Recoleta", serif;
     color: #082c6b;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: normal;
   }
   .amazon-container-header-mobile {
@@ -2243,7 +2246,7 @@ h1 {
     margin-top: 50px;
   }
   .amazon-keyword header h1 {
-    font-size: 20px;
+    font-size: 36px;
     font-weight: normal;
   }
   .amazon-keyword header p {
@@ -2433,7 +2436,7 @@ h1 {
     font-family: "Recoleta", serif;
     color: #082c6b;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 36px;
     margin-top: 20px;
   }
   .amazon-advertising header p {
@@ -2575,7 +2578,7 @@ h1 {
    TABLET VERSION (768px – 1024px)
    ================================ */
 /* ===== TABLET STYLES (768px – 1024px) ===== */
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1024px) and  (min-width: 768px) {
   /* General Padding & Layout */
 
   .amazon-section,
@@ -2714,7 +2717,7 @@ h1 {
   .keyword-research-img,
   .reduce-acos-img,
   .weekly-reporting-img {
-    width: 500px;
+    max-width: 500px;
     height: auto;
   }
 
@@ -2770,7 +2773,7 @@ h1 {
   .case-study-container-img .case-study-img {
     max-width: 400px;
     height: auto;
-    margin-left: 10px;
+    margin-left: 15%;
     margin-right: 0;
   }
 
@@ -2794,14 +2797,14 @@ h1 {
 
   .fake-review {
     padding: 20px 10px;
-    width: 100%;
-    left: 0;
+    width: 80%;
+    left: 5%;
     height: auto;
-    bottom: -20px;
+    bottom: -80%;
     gap: 5px;
   }
   .fake-review-3 {
-    bottom: -20px;
+    bottom: -80%;
   }
   .fake-review-img {
     width: 40px;
@@ -3171,7 +3174,7 @@ h1 {
   }
   .amazon-advertising-pricing-img img {
     width: 100%;
-    max-width: 800px;
+    max-width: 1800px;
     height: 440px;
   }
 }
@@ -3193,33 +3196,32 @@ h1 {
     object-fit: contain;
   }
 
-  /* .campaign-optimization-img,
+  .first-container {
+    padding: 110px 10% 0 10%;
+  }
+
+  .campaign-optimization-img,
   .increase-sales-img,
   .keyword-research-img,
   .reduce-acos-img,
   .weekly-reporting-img {
-    width: 400px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 60%;
+    height: auto;
+    bottom: 10%;
   }
 
   .campaign-optimization-img img {
-    width: 400px;
-    height: 400px;
+    max-width: 100%;
+    max-height: 60%;
     object-fit: contain;
     object-position: center;
-  } */
+  }
 
   .listing-optimization-desc {
-    width: 450px;
-    top: 80px;
-    left: 2%;
-    height: auto;
-    position: absolute;
-    transform: none;
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
     /* margin-bottom: 40px; */
   }
 
@@ -3237,17 +3239,17 @@ h1 {
   .review-card-top {
     display: flex;
     align-items: center;
-    gap: 15px; /* spacing between image and text */
+    gap: 15px;
   }
 
-  .fake-review {
+   .fake-review {
     width: 100%;
     height: 240px;
     padding: 10px 20px;
     border-radius: 20px;
     position: absolute;
     bottom: 100px;
-    left: 0px; /* force card to stay left */
+    left: 0px; 
   }
 
   .fake-review-3 {
@@ -3261,13 +3263,13 @@ h1 {
   }
 
   .case-study-spacer {
-    position: relative;
+    position: relative; 
     height: calc(100vh + 200vh);
   }
 
-  /* .case-study-main-container {
+   .case-study-main-container {
     height: 700px;
-  } */
+  } 
 
   .carousel-wrapper {
     position: sticky;
@@ -3283,6 +3285,9 @@ h1 {
   }
 
 
+  .amazon-section{
+    padding: 80px 10%;
+  }
 
   .golden-fox img {
     width: 150px;
@@ -3312,10 +3317,9 @@ h1 {
   }
 
   .amazon-ppc-question {
-    max-width: 90rem;
     min-height: 600px;
     margin: 500px auto 0 auto;
-    padding: 0 220px;
+    padding: 0 10%;
   }
 
   .accordion {
@@ -3331,7 +3335,7 @@ h1 {
 
   .amazon-advertising-pricing-img {
     max-width: 90rem;
-    padding: 0 220px;
+    padding: 0 10%;
   }
 
   .amazon-advertising-pricing-text {
@@ -3393,7 +3397,7 @@ h1 {
   }
 }
 
-@media (max-width: 1439px) and (min-width: 1020px) {
+@media (max-width: 1439px) and (min-width: 1024px) {
   .scalable-amazon {
     font-size: 18px;
   }
@@ -3484,14 +3488,14 @@ h1 {
     width: 350px;
   }
 
-  .campaign-optimization-img,
+  /* .campaign-optimization-img,
   .increase-sales-img,
   .keyword-research-img,
   .reduce-acos-img,
   .weekly-reporting-img {
-    width: 350px;
-    height: 350px;
-  }
+    width: 100%;
+    height: 100%;
+  } */
 
   .campaign-optimization-img img,
   .increase-sales-img img,
@@ -3517,23 +3521,23 @@ h1 {
   }
 
   .fake-review {
-    width: 100%;
-    height: 240px;
+    width: 80%;
+    height: 100%;
     padding: 10px 20px;
     border-radius: 20px;
     position: absolute;
-    bottom: 100px;
-    left: 0px; /* force card to stay left */
+    bottom: -50%;
+    left: 8%; /* force card to stay left */
   }
 
   .fake-review-3 {
-    bottom: 160px;
+    bottom: -40%;
   }
 
   .case-study-container-img {
     position: relative;
     right: 0 !important;
-    margin-left: 0;
+    margin-left: 20%;
   }
 
   .case-study-spacer {
@@ -3553,10 +3557,10 @@ h1 {
   }
   .case-study-container-img .case-study-img {
     width: 80%;
-    height: 200px;
+    height:30% ;
     margin-left: 70px;
     margin-right: 0;
-    margin-top: 25px;
+    margin-top: -5%;
   }
 
   .golden-fox img {
@@ -3625,30 +3629,31 @@ h1 {
   }
   .amazon-ppc-strategy-img {
     position: relative;
-    height: 520px;
+    max-height: 520px;
     /* padding: 0 60px 60px 0px; */
   }
 
   .img-wrapper {
     position: absolute;
-    top: -200px;
-    left: 60px;
+    top: -40%;
     right: 0;
   }
   .img-wrapper img {
-    width: 95%;
-    height: 520px;
+    max-width: 100%;
+    height: auto;
     overflow: hidden;
+    margin-top: 10%;
     /* height:676px; */
   }
 
-  .amazon-ppc-question {
+  /* .amazon-ppc-question {
     max-width: 90rem;
     min-height: 600px;
     margin: 500px auto 0 auto;
     padding: 0 220px;
-  }
+  } */
   .ppc-question-header h1 {
+    padding: 5% 0 2% 0;
     font-size: 40px;
   }
   .accordion-header h1 {
@@ -3665,13 +3670,13 @@ h1 {
 
   .amazon-advertising-pricing-img {
     max-width: 90rem;
-    padding: 0 220px;
+    padding: 0;
   }
 
   .amazon-advertising-pricing-text {
     position: absolute;
     top: 70px;
-    left: 270px;
+    left: 10%;
     margin-bottom: 40px;
   }
 
