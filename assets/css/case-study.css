@@ -1,0 +1,154 @@
+/* Parent container - provides scroll height */
+.sticky-parent {
+  height: 400vh;
+  position: relative;
+}
+
+/* Sticky container for title and cards */
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Fixed title at top */
+.case-study-titles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 20px 200px;
+}
+
+/* Horizontal scrolling container */
+.horizontal {
+  display: flex;
+  height: 100%;
+  gap: 40px;
+  padding: 0 120px;
+  padding-top: 150px;
+  width: max-content;
+  will-change: transform;
+  align-items: flex-start;
+}
+
+.case-study-container-1 {
+  margin-left: 90px;
+}
+
+@media (max-width: 900px) {
+  .sticky-parent {
+    margin-top: 0px;
+    margin-bottom:0px;
+  }
+  .case-study-titles {
+    padding: 20px 80px;
+  }
+  .horizontal {
+    padding: 100px 0 0 0;
+  }
+
+   .case-study-title h1 {
+    font-size: 2rem;
+  }
+
+  .case-study-title p {
+    font-size: 1rem;
+  }
+
+   .case-study-desc h1 {
+
+    font-size: 1.6rem;
+  }
+
+    .case-study-container-1,
+  .case-study-container-2,
+  .case-study-container-3 {
+    height: calc(100vh - 300px);
+    padding: 60px 20px;
+  }
+
+  .growth-percentage h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 620px) {
+  .sticky-parent {
+    margin-top: 20px;
+    margin-bottom: -150px;
+  }
+  .case-study-title {
+    padding: 60px 20px 40px;
+  }
+
+  .case-study-title h1 {
+    font-size: 2rem;
+  }
+
+  .case-study-title p {
+    font-size: 1rem;
+  }
+
+  .case-study-header {
+    max-width:450px;
+  }
+
+  .horizontal {
+    padding: 0 20px;
+    padding-top: 150px;
+    gap: 20px;
+  }
+
+  .case-study-desc h1 {
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 1rem;
+  }
+  .case-study-container-1 {
+    margin-left: 8px;
+  }
+  .case-study-container-1,
+  .case-study-container-2,
+  .case-study-container-3 {
+    min-width: 90vw !important;
+    height: calc(100vh - 240px);
+    padding: 30px 20px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .case-study-titles {
+    padding: 20px 80px;
+  }
+  .case-study-container-1 {
+    margin-left: 8px;
+  }
+
+  .horizontal {
+    padding: 150px 90px 0 90px;
+  }
+
+    .case-study-container-1,
+  .case-study-container-2,
+  .case-study-container-3 {
+    /* min-width: 90vw !important; */
+    height: calc(100vh - 240px);
+    /* padding: 30px 20px; */
+  }
+  .case-study-desc h1{
+    font-size: 1.6rem;
+  }
+  .growth-percentage h2 {
+    font-size: 1.8rem;
+  }
+  .sticky-parent{
+    margin-top: 80px;
+  }
+}
