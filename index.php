@@ -86,7 +86,7 @@
                             <h1>Reignite Your Bussiness With Our</h1>
 
                             <div class="panel__stack">
-                                <div class="panel__card panel__card--one text-white bg-purple ">
+                                <div class="panel__card panel__card--one text-white bg-blue ">
                                     <div class="listing-optimization-desc">
                                         <div class="listing-title-div">
                                             <img src="assets/images/Desktop/star.png" alt="">
@@ -94,10 +94,14 @@
                                         </div>
                                         <div class="listing-optimization-desc-content">
                                             <h3>An Enhanced Amazon <br> Listing Boosts Discoverability And Sales 4x</h3>
+                                            <h3 class="mobile-version">An Enhanced Amazon Listing Boosts Discoverability And Sales 4x</h3>
                                             <p>Optimized with powerful copy, keyword<br class="mobile-only-br"> integration, and backend enhancements.</p>
                                         </div>
 
                                         <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                                    </div>
+                                    <div class="listing-optimization-img">
+                                        <img src="assets/images/Desktop/card1.png" alt="">
                                     </div>
                                 </div>
 
@@ -109,6 +113,7 @@
                                         </div>
                                         <div class="listing-optimization-desc-content">
                                             <h3>We monitor and <br>Fine-tune bidding strategies</h3>
+                                            <h3 class="mobile-version">We monitor and Fine-tune bidding strategies</h3>
                                             <p>match types, and placements to optimize<br class="mobile-only-br"> every dollar spent on Amazon ads.</p>
                                         </div>
                                         <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
@@ -126,6 +131,7 @@
                                         </div>
                                         <div class="listing-optimization-desc-content">
                                             <h3>Scale your business with tailored campaign</h3>
+                                            <h3 class="mobile-version">Scale your business with tailored campaign</h3>
                                             <p>strategies that target the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth.</p>
                                         </div>
                                         <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
@@ -143,6 +149,7 @@
                                         </div>
                                         <div class="listing-optimization-desc-content">
                                             <h3>We uncover<br> Amazon search trends</h3>
+                                            <h3 class="mobile-version">We uncover Amazon search trends</h3>
                                             <p>to find profitable keywords, driving traffic and conversions through ranking,<br class="mobile-only-br"> More visibility, relevance, and return on ad spend.</p>
                                         </div>
                                         <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
@@ -159,6 +166,7 @@
                                         </div>
                                         <div class="listing-optimization-desc-content">
                                             <h3>Scale your business<br> with tailored campaign strategies that target</h3>
+                                            <h3 class="mobile-version">Scale your business with tailored campaign strategies that target</h3>
                                             <p>the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth..</p>
                                         </div>
                                         <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
@@ -175,6 +183,7 @@
                                         </div>
                                         <div class="listing-optimization-desc-content">
                                             <h3>We provide detailed<br> weekly PPC reports with actionable insights and clear metrics.</h3>
+                                            <h3 class="mobile-version">We provide detailed weekly PPC reports with actionable insights and clear metrics.</h3>
                                             <p>Know exactly how your ads are<br class="mobile-only-br"> performing</p>
                                         </div>
                                         <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
@@ -199,9 +208,9 @@
                 <h1>Case Study</h1>
                 <p>The Revenue Growth Story of Ecomclips</p>
             </div>
-            <div class="horizontal"> <!--Horizantal conatiner with display flex-->
+            <div class="horizontal">
 
-                <!--Content Start-->
+
                 <div class="case-study-container-1">
                     <div class="case-study-container-text">
                         <div class="case-study-header">
@@ -370,8 +379,10 @@
                         </div>
                         <div class="case-study-growth-image-container">
                             <div>
-                                <div class="case-study-desc">
-                                    <h1>&ldquo;150<span class="percentage">%</span> revenue increase over the 18 months&rdquo;</h1>
+                                <div class="case-study-descs">
+                                    <div>
+                                        <h1>&ldquo;150<span class="percentage">%</span> revenue increase over the 18 months&rdquo;</h1>
+                                    </div>
                                     <div class="case-study-line"></div>
                                 </div>
                                 <div class="growth-percentage">
@@ -439,12 +450,12 @@
 
                     </div>
                 </div>
-                <!--Content End-->
+
 
             </div>
         </div>
     </div>
-    <div style="height: 100px; width: 100vw;"></div> <!--Extra Scroll Space-->
+    <div style="height: 100px; width: 100vw;"></div>
     <!-- Amazon PPC -->
     <div class=" amazon-section">
         <div class="amazon-container">
@@ -875,198 +886,137 @@
     <script src="/assets/js/case-study-scroll.js"></script>
     <script src="./assets/js/amazon-section.js"></script>
 
+   
+
     <script>
         console.clear();
 
         let sm = gsap.matchMedia();
 
-        sm.add("(min-width: 330px)", () => {
-            gsap.registerPlugin(ScrollToPlugin);
+        sm.add({
+            isSmallMobile: "(max-width: 450px)",
+            isMobile: "(min-width: 451px) and (max-width: 767px)",
+            isTablet: "(min-width: 768px) and (max-width: 1023px)",
+            isLaptop: "(min-width: 1024px) and (max-width: 1537px)",
+            isDesktop: "(min-width: 1538px)",
+            reduceMotion: "(prefers-reduced-motion: reduce)"
+        }, (context) => {
+            let {
+                isSmallMobile,
+                isMobile,
+                isTablet,
+                isLaptop,
+                isDesktop,
+                reduceMotion
+            } = context.conditions;
 
-            /* CARD ANIMATION */
+            // Disable complex animations if user prefers reduced motion
+            if (reduceMotion) return;
 
-            const images = gsap.utils.toArray(".panel__card");
-            const listItems = gsap.utils.toArray(".panel__options span");
-            const endTime = 600 * images.length;
+            gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
+            const cards = gsap.utils.toArray(".panel__card");
+            if (cards.length === 0) return; // safety
+
+            const endTime = 600 * cards.length;
+
+            // Dynamically set stack height
             gsap.set(".panel__stack", {
                 height: () => {
                     const offset = 10;
-                    const cards = document.querySelectorAll(".panel__card");
                     const height = cards[0].offsetHeight;
-                    return height + cards.length * offset;
+                    return height + (cards.length - 1) * offset;
                 }
             });
+
+            // Responsive start offset
+            const startOffset = isSmallMobile ? "top 10px" :
+                isMobile ? "top 80%" :
+                isTablet ? "50% 60%" :
+                isLaptop ? "50% 55%" :
+                "50% 500px"; // Desktop
 
             let tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".panel",
-                    fastScrollEnd: true,
                     pin: true,
-                    start: "50% 520px",
-                    end: `'+=${endTime}px'`,
-                    pinSpacing: true,
                     scrub: 0.2,
-                    markers: false
+                    start: startOffset,
+                    end: `+=${endTime}px`,
+                    pinSpacing: true,
+                    fastScrollEnd: true,
+                    anticipatePin: 1,
+                    // markers: true, // uncomment for debugging
                 }
             });
 
-            // Set initial scales - Card 1 at normal size, others start bigger
+            // Initial card setup
             gsap.set(".panel__card--one", {
                 scale: 1,
                 transformOrigin: "top center"
             });
-            gsap.set([".panel__card--two", ".panel__card--three", ".panel__card--four", ".panel__card--five", ".panel__card--six"], {
+            gsap.set(".panel__card:not(.panel__card--one)", {
                 scale: 1.05,
                 transformOrigin: "top center"
             });
 
-            // First card border indicator
+            // Indicator for first card
             tl.set(".panel__options > span:nth-child(1)", {
                 borderBottom: "1px solid #667085"
             });
 
-            // SECOND CARD ANIMATION
-            tl.set(".panel__options > span:nth-child(1)", {
-                borderBottom: "1px solid transparent"
-            });
-
-            tl.set(".panel__options > span:nth-child(2)", {
-                borderBottom: "1px solid #667085"
-            });
-
-            // Card 2 slides in from bottom (slightly bigger at 1.05)
-            tl.from(".panel__card--two", {
-                y: () => window.innerHeight,
-                scale: 1.05,
-                duration: 1
-            });
-
-            // Card 2 scales down to fit perfectly with Card 1
-            tl.to(".panel__card--two", {
-                scale: 1,
-                duration: 0.5,
-                transformOrigin: "top center"
-            }, "-=0.5");
-
-            // THIRD CARD ANIMATION
-            tl.set(".panel__options > span:nth-child(2)", {
-                borderBottom: "1px solid transparent"
-            });
-
-            tl.set(".panel__options > span:nth-child(3)", {
-                borderBottom: "1px solid #667085"
-            });
-
-            // Card 3 slides in from bottom (slightly bigger at 1.05)
-            tl.from(".panel__card--three", {
-                y: () => window.innerHeight,
-                scale: 1.05,
-                duration: 1
-            });
-
-            // Card 3 scales down to fit perfectly with previous cards
-            tl.to(".panel__card--three", {
-                scale: 1,
-                duration: 0.5,
-                transformOrigin: "top center"
-            }, "-=0.5");
-
-            // FOURTH CARD ANIMATION
-            tl.set(".panel__options > span:nth-child(3)", {
-                borderBottom: "1px solid transparent"
-            });
-
-            tl.set(".panel__options > span:nth-child(4)", {
-                borderBottom: "1px solid #667085"
-            });
-
-            // Card 4 slides in from bottom (slightly bigger at 1.05)
-            tl.from(".panel__card--four", {
-                y: () => window.innerHeight,
-                scale: 1.05,
-                duration: 1
-            });
-
-            // Card 4 scales down to fit perfectly with all previous cards - creating unified appearance
-            tl.to(".panel__card--four", {
-                scale: 1,
-                duration: 0.5,
-                transformOrigin: "top center"
-            }, "-=0.5");
-
-            // five CARD ANIMATION
-            tl.set(".panel__options > span:nth-child(4)", {
-                borderBottom: "1px solid transparent"
-            });
-
-            tl.set(".panel__options > span:last-child", {
-                borderBottom: "1px solid #667085"
-            });
-
-            // Card 4 slides in from bottom (slightly bigger at 1.05)
-            tl.from(".panel__card--five", {
-                y: () => window.innerHeight,
-                scale: 1.05,
-                duration: 1
-            });
-
-            // Card 4 scales down to fit perfectly with all previous cards - creating unified appearance
-            tl.to(".panel__card--five", {
-                scale: 1,
-                duration: 0.5,
-                transformOrigin: "top center"
-            }, "-=0.5");
-
-            // SIXTH CARD ANIMATION
-tl.set(".panel__options > span:nth-child(5)", {
-  borderBottom: "1px solid transparent"
-});
-
-tl.set(".panel__options > span:nth-child(6)", {
-  borderBottom: "1px solid #667085"
-});
-
-tl.from(".panel__card--six", {
-  y: () => window.innerHeight,
-  scale: 1.05,
-  duration: 1
-});
-
-tl.to(".panel__card--six", {
-  scale: 1,
-  duration: 0.5,
-  transformOrigin: "top center"
-}, "-=0.5");
-
-
-            // Navigation function
-            function gotSeek(id) {
-                gsap.to(window, {
-                    duration: 0.3,
-                    scrollTo: {
-                        y: tl.scrollTrigger.labelToScroll(id) + 10
-                    },
-                    ease: Power2.easeOut
-                });
-                tl.tweenTo(id, {
-                    duration: 0.3,
-                    onComplete: function() {},
-                    ease: Power2.easeOut
-                });
+            // Helper to add card animation
+            function addCardAnimation(cardClass, indicatorFrom, indicatorTo) {
+                tl.set(indicatorFrom, {
+                        borderBottom: "1px solid transparent"
+                    })
+                    .set(indicatorTo, {
+                        borderBottom: "1px solid #667085"
+                    })
+                    .from(cardClass, {
+                        y: () => window.innerHeight,
+                        scale: 1.05,
+                        duration: 1
+                    })
+                    .to(cardClass, {
+                        scale: 1,
+                        duration: 0.5
+                    }, "-=0.5");
             }
 
-            const links = gsap.utils.toArray(".panel__options span");
+            // Add animations dynamically (cleaner than repeating)
+            addCardAnimation(".panel__card--two", ".panel__options > span:nth-child(1)", ".panel__options > span:nth-child(2)");
+            addCardAnimation(".panel__card--three", ".panel__options > span:nth-child(2)", ".panel__options > span:nth-child(3)");
+            addCardAnimation(".panel__card--four", ".panel__options > span:nth-child(3)", ".panel__options > span:nth-child(4)");
+            addCardAnimation(".panel__card--five", ".panel__options > span:nth-child(4)", ".panel__options > span:nth-child(5)");
+            addCardAnimation(".panel__card--six", ".panel__options > span:nth-child(5)", ".panel__options > span:nth-child(6)");
 
-            links.forEach((link) => {
-                link.addEventListener("click", () => {
-                    gotSeek(link.dataset.target);
+            // Navigation click to scroll
+            const navLinks = gsap.utils.toArray(".panel__options span");
+            navLinks.forEach(link => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const targetLabel = link.dataset.target;
+                    if (targetLabel && tl.scrollTrigger) {
+                        const scrollPos = tl.scrollTrigger.labelToScroll(targetLabel);
+                        gsap.to(window, {
+                            duration: 0.8,
+                            scrollTo: {
+                                y: scrollPos + 50,
+                                offsetY: 50
+                            },
+                            ease: "power2.out"
+                        });
+                    }
                 });
             });
+
+            // Cleanup on refresh/change
+            return () => {
+                navLinks.forEach(link => link.removeEventListener("click", () => {}));
+            };
         });
     </script>
-
-
 </body>
 
 </html>
