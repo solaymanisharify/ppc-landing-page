@@ -57,6 +57,7 @@ let currentIdx = 1;
 const dots = document.querySelectorAll(".dot");
 const mainImage = document.getElementById("timeline-main-image");
 const labels = document.querySelectorAll(".timeline-label");
+const fadeDivs = document.querySelectorAll(".fade-bottom-removeable");
 
 dots.forEach((dot) => {
   dot.addEventListener("click", () => {
@@ -70,17 +71,27 @@ dots.forEach((dot) => {
 
     document.querySelectorAll(".timeline-text").forEach((text) => {
       text.classList.remove("timeline-text-visible");
+      text.classList.remove("from-bottom");
+      text.classList.remove("from-top");
+    });
+
+    fadeDivs.forEach(div => {
+      // div.style.opacity = "1";
+      div.classList.remove("remove-fade-bottom");
     });
 
     labels.forEach((label) => label.classList.remove("timeline-label-active"));
 
     const targetId = dot.dataset.target;
     const activeContent = document.querySelector(`#${targetId} .timeline-text`);
+    const activeFade = document.querySelector(`#${targetId} .fade-bottom-removeable`);
     if (activeContent) {
       if (newIndex > currentIdx) activeContent.classList.add("from-bottom");
       else activeContent.classList.add("from-top");
       void activeContent.offsetHeight;
       activeContent.classList.add("timeline-text-visible");
+      // activeFade.style.opacity = "0";
+      activeFade.classList.add("remove-fade-bottom");
     }
 
     if (activeContent) activeContent.classList.add("timeline-text-visible");

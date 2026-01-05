@@ -40,7 +40,12 @@
   margin-left: 90px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 320px) {
+  .golden-fox img {
+    width: 130px;
+    height: 35px;
+  }
+
   .sticky-parent {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -62,15 +67,7 @@
   }
 
   .case-study-desc h1 {
-    font-size: 24px;
-  }
-  .golden-fox img {
-    width: 100px;
-    height: 40px;
-  }
-  .fake-review{
-    width: 100%;
-    left: 0;
+    font-size: 25px;
   }
 
   .case-study-container-1,
@@ -78,6 +75,171 @@
   .case-study-container-3 {
     height: calc(100vh - 200px);
     padding: 10px 30px;
+  }
+}
+
+@media (max-width: 375px) and (min-width: 321px) {
+  .golden-fox img {
+    width: 150px;
+    height: auto;
+  }
+
+  #woodland-logo {
+    width: 120px;
+    height: 80%;
+  }
+
+  .sticky-parent {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .case-study-titles {
+    padding: 20px 80px;
+  }
+  .horizontal {
+    padding: 100px 0 0 0;
+    gap: 20px;
+  }
+
+  .case-study-title h1 {
+    font-size: 2rem;
+  }
+
+  .case-study-title p {
+    font-size: 1rem;
+  }
+
+  .case-study-desc h1 {
+    font-size: 27px;
+  }
+
+  .case-study-container-1,
+  .case-study-container-2,
+  .case-study-container-3 {
+    height: calc(100vh - 200px);
+    padding: 10px 30px;
+  }
+
+}
+@media (max-width: 425px) and (min-width: 376px) {
+  .golden-fox img {
+    width: 150px;
+    height: auto;
+  }
+
+  #woodland-logo {
+    width: 120px;
+    height: 80%;
+  }
+
+  .sticky-parent {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .case-study-titles {
+    padding: 20px 80px;
+  }
+  .horizontal {
+    padding: 100px 0 0 0;
+    gap: 20px;
+  }
+
+  .case-study-title h1 {
+    font-size: 2rem;
+  }
+
+  .case-study-title p {
+    font-size: 1rem;
+  }
+
+  .case-study-desc h1 {
+    font-size: 32px;
+  }
+
+  .case-study-container-1,
+  .case-study-container-2,
+  .case-study-container-3 {
+    height: calc(100vh - 200px);
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 767px) and (min-width: 426px) {
+  .golden-fox img {
+    width: 150px;
+    height: auto;
+  }
+
+  #woodland-logo {
+    width: 120px;
+    height: 80%;
+  }
+
+  .sticky-parent {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .case-study-titles {
+    padding: 20px 80px;
+  }
+  .horizontal {
+    padding: 100px 0 0 0;
+    gap: 20px;
+  }
+
+  .case-study-title h1 {
+    font-size: 2rem;
+  }
+
+  .case-study-title p {
+    font-size: 1rem;
+  }
+
+  .case-study-desc h1 {
+    font-size: 32px;
+  }
+
+  .case-study-container-1,
+  .case-study-container-2,
+  .case-study-container-3 {
+    height: calc(100vh - 200px);
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+  .case-study-title {
+      padding: 20px 80px;
+      margin-bottom: 20px;
+  }
+
+  .horizontal {
+    padding: 0 14px;
+    padding-top: 125px;
+  }
+
+  .case-study-desc h1 {
+    font-size: 43px;
+  }
+
+  .case-study-container-1,
+  .case-study-container-2,
+  .case-study-container-3 {
+    height: calc(100vh - 200px);
+    padding: 10px 30px;
+  }
+
+  .golden-fox img {
+    width: 200px;
+    height: auto;
+  }
+
+  #woodland-logo {
+    width: 120px;
+    height: 80%;
+  }
+
+  .case-study-container-1 {
+      margin-left: 55px;
   }
 }
 
@@ -95,9 +257,9 @@
     font-size: 2rem;
   }
 
-  .case-study-title p {
+  /* .case-study-title p {
     font-size: 1rem;
-  }
+  } */
 
   .case-study-header {
     max-width: 450px;
@@ -113,12 +275,12 @@
     flex-wrap: wrap;
   }
 
-  .case-study-desc h1 {
+  /* .case-study-desc h1 {
     display: flex;
     flex-wrap: wrap;
 
     font-size: 30px;
-  }
+  } */
   .case-study-container-1 {
     margin-left: 8px;
   }
@@ -205,7 +367,7 @@
     /* padding: 0; */
   }
   .review-card-rating p {
-    font-size: 8px;
+    font-size: 9px;
   }
 
   .review-card-rating-img {
@@ -227,7 +389,7 @@
     margin: 5px 0 0 0;
   }
   .review-card-content p {
-    font-size: 10px;
+    font-size: 13px;
     text-align: left;
   }
 }

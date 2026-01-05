@@ -24,28 +24,32 @@
 </head>
 
 <body>
+    <!-- Hero section -->
+    <div class="hero-container">
+        <div class="hero-body container">
+            <div class="hero-1">
+                <button class="launch-dominate-btn">From Launch to Dominate</button>
+                <h1 class="scalable-amazon">Scalable Amazon Advertising <br> <span>Management</span></h1>
+                <p>
+                    At ecomclips, our Amazon PPC strategies are built for every stage from
+                    launch to market domination. No matter where you are in your journey, we
+                    help scale your brand profitably with data-driven, custom campaigns.
+                </p>
+                <button class="get-started-btn animation-btn">
+                    <span class="btn-text">Let's Go Further</span>
+                    <span class="btn-arrow">→</span>
+                </button>
+            </div>
+            <div class="hero-2">
+                <img src="assets/images/Mobile-version/product-presentation.png" alt="Hero Image" class="img-cover-mobile">
+                <img src="assets/images/Desktop/Cover.webp" alt="Hero Image" class="img-cover">
+            </div>
+        </div>
+    </div>
+    
     <!-- 1st section -->
     <div class="main-container">
         <div class="first-container">
-            <div class="hero-container container">
-                <div class="hero-1">
-                    <button class="launch-dominate-btn">From Launch to Dominate</button>
-                    <h1 class="scalable-amazon">Scalable Amazon Advertising <br> <span>Management</span></h1>
-                    <p>
-                        At ecomclips, our Amazon PPC strategies are built for every stage from
-                        launch to market domination. No matter where you are in your journey, we
-                        help scale your brand profitably with data-driven, custom campaigns.
-                    </p>
-                    <button class="get-started-btn animation-btn">
-                        <span class="btn-text">Let's Go Further</span>
-                        <span class="btn-arrow">→</span>
-                    </button>
-                </div>
-                <div class="hero-2">
-                    <img src="assets/images/Mobile-version/product-presentation.png" alt="Hero Image" class="img-cover-mobile">
-                    <img src="assets/images/Desktop/Cover.webp" alt="Hero Image" class="img-cover">
-                </div>
-            </div>
             <div class="reveneue-section container">
                 <div class="item-list">
                     <div class="item-list-1">
@@ -227,19 +231,19 @@
                                 </div>
                                 <div class="growth-percentage">
                                     <div>
-                                        <h2>237%</h2>
+                                        <h2>237<span>%</span></h2>
                                         <p>Increase in sales</p>
                                     </div>
                                     <div>
-                                        <h2>63%</h2>
+                                        <h2>63<span>%</span></h2>
                                         <p>ACOS Reduction</p>
                                     </div>
                                     <div>
-                                        <h2>19%</h2>
+                                        <h2>19<span>%</span></h2>
                                         <p>Increase in CVR</p>
                                     </div>
                                     <div>
-                                        <h2>26%</h2>
+                                        <h2>26<span>%</span></h2>
                                         <p>YOY Growth</p>
                                     </div>
                                 </div>
@@ -306,19 +310,19 @@
                                 </div>
                                 <div class="growth-percentage">
                                     <div>
-                                        <h2>254%</h2>
+                                        <h2>254<span>%</span></h2>
                                         <p>Increase in sales</p>
                                     </div>
                                     <div>
-                                        <h2>68%</h2>
+                                        <h2>68<span>%</span></h2>
                                         <p>ACOS Reduction</p>
                                     </div>
                                     <div>
-                                        <h2>13%</h2>
+                                        <h2>13<span>%</span></h2>
                                         <p>Increase in CVR</p>
                                     </div>
                                     <div>
-                                        <h2>36%</h2>
+                                        <h2>36<span>%</span></h2>
                                         <p>YOY Growth</p>
                                     </div>
                                 </div>
@@ -387,19 +391,19 @@
                                 </div>
                                 <div class="growth-percentage">
                                     <div>
-                                        <h2>337%</h2>
+                                        <h2>337<span>%</span></h2>
                                         <p>Increase in sales</p>
                                     </div>
                                     <div>
-                                        <h2>73%</h2>
+                                        <h2>73<span>%</span></h2>
                                         <p>ACOS Reduction</p>
                                     </div>
                                     <div>
-                                        <h2>16%</h2>
+                                        <h2>16<span>%</span></h2>
                                         <p>Increase in CVR</p>
                                     </div>
                                     <div>
-                                        <h2>25%</h2>
+                                        <h2>25<span>%</span></h2>
                                         <p>YOY Growth</p>
                                     </div>
                                 </div>
@@ -455,7 +459,7 @@
             </div>
         </div>
     </div>
-    <div style="height: 100px; width: 100vw;"></div>
+    <!-- <div style="height: 100px; width: 100vw;"></div> -->
     <!-- Amazon PPC -->
     <div class=" amazon-section">
         <div class="amazon-container">
@@ -649,23 +653,26 @@
                                     Use Broad match to cast a wide net and uncover high-potential search terms across your niche. Capture wide traffic and discover new keyword opportunities with Broad match targeting.
                                     View Details.
                                 </p>
+                                <div class="fade-bottom-removeable"></div>
                             </div>
                             <img src="assets/images/Desktop/Broad.webp" id="mobile-broad-img" class="timeline-image-mobile" data-target="content-broad" />
                             <div id="content-phrase" data-margin="55px 0 0 0">
                                 <h4 class="timeline-label timeline-label-active">Phrase</h2>
-                                    <p class="timeline-text">
-                                        Phrase match helps to connect with shoppers using relevant keyword sequences
-                                        for better performance. Great for intent-driven traffic and increasing ad
-                                        relevance.
-                                    </p>
+                                <p class="timeline-text timeline-text-visible">
+                                    Phrase match helps to connect with shoppers using relevant keyword sequences
+                                    for better performance. Great for intent-driven traffic and increasing ad
+                                    relevance.
+                                </p>
+                                <div class="fade-bottom-removeable remove-fade-bottom"></div>
                             </div>
 
                             <img src="assets/images/Mobile-version//Phrase.webp" id="mobile-phrase-img" class="timeline-image-mobile active" data-target="content-phrase" />
                             <div id="content-exact">
-                                <h4 class="timeline-label">exact</h4>
+                                <h4 class="timeline-label">Exact</h4>
                                 <p class="timeline-text">
                                     Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.
                                 </p>
+                                <div class="fade-bottom-removeable"></div>
                             </div>
                             <img id="mobile-exact-img" src="assets/images/Desktop/Exact.webp" id="mobile-exact-img" class="timeline-image-mobile" data-target="content-exact" />
                         </div>
@@ -894,7 +901,8 @@
         let sm = gsap.matchMedia();
 
         sm.add({
-            isSmallMobile: "(max-width: 450px)",
+            isExtraSmallMobile: "(max-width: 374px)",
+            isSmallMobile: "(max-width: 450px) and (min-width: 375px)",
             isMobile: "(min-width: 451px) and (max-width: 767px)",
             isTablet: "(min-width: 768px) and (max-width: 1023px)",
             isLaptop: "(min-width: 1024px) and (max-width: 1537px)",
@@ -902,6 +910,7 @@
             reduceMotion: "(prefers-reduced-motion: reduce)"
         }, (context) => {
             let {
+                isExtraSmallMobile,
                 isSmallMobile,
                 isMobile,
                 isTablet,
@@ -930,10 +939,11 @@
             });
 
             // Responsive start offset
-            const startOffset = isSmallMobile ? "top 10px" :
-                isMobile ? "top 80%" :
-                isTablet ? "50% 60%" :
-                isLaptop ? "50% 55%" :
+            const startOffset = isExtraSmallMobile ? "top 30%" :
+                isSmallMobile ? "top 10px" :
+                isMobile ? "90% 80%" :
+                isTablet ? "50% 55%" :
+                isLaptop ? "50% 40%" :
                 "50% 500px"; // Desktop
 
             let tl = gsap.timeline({
@@ -944,9 +954,10 @@
                     start: startOffset,
                     end: `+=${endTime}px`,
                     pinSpacing: true,
-                    fastScrollEnd: true,
-                    anticipatePin: 1,
-                    // markers: true, // uncomment for debugging
+                    // reverse:true,
+                    // fastScrollEnd: true,
+                    // anticipatePin: 1,
+                    markers: true, // uncomment for debugging
                 }
             });
 
