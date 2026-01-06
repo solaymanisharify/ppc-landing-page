@@ -67,7 +67,15 @@ dots.forEach((dot) => {
     dots.forEach((d) => d.classList.remove("active"));
     dot.classList.add("active");
 
-    mainImage.src = dot.dataset.image;
+    mainImage.classList.add("animate-out");
+
+    setTimeout(() => {
+      mainImage.src = dot.dataset.image;
+
+      mainImage.onload = () => {
+        mainImage.classList.remove("animate-out");
+      };
+    }, 400);
 
     document.querySelectorAll(".timeline-text").forEach((text) => {
       text.classList.remove("timeline-text-visible");
@@ -115,12 +123,12 @@ dots.forEach((dot) => {
       contentOffset = {
         broad: 24,
         phrase: 0,
-        exact: -80,
+        exact: -40,
       };
       dotOffset = {
         broad: 100,
-        phrase: 90,
-        exact: -80,
+        phrase: 35,
+        exact: -40,
       };
     } else if (width >= 768) {
       // tablet
@@ -207,7 +215,8 @@ dots.forEach((dot) => {
         exactImg.style.marginTop = "300px";
       }
     } else if (targetId === "content-exact") {
-      // document.getElementById('content-phrase').style.transform = `translateY(${contentOffset.exact * -1}px)`;
+      document.getElementById('content-phrase').style.transform = `translateY(${contentOffset.exact}px)`;
+      document.querySelector(".timeline-dot").style.transform = `translateY(${dotOffset.exact - 6}px)`;
       document.querySelector(".timeline-dot-3").style.transform = `translateY(${dotOffset.exact}px)`;
       document.getElementById("content-exact").style.transform = `translateY(${0}px)`;
       if (window.innerWidth < 640) {

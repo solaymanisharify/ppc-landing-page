@@ -3,11 +3,19 @@
   font-weight: 700;
 }
 
-.bg-blue {
+/* .bg-blue {
   background: url("../images/Desktop/card-bg-new.webp");
-  background-size: 100%; /* Reduced from cover to 90% width and height */
+  background-size: 100%; /* Reduced from cover to 90% width and height 
   background-position: center;
   background-repeat: no-repeat;
+} */
+
+.bg-blue {
+    background: url("../images/Desktop/card-bg-new.webp");
+    background-size: cover;
+    background-size: 100% 100%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
 }
 
 .optimization-container h1 {
@@ -190,12 +198,13 @@
 .panel__stack .panel__card {
   grid-area: 1/1/2/2/2;
   border-radius: 30px;
-  padding: 1rem;
+  padding: 4rem 2rem;
   position: absolute;
   height: 800px;
   width: 100%;
   will-change: transform;
   /* background: red; */
+  display: flex;
 }
 .panel__stack .panel__card:first-child {
   top: calc(var(--spacer) * 1);
@@ -204,7 +213,7 @@
 }
 .panel__stack .panel__card:nth-child(2) {
   top: calc(var(--spacer) * 1);
-  padding: 100px;
+  /* padding: 100px; */
   overflow: hidden;
   z-index: 2;
   transform: scale(1.05);
@@ -331,29 +340,71 @@
   background-color: #98d89c;
 }
 
-.listing-title-div {
-  margin-top: 30px;
+.listing-optimization-desc {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 4%; Moves content to the left side, like your screenshot */
+  /* transform: translateY(-50%); */
+  /* height: 650px; */
+
+  /* width: 575px; Text block width */
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px; /* The spacing between elements */
 }
+
+.listing-title-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* .listing-title-div {
+  margin-top: 30px;
+} */
 .panel__card {
   position: relative;
 }
 
-.listing-optimization-img,
-.campaign-optimization-img {
-  position: absolute;
-  right: 0;
-  /* top: 100px; */
-  bottom: 0;
-  right: 2px;
-  width: 50%;
-  height: 700px;
+.lets-talk-btn {
+  /* width: 28%; */
+  background: #ffdc00;
+  color: #000;
+  font-size: 14px;
+  font-family: "inter";
+  /* font-weight: 700; */
+  border: none;
+  padding: 6px 2px 6px 15px;
+  border: 2px solid #ffdc00;
+  border-radius: 32px;
+  cursor: pointer;
   display: flex;
-  align-items: end;
-  justify-content: end;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 55px;
+  border-radius: 10px;
 }
-.keyword-research-img, .increase-sales-img, .reduce-acos-img {
-  position: absolute;
+
+.listing-optimization-img,
+.campaign-optimization-img,
+.keyword-research-img, .increase-sales-img, .reduce-acos-img, .weekly-reporting-img {
+  /* position: absolute; */
+  /* right: 0; */
   /* top: 100px; */
+  /* bottom: 0; */
+  /* right: 2px; */
+  /* width: 50%; */
+  /* height: 700px; */
+  width: 60%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .keyword-research-img, .increase-sales-img, .reduce-acos-img {
+  position: absolute;
   bottom: 0;
   right: 2px;
   width: 70%;
@@ -361,11 +412,13 @@
   display: flex;
   align-items: end;
   justify-content: end;
-}
+} */
 
 .listing-optimization-img img,
 .campaign-optimization-img img,
 .increase-sales-img img,
+.reduce-acos-img img,
+.weekly-reporting-img img,
 .keyword-research-img img {
   width: 100%;
   height: 100%;
@@ -382,24 +435,26 @@
 ========================================================= */
 
 @media (max-width: 320px) {
-  .bg-blue {
+  /* .bg-blue {
     background-image: url("../images/Desktop/listing_opt_bg_mobile.png");
     background-size: cover;
     background-size: 100% 100%;
     background-position: center;
-  }
+  } */
 
   .panel {
     margin-top: 30px;
     padding: 0;
   }
   .panel__stack .panel__card {
-    height: 60vh;
-    padding: 20px;
+    min-height: 400px;
+    max-height: 470px;
+    padding: 30px 16px 0px;
+    flex-direction: column;
   }
 
   .optimization-container h1 {
-    font-size: 25px;
+    font-size: 16px;
   }
 
   .listing-optimization-desc-content h3 {
@@ -414,16 +469,23 @@
     max-width: 85%;
   }
 
-  .listing-optimization-img {
-    height: 320px;
-    bottom: 1rem;
+  .listing-optimization-desc {
     width: 100%;
-    /* left: -2px; */
-    /* right: 2px; */
+    justify-content: flex-start;
+    gap: 12px;
   }
-  .listing-title-div {
-    margin-top: 10px;
+
+  .listing-title-div img {
+    width: 18px;
+    height: 18px;
   }
+
+  .listing-optimization-img,
+  .campaign-optimization-img,
+  .keyword-research-img, .increase-sales-img, .reduce-acos-img, .weekly-reporting-img {
+    width: 100%;
+  }
+  
   .listing-title-div h2 {
     font-size: 16px;
   }
@@ -440,66 +502,67 @@
     width: 100%;
   }
   .lets-talk-btn {
-    padding: 2px 4px 2px 10px;
-    font-size: 15px;
-    margin-top: 0px;
-    width: 47%;
+    padding: 1px 3px 1px 10px;
+    /* font-size: 15px; */
+    margin-top: 8px;
+    /* border-radius: 10px; */
+    /* width: 47%; */
     justify-content: space-between;
+    margin-bottom: 18px;
   }
 
   .lets-talk-btn .btn-text {
     font-size: 14px;
   }
 
-  .panel__image,
-  .campaign-optimization-img,
-  .increase-sales-img,
-  .keyword-research-img,
-  .reduce-acos-img {
-    width: 95%;
-    top: 0;
-    right: 13px;
-  }
+  /* .panel__image, .campaign-optimization-img, .increase-sales-img, .keyword-research-img, .reduce-acos-img {
+    width: 100%;
+    height: auto;
+    top: 32%;
+    right: 0px;
+  } */
 
-  .weekly-reporting-img {
+  /* .weekly-reporting-img {
     bottom: 0;
     top: 40%;
     right: 1px;
     width: 100%;
-  }
+  } */
 
 
-  .panel__image img,
+  /* .panel__image img,
   .increase-sales-img img,
   .keyword-research-img img,
   .reduce-acos-img img,
   .weekly-reporting-img img {
     max-width: 95%;
-  }
-  .listing-optimization-desc {
+  } */
+  /* .listing-optimization-desc {
     margin-top: 0px;
-  }
+  } */
 }
 
 @media (max-width: 375px) and (min-width: 321px) {
-  .bg-blue {
+  /* .bg-blue {
     background-image: url("../images/Desktop/listing_opt_bg_mobile.png");
     background-size: cover;
     background-size: 100% 100%;
     background-position: center;
-  }
+  } */
 
   .panel {
     margin-top: 30px;
     padding: 0;
   }
   .panel__stack .panel__card {
-    height: 60vh;
-    padding: 20px;
+    min-height: 400px;
+    max-height: 470px;
+    padding: 30px 16px 0px;
+    flex-direction: column;
   }
 
   .optimization-container h1 {
-    font-size: 28px;
+    font-size: 16px;
   }
 
   .listing-optimization-desc-content h3 {
@@ -514,22 +577,39 @@
     max-width: 85%;
   }
 
-  .listing-title-div {
+  /* .listing-title-div {
     margin-top: 10px;
     padding-top: 10px;
+  } */
+
+  .listing-optimization-desc {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .listing-title-div img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .listing-optimization-img,
+  .campaign-optimization-img,
+  .keyword-research-img, .increase-sales-img, .reduce-acos-img, .weekly-reporting-img {
+    width: 100%;
   }
 
   .listing-title-div h2 {
     font-size: 20px;
   }
 
-  .listing-optimization-img {
+  /* .listing-optimization-img {
     height: 320px;
     width: 100%;
-  }
-  .listing-title-div {
+  } */
+  /* .listing-title-div {
     margin-top: 10px;
-  }
+  } */
   .listing-title-div h2 {
     font-size: 16px;
   }
@@ -546,61 +626,65 @@
     width: 100%;
   }
   .lets-talk-btn {
-    padding: 2px 4px 2px 10px;
-    font-size: 15px;
-    margin-top: 0px;
-    width: 47%;
+    padding: 1px 3px 1px 10px;
+    /* font-size: 15px; */
+    margin-top: 8px;
+    /* border-radius: 10px; */
+    /* width: 47%; */
     justify-content: space-between;
+    margin-bottom: 18px;
   }
 
   .lets-talk-btn .btn-text {
     font-size: 14px;
   }
 
-  .panel__image, .campaign-optimization-img, .increase-sales-img, .keyword-research-img, .reduce-acos-img {
+  /* .panel__image, .campaign-optimization-img, .increase-sales-img, .keyword-research-img, .reduce-acos-img {
     width: 98%;
     top: 35%;
     height: auto;
-  }
-  .weekly-reporting-img {
+  } */
+  /* .weekly-reporting-img {
     bottom: 0;
     top: 40%;
     right: 1px;
     width: 100%;
-  }
+  } */
 
 
-  .panel__image img,
+  /* .panel__image img,
   .increase-sales-img img,
   .keyword-research-img img,
   .reduce-acos-img img,
   .weekly-reporting-img img {
     max-width: 95%;
-  }
-  .listing-optimization-desc {
+  } */
+  /* .listing-optimization-desc {
     margin-top: 0px;
-  }
+  } */
 }
 @media (max-width: 425px) and (min-width: 376px) {
 
-  .bg-blue {
+  /* .bg-blue {
     background-image: url("../images/Desktop/listing_opt_bg_mobile.png");
     background-size: cover;
     background-size: 100% 100%;
     background-position: center;
-  }
+  } */
 
   .panel {
     margin-top: 30px;
     padding: 0;
   }
   .panel__stack .panel__card {
-    height: 60vh;
-    padding: 20px;
+    min-height: 400px;
+    max-height: 500px;
+    padding: 30px 16px 0px;
+    flex-direction: column;
   }
 
   .optimization-container h1 {
-    font-size: 33px;
+    font-size: 22px;
   }
 
   .listing-optimization-desc-content h3 {
@@ -615,22 +699,39 @@
     max-width: 85%;
   }
 
-  .listing-title-div {
+  /* .listing-title-div {
     margin-top: 10px;
     padding-top: 10px;
+  } */
+
+  .listing-optimization-desc {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .listing-title-div img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .listing-optimization-img,
+  .campaign-optimization-img,
+  .keyword-research-img, .increase-sales-img, .reduce-acos-img, .weekly-reporting-img {
+    width: 100%;
   }
 
   .listing-title-div h2 {
     font-size: 20px;
   }
 
-  .listing-optimization-img {
+  /* .listing-optimization-img {
     height: 320px;
     width: 100%;
-  }
-  .listing-title-div {
+  } */
+  /* .listing-title-div {
     margin-top: 10px;
-  }
+  } */
   
   .listing-optimization-desc-content h3 {
     display: none;
@@ -645,40 +746,43 @@
     width: 100%;
   }
   .lets-talk-btn {
-    padding: 2px 4px 2px 10px;
-    margin-top: 0px;
-    width: 38%;
+    padding: 1px 3px 1px 10px;
+    /* font-size: 15px; */
+    margin-top: 8px;
+    /* border-radius: 10px; */
+    /* width: 42%; */
     justify-content: space-between;
+    margin-bottom: 18px;
   }
 
   .lets-talk-btn .btn-text {
     font-size: 15px;
   }
 
-  .panel__image, .campaign-optimization-img, .increase-sales-img, .keyword-research-img, .reduce-acos-img {
+  /* .panel__image, .campaign-optimization-img, .increase-sales-img, .keyword-research-img, .reduce-acos-img {
     width: 98%;
     top: 35%;
     height: auto;
-  }
+  } */
 
-  .weekly-reporting-img {
+  /* .weekly-reporting-img {
     bottom: 0;
     top: 43%;
     right: 4px;
     width: 100%;
-  }
+  } */
 
 
-  .panel__image img,
+  /* .panel__image img,
   .increase-sales-img img,
   .keyword-research-img img,
   .reduce-acos-img img,
   .weekly-reporting-img img {
     max-width: 95%;
-  }
-  .listing-optimization-desc {
+  } */
+  /* .listing-optimization-desc {
     margin-top: 0px;
-  }
+  } */
 
 }
 @media (max-width: 768px) and (min-width: 426px) {
@@ -707,16 +811,23 @@
 
   /* ---------- CARDS BASE ---------- */
   .panel__stack .panel__card {
-    position: absolute !important;
+    /* position: absolute !important;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 90vh;
-    padding: 24px;
-    border-radius: 20px;
+    width: 100%; */
+    min-height: 72dvh;
+    max-height: 80dvh;
+    padding: 2.8rem 1.5rem 1.8rem;
+    /* flex-direction: column; */
+    /* border-radius: 20px;
 
     transform-origin: top center;
-    will-change: transform;
+    will-change: transform; */
+  }
+
+  .listing-optimization-desc {
+    width: 50%;
+    justify-content: flex-start;
   }
 
   /* ---------- STACK ORDER ---------- */
@@ -750,11 +861,11 @@
     width: 100%;
   }
 
-  .listing-title-div {
+  /* .listing-title-div {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
+  } */
 
   .listing-title-div h2 {
     font-size: 24px;
@@ -762,75 +873,83 @@
   }
 
   .optimization-container h1 {
-    font-size: 52px;
+    font-size: 5dvw;
   }
   .listing-optimization-desc-content h3 {
     font-size: 26px;
     line-height: 1.3;
     margin-bottom: 10px;
-    width: 60%;
   }
 
   .listing-optimization-desc-content p {
     font-size: 17px;
     line-height: 1.6;
-    width: 65%;
   }
 
-  .listing-optimization-desc {
+  /* .listing-optimization-desc {
     margin-top: 60px;
+  } */
+
+  .listing-optimization-img,
+  .campaign-optimization-img,
+  .keyword-research-img, 
+  .increase-sales-img, 
+  .reduce-acos-img, 
+  .weekly-reporting-img {
+    width: 50%;
+    align-items: flex-start;
   }
 
-  .listing-optimization-img {
-    bottom: 6%;
-    width: 63%;
+  .listing-optimization-img img, 
+  .campaign-optimization-img img, 
+  .increase-sales-img img, 
+  .reduce-acos-img img, 
+  .weekly-reporting-img img, 
+  .keyword-research-img img {
     height: auto;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-    right: 24%;
   }
 
-  .campaign-optimization-img {
+  /* .campaign-optimization-img {
       top: 40%;
-      /* max-width: 400px; */
+      /* max-width: 400px;
       width: 76%;
       height: auto;
       display: flex;
       align-items: end;
       justify-content: end;
       right: 13%;
-  }
+  } */
 
   /* ---------- IMAGES ---------- */
-  .panel__image, .increase-sales-img, .keyword-research-img, .reduce-acos-img, .weekly-reporting-img {
+  /* .panel__image, .increase-sales-img, .keyword-research-img, .reduce-acos-img, .weekly-reporting-img {
     position: absolute;
     top: 7%;
     right: 15%;
     text-align: center;
-  }
+  } */
 
-  .weekly-reporting-img {
+  /* .weekly-reporting-img {
     top: 58%;
     left: 16%;
     width: 68%;
-  }
+  } */
 
-  .panel__image img,
+  /* .panel__image img,
   .increase-sales-img img,
   .keyword-research-img img,
   .reduce-acos-img img,
   .weekly-reporting-img img {
     height: auto;
-  }
+  } */
 
   /* ---------- BUTTON ---------- */
   .lets-talk-btn {
     padding: 2px 4px 2px 10px;
     font-size: 15px;
     margin-top: 0px;
-    width: 22%;
+    /* width: 40%; */
     justify-content: space-between;
+    margin-bottom: 0px;
   }
 
   .lets-talk-btn .btn-text {
@@ -838,12 +957,12 @@
   }
 
   /* ---------- BACKGROUNDS ---------- */
-  .bg-blue {
+  /* .bg-blue {
     background-image: url("../images/Desktop/card-bg-new.webp");
     background-size: cover;
     background-size: 90% 90%;
     background-position: center;
-  }
+  } */
 
   .bg-purple {
     background-image: url("../images/Desktop/Listing-optimization.webp");
@@ -863,20 +982,20 @@
 ========================================================= */
 
 @media (max-width: 640px) and (min-width: 321px) {
-  .bg-blue {
+  /* .bg-blue {
     background-image: url("../images/Desktop/listing_opt_bg_mobile.png");
     background-size: cover;
     background-position: center;
-  }
+  } */
 
   .panel {
     margin-top: 30px;
     padding: 0;
   }
-  .panel__stack .panel__card {
-    height: 60vh;
+  /* .panel__stack .panel__card {
+    height: 80vh;
     padding: 20px;
-  }
+  } */
 
   .listing-optimization-desc-content h3 {
     font-size: 14px;
@@ -936,9 +1055,9 @@
   .weekly-reporting-img img {
     max-width: 100%;
   } */
-  .listing-optimization-desc {
+  /* .listing-optimization-desc {
     margin-top: 0px;
-  }
+  } */
 }
 /* ===============================
    LARGE DESKTOP (≤1440px)
@@ -952,10 +1071,10 @@
     max-width: 100%;
   }
 
-  .panel__stack .panel__card {
+  /* .panel__stack .panel__card {
     max-height: 720px;
     width: 100%;
-  }
+  } */
 
   .panel__content {
     width: 50%;
@@ -989,9 +1108,9 @@
     width: 60%;
   }
 
-  .listing-title-div {
+  /* .listing-title-div {
     margin-top: 50px;
-  }
+  } */
 
   .lets-talk-btn {
     margin-top: 50px;
@@ -1002,12 +1121,12 @@
   .listing-optimization-desc-content p {
     margin-top: 40px;
   }
-  .listing-optimization-desc {
+  /* .listing-optimization-desc {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 80%;
-  }
+  } */
 }
 
 /* ===============================
@@ -1022,13 +1141,13 @@
   .panel {
     margin-top: 100px;
   }
-  .bg-blue {
+  /* .bg-blue {
     background: url("../images/Desktop/card-bg-new.webp");
     background-size: contain;
-    background-size: 100%; /* Reduced from cover to 90% width and height */
+    background-size: 100%; /* Reduced from cover to 90% width and height
     background-position: center;
     background-repeat: no-repeat;
-  }
+  } */
 
 
 
@@ -1038,7 +1157,7 @@
   }
 
   .panel__stack .panel__card {
-    max-height: 500px;
+    /* max-height: 80dvh; */
   }
 
   .panel__stack .panel__card:nth-child(2) {
@@ -1053,39 +1172,39 @@
     width: 45%;
   }
 
-  .panel__image img,
+  /* .panel__image img,
   .keyword-research-img img,
   .reduce-acos-img img,
   .weekly-reporting-img img {
     max-width: 100%;
     max-height: 100%;
-  }
+  } */
 
   .campaign-optimization-img {
     /* left: 40%; */
     top: auto;
     height: 450px;
   }
-  .panel__image,
+  /* .panel__image,
   .weekly-reporting-img {
     left: 40%;
     top: 120px;
-  }
-  .panel__image,
+  } */
+  /* .panel__image,
   .reduce-acos-img {
     top: 0;
-  }
+  } */
 
-  .listing-title-div {
+  /* .listing-title-div {
     margin-top: 30px;
-  }
+  } */
 
-  .listing-optimization-desc {
+  /* .listing-optimization-desc {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 90%;
-  }
+  } */
   .listing-optimization-desc-content {
     width: 80%;
   }
@@ -1101,17 +1220,17 @@
   .lets-talk-btn {
     /* margin-top: 60px; */
     padding-left: 6px;
-    min-width: 125px;
-    max-width: 150px;
+    /* min-width: 125px;
+    max-width: 150px; */
   }
 
   .lets-talk-btn .btn-text {
     font-size: 15px;
   }
 
-  .listing-title-div {
+  /* .listing-title-div {
     margin-top: 55px;
-  }
+  } */
 
   .listing-optimization-desc-content p {
     margin-top: 40px;

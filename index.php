@@ -101,8 +101,10 @@
                                             <h3 class="mobile-version">An Enhanced Amazon Listing Boosts Discoverability And Sales 4x</h3>
                                             <p>Optimized with powerful copy, keyword<br class="mobile-only-br"> integration, and backend enhancements.</p>
                                         </div>
+                                        <div>
+                                            <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                                        </div>
 
-                                        <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
                                     </div>
                                     <div class="listing-optimization-img">
                                         <img src="assets/images/Desktop/card1.png" alt="">
@@ -120,7 +122,9 @@
                                             <h3 class="mobile-version">We monitor and Fine-tune bidding strategies</h3>
                                             <p>match types, and placements to optimize<br class="mobile-only-br"> every dollar spent on Amazon ads.</p>
                                         </div>
-                                        <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                                        <div>
+                                            <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                                        </div>
                                     </div>
                                     <div class="campaign-optimization-img">
                                         <img src="assets/images/Desktop/Campaign-optimization.png" alt="">
@@ -138,7 +142,9 @@
                                             <h3 class="mobile-version">Scale your business with tailored campaign</h3>
                                             <p>strategies that target the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth.</p>
                                         </div>
-                                        <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                                        <div>
+                                            <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                                        </div>
                                     </div>
                                     <div class="increase-sales-img">
                                         <img src="assets/images/Desktop/Increase-Sales.png" alt="">
@@ -156,7 +162,9 @@
                                             <h3 class="mobile-version">We uncover Amazon search trends</h3>
                                             <p>to find profitable keywords, driving traffic and conversions through ranking,<br class="mobile-only-br"> More visibility, relevance, and return on ad spend.</p>
                                         </div>
-                                        <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                                        <div>
+                                            <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                                        </div>
                                     </div>
                                     <div class="keyword-research-img">
                                         <img src="assets/images/Desktop/Keyword-research.png" alt="">
@@ -173,7 +181,9 @@
                                             <h3 class="mobile-version">Scale your business with tailored campaign strategies that target</h3>
                                             <p>the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth..</p>
                                         </div>
-                                        <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                                        <div>
+                                            <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                                        </div>
                                     </div>
                                     <div class="reduce-acos-img">
                                         <img src="assets/images/Desktop/Reduce-ACOS.png" alt="">
@@ -190,7 +200,9 @@
                                             <h3 class="mobile-version">We provide detailed weekly PPC reports with actionable insights and clear metrics.</h3>
                                             <p>Know exactly how your ads are<br class="mobile-only-br"> performing</p>
                                         </div>
-                                        <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                                        <div>
+                                            <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                                        </div>
                                     </div>
                                     <div class="weekly-reporting-img">
                                         <img src="assets/images/Desktop/weekly-reporting.png" alt="">
@@ -938,11 +950,14 @@
                 }
             });
 
+            const screenHeight = window.screen.height;
+            const h = window.screen.height;
+
             // Responsive start offset
-            const startOffset = isExtraSmallMobile ? "top 30%" :
-                isSmallMobile ? "top 10px" :
+            const startOffset = isExtraSmallMobile ? "top 30px" :
+                isSmallMobile ? "top 20px" :
                 isMobile ? "90% 80%" :
-                isTablet ? "50% 55%" :
+                isTablet ? "50% 67%" :
                 isLaptop ? "50% 40%" :
                 "50% 500px"; // Desktop
 
@@ -954,10 +969,9 @@
                     start: startOffset,
                     end: `+=${endTime}px`,
                     pinSpacing: true,
-                    // reverse:true,
-                    // fastScrollEnd: true,
-                    // anticipatePin: 1,
-                    markers: true, // uncomment for debugging
+                    fastScrollEnd: true,
+                    anticipatePin: 1,
+                    // markers: true, // uncomment for debugging
                 }
             });
 

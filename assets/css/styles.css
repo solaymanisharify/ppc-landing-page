@@ -92,8 +92,7 @@ h1 {
   background: linear-gradient(to bottom, #1f3c5a 12%, #184f88 36%, #121921 80%, #121921 90%, #121921 100%);
 }
 
-.hero-body{
-  max-width: 90rem;
+.hero-body {
   max-width: 90rem;
   display: flex;
   align-items: center;
@@ -216,6 +215,7 @@ h1 {
   align-items: center;
   justify-content: center;
   transition: background 0.3s ease;
+  margin-left: 8px;
 }
 
 .btn-arrow::before {
@@ -294,7 +294,8 @@ h1 {
   font-family: "Recoleta";
 }
 .scalable-amazon span {
-  font-size: 93px;
+  /* font-size: 93px; */
+  font-size: clamp(2.6rem, 5vw, 5.8125rem);
   font-weight: normal;
   background: linear-gradient(to bottom, white 0%, white 25%, #94c3ff 50%, #529dff 100%);
 
@@ -326,11 +327,14 @@ h1 {
 }
 .item-list {
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   gap: 20px;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(4, minmax(70px, 1fr));
+  text-align: center;
 }
 
 .item-list-2 img {
@@ -419,11 +423,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.listing-title-div {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+
 .listing-optimization-container {
   width: 100%;
   height: auto;
@@ -432,19 +432,7 @@ h1 {
   flex-direction: column;
   /* overflow-x: hidden; */
 }
-.listing-optimization-desc {
-  position: absolute;
-  top: 50%;
-  left: 4%; /* Moves content to the left side, like your screenshot */
-  transform: translateY(-50%);
-  height: 650px;
 
-  width: 575px; /* Text block width */
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 20px; /* The spacing between elements */
-}
 .listing-optimization-desc h2 {
   font-family: "Recoleta", serif;
   font-size: 44px;
@@ -464,11 +452,11 @@ h1 {
   color: white;
   margin-top: 20px;
 }
-.listing-optimization-img {
+/* .listing-optimization-img {
   width: 100%;
   object-fit: cover;
   display: block;
-}
+} */
 .listing-optimization-img-mobile {
   display: none;
 }
@@ -501,7 +489,7 @@ h1 {
   z-index: 10;
 }
 
-.campaign-optimization-img,
+/* .campaign-optimization-img,
 .keyword-research-img,
 .reduce-acos-img,
 .weekly-reporting-img {
@@ -513,8 +501,7 @@ h1 {
   display: flex;
   align-items: end;
   justify-content: end;
-  /* background: #000; */
-}
+} */
 /* .campaign-optimization-img img {
   max-width: 700px;
   max-height: 700px;
@@ -527,13 +514,13 @@ h1 {
   object-fit: contain;
   object-position: center;
 } */
-.keyword-research-img img {
+/* .keyword-research-img img {
   max-width: 850px;
   max-height: 750px;
   object-fit: contain;
   object-position: center;
-}
-.reduce-acos-img img {
+} */
+/* .reduce-acos-img img {
   max-width: 700px;
   max-height: 700px;
   object-fit: contain;
@@ -544,25 +531,8 @@ h1 {
   max-height: 650px;
   object-fit: contain;
   object-position: center;
-}
+} */
 
-.lets-talk-btn {
-  width: 177px;
-  background: #ffdc00;
-  color: #000;
-  font-size: 12px;
-  font-family: "inter";
-  /* font-weight: 700; */
-  border: none;
-  padding: 6px 2px 6px 15px;
-  border: 2px solid #ffdc00;
-  border-radius: 32px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 55px;
-}
 .lets-talk-btn img {
   width: 24px;
   height: auto;
@@ -784,7 +754,7 @@ h1 {
 .growth-desc p {
   color: #fff;
   opacity: 0.9;
-  font-family: 'SFProDisplay-test';
+  font-family: "SFProDisplay-test";
   font-size: 16px;
   font-weight: 300;
   padding-bottom: 20px;
@@ -794,7 +764,7 @@ h1 {
   background: #ffdc00;
   color: #000;
   font-size: 26px;
-  font-family: 'SFProDisplay-test';
+  font-family: "SFProDisplay-test";
   font-weight: 700;
   border: none;
   padding: 10px;
@@ -815,16 +785,16 @@ h1 {
   width: 100%;
 }
 .case-study-container-img .case-study-img {
-    width: 500px;
-    height: 236px;
-    object-fit: fill;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 8.6rem;
-    right: 5.8rem;
-    /* display: block; */
-    /* margin-right: 0px; */
-    /* margin: 0 0px 0 160px; */
+  width: 500px;
+  height: 236px;
+  object-fit: fill;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 8.6rem;
+  right: 5.8rem;
+  /* display: block; */
+  /* margin-right: 0px; */
+  /* margin: 0 0px 0 160px; */
 }
 
 .fake-review {
@@ -1032,10 +1002,19 @@ h1 {
   background: linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 0) 100%);
 }
 
+#content-broad .fade-bottom-removeable {
+  background: linear-gradient(to top, #fff 18%, rgba(255, 255, 255, 0) 100%);
+}
+#content-phrase .fade-bottom-removeable {
+  background: linear-gradient(to top, #fff 18%, rgba(255, 255, 255, 0) 100%);
+}
+#content-exact .fade-bottom-removeable {
+  background: linear-gradient(to top, #fff 30%, rgba(255, 255, 255, 0) 100%);
+}
+
 .remove-fade-bottom {
   display: none;
 }
-
 
 .amazon-ppc-content-text {
   margin-top: 43px;
@@ -1221,7 +1200,7 @@ h1 {
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10rem;
   margin-top: 40px;
   /* align-items: center; */
 }
@@ -1266,7 +1245,7 @@ h1 {
 .timeline-dot {
   position: absolute;
   left: 5px;
-  top: 85px;
+  top: 140px;
   width: 10px;
   height: 10px;
   background: black;
@@ -1275,14 +1254,14 @@ h1 {
   /* box-shadow: 0 0 16px 10px rgba(0, 100, 255, 1); */
 }
 
-.timeline-dot.active{
+/* .timeline-dot.active {
   top: 140px;
-}
+} */
 
 .timeline-dot-3 {
   position: absolute;
   left: 5px;
-  bottom: 48px;
+  bottom: 68px;
   width: 10px;
   height: 10px;
   background: black;
@@ -1295,7 +1274,7 @@ h1 {
 
 .timeline-content {
   padding-left: 40px;
-  width: 550px;
+  width: 100%;
 }
 
 .timeline-content > div {
@@ -1336,6 +1315,26 @@ h1 {
   transition: transform 0.6s ease;
   margin-top: 40px;
 }
+
+/* #timeline-main-image {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+#timeline-main-image.fade-out {
+  opacity: 0;
+} */
+
+#timeline-main-image {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#timeline-main-image.animate-out {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+
 
 /* #content-phrase.shifted {
   margin-top: 55px !important;
@@ -1700,7 +1699,6 @@ h1 {
   margin-top: 10px;
 }
 
-
 /* .timeline-content > div {
     opacity: 0.3;
     transition: opacity 0.3s ease;
@@ -1710,8 +1708,6 @@ h1 {
     opacity: 1;
 } */
 
-
-
 /* MOBILE VERSION */
 @media (max-width: 320px) {
   .main-container {
@@ -1719,7 +1715,7 @@ h1 {
   }
 
   .first-container {
-    padding: 0 30px;
+    padding: 0 16px;
     /* display: none; */
     background: none;
   }
@@ -1734,7 +1730,7 @@ h1 {
     /* width: 100vw; */
     padding: 0 40px;
   }
-  .hero-body{
+  .hero-body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1767,7 +1763,7 @@ h1 {
   }
 
   .scalable-amazon span {
-    font-size: 42px;
+    /* font-size: 42px; */
     line-height: 52px;
     text-align: left;
   }
@@ -1810,7 +1806,8 @@ h1 {
 
   .btn-arrow::before,
   .btn-arrow::after {
-    font-size: 14px; /* arrow size smaller */
+    font-size: 14px;
+    padding: 0px 0px 3px 0;
   }
 
   /* IMAGE SECTION (RIGHT SIDE) */
@@ -1838,27 +1835,27 @@ h1 {
   }
 
   .revenue-icon img {
-    width: 35px;
-    height: 35px;
+    width: 17px;
+    height: 17px;
   }
   .revenue-icon h1 {
-    font-size: 24px;
+    font-size: 18px;
   }
 
-  .item-list {
+  /* .item-list {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     text-align: center;
-  }
+  } */
 
   /* .item-list div {
     align-items: center;
   } */
 
   .item-list p {
-    font-size: 10px;
+    font-size: 6px;
   }
   .listing-optimization {
     padding: 20px 0px;
@@ -1868,10 +1865,7 @@ h1 {
     font-size: 18px;
     text-align: start;
   }
-  .listing-title-div img {
-    width: 20px;
-    height: 20px;
-  }
+
   .listing-title-div h2 {
     opacity: 0.9;
     color: white;
@@ -1886,7 +1880,7 @@ h1 {
     height: 600px;
     margin-top: 20px;
   }
-  .listing-optimization-desc {
+  /* .listing-optimization-desc {
     position: absolute;
     top: 0px;
     left: 4%;
@@ -1896,7 +1890,7 @@ h1 {
     margin-bottom: 0px;
     padding-bottom: 30px;
     gap: 10px;
-  }
+  } */
   .listing-optimization-desc h2 {
     font-size: 18px;
     text-align: start;
@@ -1910,14 +1904,14 @@ h1 {
     text-align: start;
     margin-top: 10px;
   }
-  .lets-talk-btn {
+  /* .lets-talk-btn {
     width: 100px;
     padding: 4px 5px;
     font-size: 10px;
     display: flex;
     align-items: center;
     margin-top: 20px;
-  }
+  } */
   .lets-talk-btn img {
     width: 15px;
     margin-top: 0px;
@@ -1931,22 +1925,21 @@ h1 {
     position: relative;
   }
 
-
-  .increase-sales-img,
+  /* .increase-sales-img,
   .keyword-research-img,
   .reduce-acos-img,
   .weekly-reporting-img {
     width: 300px;
     height: 300px;
-  }
+  } */
 
-  .reduce-acos-img img,
+  /* .reduce-acos-img img,
   .weekly-reporting-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: center;
-  }
+  } */
 
   .case-study {
     margin-top: 10px;
@@ -2332,7 +2325,7 @@ h1 {
   }
   .timeline {
     position: relative;
-    padding-left: 40px;
+    padding-left: 0px;
     height: 520px;
     flex-direction: column;
   }
@@ -2365,7 +2358,7 @@ h1 {
   .timeline-dot {
     position: absolute;
     left: 5px;
-    top: 70px;
+    top: 144px;
     width: 10px;
     height: 10px;
     background: black;
@@ -2385,7 +2378,7 @@ h1 {
 
   .timeline-content {
     padding-left: 40px;
-    max-width: 350px;
+    width: 100%;
     height: 100%;
   }
 
@@ -2408,13 +2401,6 @@ h1 {
   }
 
   .timeline-text {
-    display: block; /* IMPORTANT */
-    overflow: hidden;
-    opacity: 0;
-
-    -webkit-clip-path: inset(0 0 100% 0);
-    clip-path: inset(0 0 100% 0);
-
     transition: -webkit-clip-path 0.6s ease, clip-path 0.6s ease, opacity 0.4s ease;
   }
 
@@ -2671,7 +2657,7 @@ h1 {
     /* width: 100vw; */
     padding: 0 40px;
   }
-  .hero-body{
+  .hero-body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -2704,7 +2690,7 @@ h1 {
   }
 
   .scalable-amazon span {
-    font-size: 52px;
+    /* font-size: 52px; */
     line-height: 60px;
     text-align: left;
   }
@@ -2714,7 +2700,7 @@ h1 {
     margin-top: 7px;
     text-align: justify;
     color: rgb(182, 181, 181);
-}
+  }
 
   .get-started-btn {
     width: 160px; /* smaller button */
@@ -2775,27 +2761,27 @@ h1 {
   }
 
   .revenue-icon img {
-    width: 40px;
-    height: 40px;
+    width: 17px;
+    height: 17px;
   }
   .revenue-icon h1 {
-    font-size: 30px;
+    font-size: 18px;
   }
 
-  .item-list {
+  /* .item-list {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     text-align: center;
-  }
+  } */
 
   .item-list div {
     align-items: center;
   }
 
   .item-list p {
-    font-size: 11px;
+    font-size: 6px;
   }
   .listing-optimization {
     padding: 20px 0px;
@@ -2823,7 +2809,7 @@ h1 {
     height: 600px;
     margin-top: 20px;
   }
-  .listing-optimization-desc {
+  /* .listing-optimization-desc {
     position: absolute;
     top: 0px;
     left: 4%;
@@ -2833,7 +2819,7 @@ h1 {
     margin-bottom: 0px;
     padding-bottom: 30px;
     gap: 10px;
-  }
+  } */
   .listing-optimization-desc h2 {
     font-size: 18px;
     text-align: start;
@@ -2847,14 +2833,14 @@ h1 {
     text-align: start;
     margin-top: 10px;
   }
-  .lets-talk-btn {
+  /* .lets-talk-btn {
     width: 100px;
     padding: 4px 5px;
     font-size: 10px;
     display: flex;
     align-items: center;
     margin-top: 20px;
-  }
+  } */
   .lets-talk-btn img {
     width: 15px;
     margin-top: 0px;
@@ -2868,22 +2854,21 @@ h1 {
     position: relative;
   }
 
-
-  .increase-sales-img,
+  /* .increase-sales-img,
   .keyword-research-img,
   .reduce-acos-img,
   .weekly-reporting-img {
     width: 300px;
     height: 300px;
-  }
+  } */
 
-  .reduce-acos-img img,
+  /* .reduce-acos-img img,
   .weekly-reporting-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: center;
-  }
+  } */
 
   .case-study {
     margin-top: 10px;
@@ -2960,7 +2945,7 @@ h1 {
   .case-study-container-3 {
     width: 90vw;
   }
-  
+
   .case-study-growth-image-container {
     flex-direction: column;
   }
@@ -3295,7 +3280,7 @@ h1 {
   .timeline-dot {
     position: absolute;
     left: 5px;
-    top: 70px;
+    top: 144px;
     width: 10px;
     height: 10px;
     background: black;
@@ -3315,7 +3300,7 @@ h1 {
 
   .timeline-content {
     padding-left: 40px;
-    max-width: 350px;
+    width: 100%;
     height: 100%;
   }
 
@@ -3338,13 +3323,6 @@ h1 {
   }
 
   .timeline-text {
-    display: block; /* IMPORTANT */
-    overflow: hidden;
-    opacity: 0;
-
-    -webkit-clip-path: inset(0 0 100% 0);
-    clip-path: inset(0 0 100% 0);
-
     transition: -webkit-clip-path 0.6s ease, clip-path 0.6s ease, opacity 0.4s ease;
   }
 
@@ -3575,7 +3553,6 @@ h1 {
     padding: 2px 4px;
   }
   .amazon-advertising-pricing-img img {
-    width: 400px;
     height: 250px;
   }
 }
@@ -3601,7 +3578,7 @@ h1 {
     /* width: 100vw; */
     padding: 0 40px;
   }
-  .hero-body{
+  .hero-body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -3636,7 +3613,7 @@ h1 {
   }
 
   .scalable-amazon span {
-    font-size: 60px;
+    /* font-size: 60px; */
     line-height: 56px;
     text-align: left;
   }
@@ -3679,7 +3656,8 @@ h1 {
 
   .btn-arrow::before,
   .btn-arrow::after {
-    font-size: 14px; /* arrow size smaller */
+    font-size: 14px;
+    padding: 0 0 4px 0;
   }
 
   /* IMAGE SECTION (RIGHT SIDE) */
@@ -3707,26 +3685,27 @@ h1 {
   }
 
   .revenue-icon img {
-    height: 45px;
+    width: 17px;
+    height: 17px;
   }
   .revenue-icon h1 {
-    font-size: 35px;
+    font-size: 18px;
   }
 
-  .item-list {
+  /* .item-list {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     text-align: center;
-  }
+  } */
 
   .item-list div {
     align-items: center;
   }
 
   .item-list p {
-    font-size: 10px;
+    font-size: 7px;
   }
   .listing-optimization {
     padding: 20px 0px;
@@ -3736,14 +3715,14 @@ h1 {
     font-size: 18px;
     text-align: start;
   }
-  .listing-title-div img {
+  /* .listing-title-div img {
     width: 20px;
     height: 20px;
-  }
-  .listing-title-div h2 {
+  } */
+  /* .listing-title-div h2 {
     opacity: 0.9;
     color: white;
-  }
+  } */
   /* .listing-optimization-img {
     object-fit: cover;
     display: none;
@@ -3754,7 +3733,7 @@ h1 {
     height: 600px;
     margin-top: 20px;
   }
-  .listing-optimization-desc {
+  /* .listing-optimization-desc {
     position: absolute;
     top: 0px;
     left: 4%;
@@ -3764,11 +3743,11 @@ h1 {
     margin-bottom: 0px;
     padding-bottom: 30px;
     gap: 10px;
-  }
-  .listing-optimization-desc h2 {
+  } */
+  /* .listing-optimization-desc h2 {
     font-size: 18px;
     text-align: start;
-  }
+  } */
   .listing-optimization-desc h3 {
     font-size: 24px;
     text-align: start;
@@ -3778,14 +3757,14 @@ h1 {
     text-align: start;
     margin-top: 10px;
   }
-  .lets-talk-btn {
+  /* .lets-talk-btn {
     width: 100px;
     padding: 4px 5px;
     font-size: 10px;
     display: flex;
     align-items: center;
     margin-top: 20px;
-  }
+  } */
   .lets-talk-btn img {
     width: 15px;
     margin-top: 0px;
@@ -3799,22 +3778,21 @@ h1 {
     position: relative;
   }
 
-
-  .increase-sales-img,
+  /* .increase-sales-img,
   .keyword-research-img,
   .reduce-acos-img,
   .weekly-reporting-img {
     width: 300px;
     height: 300px;
-  }
+  } */
 
-  .reduce-acos-img img,
+  /* .reduce-acos-img img,
   .weekly-reporting-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: center;
-  }
+  } */
 
   .case-study {
     margin-top: 10px;
@@ -4233,7 +4211,7 @@ h1 {
   .timeline-dot {
     position: absolute;
     left: 5px;
-    top: 70px;
+    top: 144px;
     width: 10px;
     height: 10px;
     background: black;
@@ -4253,7 +4231,7 @@ h1 {
 
   .timeline-content {
     padding-left: 40px;
-    max-width: 350px;
+    width: 100%;
     height: 100%;
   }
 
@@ -4276,13 +4254,6 @@ h1 {
   }
 
   .timeline-text {
-    display: block; /* IMPORTANT */
-    overflow: hidden;
-    opacity: 0;
-
-    -webkit-clip-path: inset(0 0 100% 0);
-    clip-path: inset(0 0 100% 0);
-
     transition: -webkit-clip-path 0.6s ease, clip-path 0.6s ease, opacity 0.4s ease;
   }
 
@@ -4539,7 +4510,7 @@ h1 {
     /* width: 100vw; */
     padding: 0 40px;
   }
-  .hero-body{
+  .hero-body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -4574,7 +4545,7 @@ h1 {
   }
 
   .scalable-amazon span {
-    font-size: 60px;
+    /* font-size: 60px; */
     line-height: 56px;
     text-align: left;
   }
@@ -4604,10 +4575,10 @@ h1 {
   }
 
   .btn-arrow {
-    width: 28px; /* smaller circle */
+    width: 28px;
     height: 28px;
-    font-size: 14px;
-    padding: 0; /* inner padding smaller */
+    font-size: 15px;
+    padding: 0 0 3px 0px;
   }
 
   .get-started-btn::before {
@@ -4646,27 +4617,27 @@ h1 {
   }
 
   .revenue-icon img {
-    height: 40px;
-    width: 40px;
-}
+    height: 30px;
+    width: 30px;
+  }
   .revenue-icon h1 {
-    font-size: 35px;
+    font-size: 4vw;
   }
 
-  .item-list {
+  /* .item-list {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     text-align: center;
-  }
+  } */
 
   .item-list div {
     align-items: center;
   }
 
   .item-list p {
-    font-size: 12px;
+    font-size: 1.5vw;
     margin-top: 3px;
   }
 
@@ -4696,7 +4667,7 @@ h1 {
     height: 600px;
     margin-top: 20px;
   }
-  .listing-optimization-desc {
+  /* .listing-optimization-desc {
     position: absolute;
     top: 0px;
     left: 10%;
@@ -4706,7 +4677,7 @@ h1 {
     margin-bottom: 0px;
     padding-bottom: 30px;
     gap: 10px;
-  }
+  } */
   .listing-optimization-desc h2 {
     font-size: 18px;
     text-align: start;
@@ -4720,14 +4691,14 @@ h1 {
     text-align: start;
     margin-top: 10px;
   }
-  .lets-talk-btn {
+  /* .lets-talk-btn {
     width: 100px;
     padding: 4px 5px;
     font-size: 10px;
     display: flex;
     align-items: center;
     margin-top: 20px;
-  }
+  } */
   .lets-talk-btn img {
     width: 15px;
     margin-top: 0px;
@@ -4741,22 +4712,21 @@ h1 {
     position: relative;
   }
 
-
-  .increase-sales-img,
+  /* .increase-sales-img,
   .keyword-research-img,
   .reduce-acos-img,
   .weekly-reporting-img {
     width: 300px;
     height: 300px;
-  }
+  } */
 
-  .reduce-acos-img img,
+  /* .reduce-acos-img img,
   .weekly-reporting-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: center;
-  }
+  } */
 
   .case-study {
     margin-top: 10px;
@@ -5171,7 +5141,7 @@ h1 {
   .timeline-dot {
     position: absolute;
     left: 5px;
-    top: 70px;
+    top: 99px;
     width: 10px;
     height: 10px;
     background: black;
@@ -5191,7 +5161,7 @@ h1 {
 
   .timeline-content {
     padding-left: 40px;
-    max-width: 350px;
+    width: 100%;
     height: 100%;
   }
 
@@ -5214,14 +5184,7 @@ h1 {
   }
 
   .timeline-text {
-    display: block; /* IMPORTANT */
-    overflow: hidden;
-    opacity: 0;
-
-    -webkit-clip-path: inset(0 0 100% 0);
-    clip-path: inset(0 0 100% 0);
-
-    transition: -webkit-clip-path 0.6s ease, clip-path 0.6s ease, opacity 0.4s ease;
+   transition: -webkit-clip-path 0.6s ease, clip-path 0.6s ease, opacity 0.4s ease;
   }
 
   .timeline-text.from-top {
@@ -5520,7 +5483,7 @@ h1 {
   }
 
   .scalable-amazon span {
-    font-size: 48px;
+    /* font-size: 48px; */
   }
 
   /* Stats Section */
@@ -5538,9 +5501,9 @@ h1 {
   .item-list p {
     font-size: 12px;
   }
-  .item-list {
+  /* .item-list {
     gap: 10px;
-  }
+  } */
 
   /* Listing Optimization */
   .listing-optimization {
@@ -5552,7 +5515,7 @@ h1 {
     font-size: 40px;
   }
 
-  .listing-optimization-desc {
+  /* .listing-optimization-desc {
     width: 350px;
     top: 0px;
     left: 11%;
@@ -5560,7 +5523,7 @@ h1 {
     position: absolute;
     transform: none;
     margin-bottom: 40px;
-  }
+  } */
 
   .listing-optimization-desc h3 {
     font-size: 20px;
@@ -5581,38 +5544,37 @@ h1 {
     opacity: 0.9;
   }
 
-  .lets-talk-btn {
+  /* .lets-talk-btn {
     width: 100px;
     font-size: 12px;
     padding: 2px 3px;
-  }
+  } */
 
-  .listing-optimization-img {
+  /* .listing-optimization-img {
     height: 400px !important;
     max-width: 500px !important;
     margin-top: 20px;
     bottom: 35px !important;
-  }
+  } */
 
-  .increase-sales-img, .keyword-research-img, .reduce-acos-img, .weekly-reporting-img {
-    /* max-width: 500px; */
+  /* .increase-sales-img, .keyword-research-img, .reduce-acos-img, .weekly-reporting-img {
     height: auto !important;
     top: 40px;
     width: 56% !important;
-  }
+  } */
 
-  .reduce-acos-img img {
+  /* .reduce-acos-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     position: absolute;
     top: 25px;
-  }
+  } */
 
-  .weekly-reporting-img img {
+  /* .weekly-reporting-img img {
     width: 400px;
     height: auto;
-  }
+  } */
 
   /* Case Study */
   .case-study {
@@ -5772,8 +5734,8 @@ h1 {
 
   .growth-percentage {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-     width: 100%;
-     justify-content: space-between;
+    width: 100%;
+    justify-content: space-between;
   }
   .growth-desc {
     width: 100%;
@@ -5914,7 +5876,7 @@ h1 {
   .timeline-dot {
     position: absolute;
     left: 5px;
-    top: 70px;
+    top: 108px;
     width: 10px;
     height: 10px;
     background: black;
@@ -5925,7 +5887,7 @@ h1 {
   .timeline-dot-3 {
     position: absolute;
     left: 5px;
-    bottom: 0px;
+    bottom: 43px;
     width: 10px;
     height: 10px;
     background: black;
@@ -6082,7 +6044,7 @@ h1 {
   }
 
   .scalable-amazon span {
-    font-size: 60px;
+    /* font-size: 60px; */
   }
   .hero-1 {
     gap: 12px;
@@ -6097,14 +6059,14 @@ h1 {
     padding: 110px 10% 0 10%;
   }
 
-  .campaign-optimization-img,
+  /* .campaign-optimization-img,
   .keyword-research-img,
   .reduce-acos-img,
   .weekly-reporting-img {
     max-width: 60%;
     height: auto;
     bottom: 10%;
-  }
+  } */
 
   /* .campaign-optimization-img img {
     max-width: 100%;
@@ -6113,13 +6075,13 @@ h1 {
     object-position: center;
   } */
 
-  .listing-optimization-desc {
+  /* .listing-optimization-desc {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 90%;
-    /* margin-bottom: 40px; */
-  }
+    /* margin-bottom: 40px; 
+  } */
 
   .listing-optimization-desc h3 {
     font-size: 32px;
@@ -6129,9 +6091,9 @@ h1 {
     font-size: 20px;
   }
 
-  .lets-talk-btn {
+  /* .lets-talk-btn {
     margin-top: 45px;
-  }
+  } */
   .review-card-top {
     display: flex;
     align-items: center;
@@ -6279,7 +6241,7 @@ h1 {
   }
 
   .scalable-amazon span {
-    font-size: 40px;
+    /* font-size: 40px; */
   }
   .hero-1 {
     gap: 10px;
@@ -6323,9 +6285,9 @@ h1 {
   .item-list p {
     font-size: 12px;
   }
-  .item-list {
+  /* .item-list {
     gap: 10px;
-  }
+  } */
 
   .listing-optimization {
     margin: 60px auto 0 auto;
@@ -6354,15 +6316,15 @@ h1 {
     color: white;
     margin-top: 20px;
   }
-  .listing-optimization-img {
+  /* .listing-optimization-img {
     width: 100%;
     object-fit: cover;
     display: none;
-  }
-  .listing-optimization-desc {
+  } */
+  /* .listing-optimization-desc {
     height: 370px;
     width: 350px;
-  }
+  } */
 
   /* .campaign-optimization-img,
   .increase-sales-img,
@@ -6373,21 +6335,21 @@ h1 {
     height: 100%;
   } */
 
-  .keyword-research-img img,
+  /* .keyword-research-img img,
   .reduce-acos-img img,
   .weekly-reporting-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-  }
+  } */
 
-  .lets-talk-btn {
+  /* .lets-talk-btn {
     width: 127px;
     margin-bottom: 20px;
     font-size: 14px;
     padding: 2px 2px 2px 7px;
     border-radius: 32px;
-  }
+  } */
   .review-card-top {
     display: flex;
     align-items: center;
