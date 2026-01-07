@@ -651,6 +651,7 @@ h1 {
 .amazon-content-img {
   display: flex;
   width: 100%;
+  gap: 6rem;
 }
 .fade-top,
 .fade-bottom,
@@ -690,7 +691,7 @@ h1 {
 
 .amazon-ppc-content-text {
   margin-top: 43px;
-  width: 70%;
+  width: 90%;
 }
 .amazon-ppc-content p {
   font-size: 14px;
@@ -713,8 +714,8 @@ h1 {
 }
 
 .radial {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(11, 131, 254, 0.8) 0%, rgba(11, 131, 254, 0) 70%);
   position: absolute;
