@@ -98,7 +98,7 @@
                                         </div>
                                         <div class="listing-optimization-desc-content">
                                             <h3>An Enhanced Amazon <br> Listing Boosts Discoverability And Sales 4x</h3>
-                                            <h3 class="mobile-version">An Enhanced Amazon Listing Boosts Discoverability And Sales 4x</h3>
+                                            <!-- <h3 class="mobile-version">An Enhanced Amazon Listing Boosts Discoverability And Sales 4x</h3> -->
                                             <p>Optimized with powerful copy, keyword<br class="mobile-only-br"> integration, and backend enhancements.</p>
                                         </div>
                                         <div>
@@ -119,7 +119,7 @@
                                         </div>
                                         <div class="listing-optimization-desc-content">
                                             <h3>We monitor and <br>Fine-tune bidding strategies</h3>
-                                            <h3 class="mobile-version">We monitor and Fine-tune bidding strategies</h3>
+                                            <!-- <h3 class="mobile-version">We monitor and Fine-tune bidding strategies</h3> -->
                                             <p>match types, and placements to optimize<br class="mobile-only-br"> every dollar spent on Amazon ads.</p>
                                         </div>
                                         <div>
@@ -139,7 +139,7 @@
                                         </div>
                                         <div class="listing-optimization-desc-content">
                                             <h3>Scale your business with tailored campaign</h3>
-                                            <h3 class="mobile-version">Scale your business with tailored campaign</h3>
+                                            <!-- <h3 class="mobile-version">Scale your business with tailored campaign</h3> -->
                                             <p>strategies that target the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth.</p>
                                         </div>
                                         <div>
@@ -159,7 +159,7 @@
                                         </div>
                                         <div class="listing-optimization-desc-content">
                                             <h3>We uncover<br> Amazon search trends</h3>
-                                            <h3 class="mobile-version">We uncover Amazon search trends</h3>
+                                            <!-- <h3 class="mobile-version">We uncover Amazon search trends</h3> -->
                                             <p>to find profitable keywords, driving traffic and conversions through ranking,<br class="mobile-only-br"> More visibility, relevance, and return on ad spend.</p>
                                         </div>
                                         <div>
@@ -178,7 +178,7 @@
                                         </div>
                                         <div class="listing-optimization-desc-content">
                                             <h3>Scale your business<br> with tailored campaign strategies that target</h3>
-                                            <h3 class="mobile-version">Scale your business with tailored campaign strategies that target</h3>
+                                            <!-- <h3 class="mobile-version">Scale your business with tailored campaign strategies that target</h3> -->
                                             <p>the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth..</p>
                                         </div>
                                         <div>
@@ -197,7 +197,7 @@
                                         </div>
                                         <div class="listing-optimization-desc-content">
                                             <h3>We provide detailed<br> weekly PPC reports with actionable insights and clear metrics.</h3>
-                                            <h3 class="mobile-version">We provide detailed weekly PPC reports with actionable insights and clear metrics.</h3>
+                                            <!-- <h3 class="mobile-version">We provide detailed weekly PPC reports with actionable insights and clear metrics.</h3> -->
                                             <p>Know exactly how your ads are<br class="mobile-only-br"> performing</p>
                                         </div>
                                         <div>
@@ -236,7 +236,7 @@
                             </div>
                         </div>
                         <div class="case-study-growth-image-container">
-                            <div>
+                            <div class="case-study-growth-left-side">
                                 <div class="case-study-desc">
                                     <h1>&ldquo;Ecomclips Doubled Our Revenue!&rdquo;</h1>
                                     <div class="case-study-line"></div>
@@ -266,39 +266,41 @@
                                     <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
                                 </div>
                             </div>
-                            <div class="case-study-container-img">
-                                <img src="assets/images/Desktop/Review-copy.png" alt="Hero Image" class="case-study-img">
-                                <div class="fake-review">
-                                    <div class="review-card-top">
-                                        <div class="fake-review-img">
-                                            <img src="assets/images/Desktop/fake-critics.png" alt="Hero Image" class="">
-                                        </div>
-                                        <div>
-                                            <h1>James Hawken</h1>
-                                            <div class="review-card-rating">
-                                                <p>Golden Fox, USA</p>
-                                                <div class="review-card-rating-stars">
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                            <div class="case-study-container-img-body">
+                                <div class="case-study-container-img">
+                                    <img src="assets/images/Desktop/Review-copy.png" alt="Hero Image" class="case-study-img">
+                                    <div class="fake-review">
+                                        <div class="review-card-top">
+                                            <div class="fake-review-img">
+                                                <img src="assets/images/Desktop/fake-critics.png" alt="Hero Image" class="">
+                                            </div>
+                                            <div>
+                                                <h1>James Hawken</h1>
+                                                <div class="review-card-rating">
+                                                    <p>Golden Fox, USA</p>
+                                                    <div class="review-card-rating-stars">
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="review-card-content">
-                                        <p>Ecomclips are fantastic! Proffessional, effiecient, and always deliver high-quality work on time. They've helped streamline my e-commerce business and exceeded my expectations. Higly recommended!</p>
+                                        <div class="review-card-content">
+                                            <p>Ecomclips are fantastic! Proffessional, effiecient, and always deliver high-quality work on time. They've helped streamline my e-commerce business and exceeded my expectations. Higly recommended!</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -315,7 +317,7 @@
                             </div>
                         </div>
                         <div class="case-study-growth-image-container">
-                            <div>
+                            <div class="case-study-growth-left-side">
                                 <div class="case-study-desc">
                                     <h1>&ldquo;Ecomclips Has Been a God Sent To Us&rdquo;</h1>
                                     <div class="case-study-line"></div>
@@ -345,39 +347,41 @@
                                     <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
                                 </div>
                             </div>
-                            <div class="case-study-container-img">
-                                <img id="" src="assets/images/Desktop/woodland-cover.png" alt="Hero Image" class="case-study-img">
-                                <div class="fake-review">
-                                    <div class="review-card-top">
-                                        <div class="fake-review-img">
-                                            <img src="assets/images/Desktop/woodland-critic.png" alt="Hero Image" class="">
-                                        </div>
-                                        <div>
-                                            <h1>Max Davidson</h1>
-                                            <div class="review-card-rating">
-                                                <p>Woodland, USA</p>
-                                                <div class="review-card-rating-stars">
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                            <div class="case-study-container-img-body">
+                                <div class="case-study-container-img">
+                                    <img id="" src="assets/images/Desktop/woodland-cover.png" alt="Hero Image" class="case-study-img">
+                                    <div class="fake-review">
+                                        <div class="review-card-top">
+                                            <div class="fake-review-img">
+                                                <img src="assets/images/Desktop/woodland-critic.png" alt="Hero Image" class="">
+                                            </div>
+                                            <div>
+                                                <h1>Max Davidson</h1>
+                                                <div class="review-card-rating">
+                                                    <p>Woodland, USA</p>
+                                                    <div class="review-card-rating-stars">
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="review-card-content">
-                                        <p>Ecom has been a god sent to us, we were just giving money away to google and they came and got us profitable with our ads quickly most of all they have been patience with us when we have made mistakes and having serious issues with our old site. They are good people enjoyed growing with them.</p>
+                                        <div class="review-card-content">
+                                            <p>Ecom has been a god sent to us, we were just giving money away to google and they came and got us profitable with our ads quickly most of all they have been patience with us when we have made mistakes and having serious issues with our old site. They are good people enjoyed growing with them.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -394,11 +398,9 @@
                             </div>
                         </div>
                         <div class="case-study-growth-image-container">
-                            <div>
-                                <div class="case-study-descs">
-                                    <div>
-                                        <h1>&ldquo;150<span class="percentage">%</span> revenue increase over the 18 months&rdquo;</h1>
-                                    </div>
+                            <div class="case-study-growth-left-side">
+                                <div class="case-study-desc">
+                                    <h1>&ldquo;150<span class="percentage">%</span> revenue increase over the 18 months&rdquo;</h1>
                                     <div class="case-study-line"></div>
                                 </div>
                                 <div class="growth-percentage">
@@ -426,39 +428,41 @@
                                     <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
                                 </div>
                             </div>
-                            <div class="case-study-container-img">
-                                <img src="assets/images/Desktop/umbra.png" alt="Hero Image" class="case-study-img">
-                                <div class="fake-review fake-review-3">
-                                    <div class="review-card-top">
-                                        <div class="fake-review-img">
-                                            <img src="assets/images/Desktop/umbra-critic.png" alt="Hero Image" class="">
-                                        </div>
-                                        <div>
-                                            <h1>Marlyn Costello</h1>
-                                            <div class="review-card-rating">
-                                                <p>Umbra, USA</p>
-                                                <div class="review-card-rating-stars">
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                    </div>
-                                                    <div class="review-card-rating-img">
-                                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                            <div class="case-study-container-img-body">
+                                <div class="case-study-container-img">
+                                    <img src="assets/images/Desktop/umbra.png" alt="Hero Image" class="case-study-img">
+                                    <div class="fake-review">
+                                        <div class="review-card-top">
+                                            <div class="fake-review-img">
+                                                <img src="assets/images/Desktop/umbra-critic.png" alt="Hero Image" class="">
+                                            </div>
+                                            <div>
+                                                <h1>Marlyn Costello</h1>
+                                                <div class="review-card-rating">
+                                                    <p>Umbra, USA</p>
+                                                    <div class="review-card-rating-stars">
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
+                                                        <div class="review-card-rating-img">
+                                                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="review-card-content">
-                                        <p>We had the pleasure of working with Ecomclips for approximately 18 months. The Ecomclips team provided great guidance and continuously worked on their on their own for improved SKU opti-mization. We utilized their services for product listing, optimiza-tion, and advertising. We realized 150% revenue increase over the 18 months were worked with them.</p>
+                                        <div class="review-card-content">
+                                            <p>We had the pleasure of working with Ecomclips for approximately 18 months. The Ecomclips team provided great guidance and continuously worked on their on their own for improved SKU opti-mization. We utilized their services for product listing, optimiza-tion, and advertising. We realized 150% revenue increase over the 18 months were worked with them.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -473,6 +477,147 @@
     </div>
     <!-- <div style="height: 100px; width: 100vw;"></div> -->
     <!-- Amazon PPC -->
+
+    <div class="amazon-ppc-card-container">
+        <div class="amazon-ppc-card">
+            <div class="amazon-ppc-card-header">
+                <h1>Helping ambitious sellers <span>grow <br> smarter</span>, since 2010.</h1>
+            </div>
+            <div class="amazon-ppc-card-stat">
+                <div>
+                    <h2>81<span class="percentage">%</span></h2>
+                    <p>Average Year Over Year Profit Growth For Our Partners</p>
+                </div>
+                <span class="amazon-ppc-card-stat-line"></span>
+                <div>
+                    <h2>12</h2>
+                    <p>Industry Awards & Recognitions</p>
+                </div>
+                <span class="amazon-ppc-card-stat-line"></span>
+                <div>
+                    <h2>$1.1B+</h2>
+                    <p>Revenue Managed Across Marketplaces</p>
+                </div>
+                <span class="amazon-ppc-card-stat-line"></span>
+                <div>
+                    <h2>98.7<span class="percentage">%</span></h2>
+                    <p>Client Retention Rate</p>
+                </div>
+            </div>
+            <div class="amazon-ppc-card-ratings">
+                <div class="amazon-ppc-card-ratings-card">
+                    <div class="amazon-ppc-card-ratings-img">
+                        <img src="assets/images/Desktop/trustpilot-logo.png" alt="">
+                    </div>
+                    <div class="amazon-ppc-card-ratings-stars">
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <p>4.9 Stars | 141 Ratings</p>
+                    </div>
+                </div>
+
+                <div class="amazon-ppc-card-ratings-card">
+                    <div class="amazon-ppc-card-ratings-img">
+                        <img src="assets/images/Desktop/clutch-logo.png" alt="">
+                    </div>
+                    <div class="amazon-ppc-card-ratings-stars">
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <p>4.9 Stars | 24 Ratings</p>
+                    </div>
+                </div>
+                <div class="amazon-ppc-card-ratings-card">
+                    <div class="amazon-ppc-card-ratings-img">
+                        <img src="assets/images/Desktop/google-logo.png" alt="">
+                    </div>
+                    <div class="amazon-ppc-card-ratings-stars">
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/half-star.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <p>4.7 Stars | 116 Ratings</p>
+                    </div>
+                </div>
+                <div class="amazon-ppc-card-ratings-card">
+                    <div class="amazon-ppc-card-ratings-img">
+                        <img src="assets/images/Desktop/Upwork-logo.png" alt="">
+                    </div>
+                    <div class="amazon-ppc-card-ratings-stars">
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                        <div class="amazon-ppc-card-star-img">
+                            <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                        </div>
+                    </div>
+                    <div class="amazon-ppc-card-ratings-description">
+                        <div>
+                            <p>100% Job Success</p>
+                        </div>
+                        <div>
+                            <p>|</p>
+                        </div>
+                        <div>
+                            <p>Top Rated</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="amazon-ppc-card-bg"></div>
+    </div>
     <div class=" amazon-section">
         <div class="amazon-container">
             <div class="amazon-container-header">
@@ -480,143 +625,6 @@
                 <h3>Custom Strategies to our Growth</h3>
             </div>
             <div class="amazon-ppc">
-                <div class="amazon-ppc-card">
-                    <div class="amazon-ppc-card-header">
-                        <h1>Helping ambitious sellers <span>grow <br> smarter</span>, since 2010.</h1>
-                    </div>
-                    <div class="amazon-ppc-card-stat">
-                        <div>
-                            <h2>81<span class="percentage">%</span></h2>
-                            <p>Average Year Over Year Profit Growth For Our Partners</p>
-                        </div>
-                        <span class="amazon-ppc-card-stat-line"></span>
-                        <div>
-                            <h2>12</h2>
-                            <p>Industry Awards & Recognitions</p>
-                        </div>
-                        <span class="amazon-ppc-card-stat-line"></span>
-                        <div>
-                            <h2>$1.1B+</h2>
-                            <p>Revenue Managed Across Marketplaces</p>
-                        </div>
-                        <span class="amazon-ppc-card-stat-line"></span>
-                        <div>
-                            <h2>98.7<span class="percentage">%</span></h2>
-                            <p>Client Retention Rate</p>
-                        </div>
-                    </div>
-                    <div class="amazon-ppc-card-ratings">
-                        <div class="amazon-ppc-card-ratings-card">
-                            <div class="amazon-ppc-card-ratings-img">
-                                <img src="assets/images/Desktop/trustpilot-logo.png" alt="">
-                            </div>
-                            <div class="amazon-ppc-card-ratings-stars">
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                            </div>
-                            <div>
-                                <p>4.9 Stars | 141 Ratings</p>
-                            </div>
-                        </div>
-
-                        <div class="amazon-ppc-card-ratings-card">
-                            <div class="amazon-ppc-card-ratings-img">
-                                <img src="assets/images/Desktop/clutch-logo.png" alt="">
-                            </div>
-                            <div class="amazon-ppc-card-ratings-stars">
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                            </div>
-                            <div>
-                                <p>4.9 Stars | 24 Ratings</p>
-                            </div>
-                        </div>
-                        <div class="amazon-ppc-card-ratings-card">
-                            <div class="amazon-ppc-card-ratings-img">
-                                <img src="assets/images/Desktop/google-logo.png" alt="">
-                            </div>
-                            <div class="amazon-ppc-card-ratings-stars">
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/half-star.png" alt="">
-                                </div>
-                            </div>
-                            <div>
-                                <p>4.7 Stars | 116 Ratings</p>
-                            </div>
-                        </div>
-                        <div class="amazon-ppc-card-ratings-card">
-                            <div class="amazon-ppc-card-ratings-img">
-                                <img src="assets/images/Desktop/Upwork-logo.png" alt="">
-                            </div>
-                            <div class="amazon-ppc-card-ratings-stars">
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                                <div class="amazon-ppc-card-star-img">
-                                    <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                </div>
-                            </div>
-                            <div class="amazon-ppc-card-ratings-description">
-                                <div>
-                                    <p>100% Job Success</p>
-                                </div>
-                                <div>
-                                    <p>|</p>
-                                </div>
-                                <div>
-                                    <p>Top Rated</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="amazon-content-img">
                     <div class="amazon-container-header-mobile">
                         <h1>Amazon PPC for Every Phase</h1>
@@ -678,7 +686,7 @@
                                 <div class="fade-bottom-removeable remove-fade-bottom"></div>
                             </div>
 
-                            <img src="assets/images/Mobile-version//Phrase.webp" id="mobile-phrase-img" class="timeline-image-mobile active" data-target="content-phrase" />
+                            <img src="assets/images/Mobile-version/Phrase.webp" id="mobile-phrase-img" class="timeline-image-mobile active" data-target="content-phrase" />
                             <div id="content-exact">
                                 <h4 class="timeline-label">Exact</h4>
                                 <p class="timeline-text">
@@ -957,7 +965,7 @@
             const startOffset = isExtraSmallMobile ? "top 30px" :
                 isSmallMobile ? "top 20px" :
                 isMobile ? "90% 80%" :
-                isTablet ? "50% 67%" :
+                isTablet ? "50% 55%" :
                 isLaptop ? "50% 40%" :
                 "50% 500px"; // Desktop
 

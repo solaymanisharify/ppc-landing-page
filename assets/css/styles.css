@@ -551,24 +551,8 @@ h1 {
   width: 90rem;
   margin-bottom: 40px;
 }
-.case-study-title h1 {
-  font-family: "Recoleta";
-  font-size: 48px;
-  font-weight: 300;
-  background: linear-gradient(to bottom, #a0b6fd 0%, #7aa9fd 40%, #559dfd 60%, #1f8afd 100%);
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 0;
-}
-.case-study-title p {
-  font-family: "SF-Pro-Desplay";
-  font-size: 24px;
-  font-weight: 300;
-  color: white;
-  margin-top: 0;
-  opacity: 0.9;
-}
+
 .case-study-spacer {
   height: calc(100vh + 70vh); /* scroll length */
 }
@@ -607,334 +591,22 @@ h1 {
   flex-shrink: 0;
   height: 80%;
 }
-.case-study-container-1,
-.case-study-container-2,
-.case-study-container-3 {
-  width: 100%;
-  position: relative;
-  /* height: 650px !important; */
-  gap: 20px;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to right, #05214b 0%, #133c9f 40%, #194cc4 70%, #36abdb 100%);
-  padding: 40px;
-  border-radius: 30px;
-  /* overflow: hidden; */
-  /* border-left:3px solid #526685;
-  border-top:3px solid #526685; */
-}
-/* .case-study-img {
-  width: 100px;
-  margin-top: 100px;
-} */
 
-.case-study-container-1::before,
-.case-study-container-2::before,
-.case-study-container-3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 55%;
-  height: 55%;
-  pointer-events: none;
-  border-radius: 30px 0 0 0; /* Only round the top-left corner */
 
-  border-top: 3px solid #526685;
-  border-left: 3px solid #526685;
 
-  /* Create the fade effect with mask */
-  mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
-  mask-composite: intersect;
-  mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
-  mask-composite: intersect;
-  -webkit-mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
-  -webkit-mask-composite: source-in;
-}
 
-.case-study-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  background: linear-gradient(to bottom, #fafbff 0%, #d8fcff 40%, #c3fdff 60%, #8affff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 23px;
-  margin-bottom: 0px;
-}
-.case-study-header {
-  font-family: "Recoleta";
-  font-weight: 300;
-}
-.case-study-header h2 {
-  font-size: 23px;
-  font-weight: 400;
-}
-.case-study-desc h2 {
-  background: linear-gradient(to bottom, #fff 0%, #86d3db 40%, #1cd3d9 40%, #1cd3d9 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 0;
-}
-.case-study-desc h1 {
-  color: #fafbff;
-  opacity: 0.9;
-  font-family: "Recoleta", serif;
-  font-size: 48px;
-  font-weight: 300;
-  margin: 0;
-  width: 466px;
-  line-height: 96%;
-  letter-spacing: 0px;
-}
-.case-study-descs h1 {
-  color: #fafbff;
-  opacity: 0.9;
-  font-family: "Recoleta", serif;
-  /* font-size: 36px; */
-  font-weight: 300;
-}
-.case-study-line {
-  width: 347px;
-  height: 2px;
-  background: #d9d9d9;
-  opacity: 49%;
-  margin: 10px 0px;
-}
-.golden-fox img {
-  width: auto;
-  height: 50px;
-}
-.case-study-container-text {
-  width: 70vw;
-  padding-right: 20px;
-}
-.case-study-growth-image-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.growth-percentage {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding-bottom: 20px;
-  width: 466px;
-}
-.growth-percentage div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin: 20px 0px;
-}
-.growth-percentage h2 {
-  background: linear-gradient(to bottom, #41d3d9 0%, #38bfe3 40%, #2da9ee 60%, #1f8afd 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Recoleta";
-  font-size: 48px;
-  font-weight: 200;
-  margin-bottom: 0px;
-  line-height: 100%;
-}
 
-.growth-percentage h2 span {
-  font-family: "Poppins";
-  font-weight: 400;
-}
-.growth-percentage p {
-  margin: 0;
-  color: #fff;
-  font-family: "Recoleta-bold";
-  font-size: 21px;
-  font-weight: 100;
-}
-.growth-desc {
-  width: 466px;
-}
-.growth-desc p {
-  color: #fff;
-  opacity: 0.9;
-  font-family: "SFProDisplay-test";
-  font-size: 16px;
-  font-weight: 300;
-  padding-bottom: 20px;
-}
-.our-impact-btn button {
-  width: 190px;
-  background: #ffdc00;
-  color: #000;
-  font-size: 26px;
-  font-family: "SFProDisplay-test";
-  font-weight: 700;
-  border: none;
-  padding: 10px;
-  border-radius: 30px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 22px;
-}
-.our-impact-btn button span img {
-  width: 22px;
-  height: auto;
-  margin-top: 6px;
-}
-.case-study-container-img {
-  position: relative;
-  width: 100%;
-}
-.case-study-container-img .case-study-img {
-  width: 500px;
-  height: 236px;
-  object-fit: fill;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 8.6rem;
-  right: 5.8rem;
-  /* display: block; */
-  /* margin-right: 0px; */
-  /* margin: 0 0px 0 160px; */
-}
 
-.fake-review {
-  position: absolute;
-  bottom: -6rem;
-  right: 0px;
-  background-color: #031d42;
-  border-radius: 25px;
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-  gap: 20px;
-  width: 80%;
-  /* left: 100px; */
-}
 
-/* .fake-review-3 {
-  bottom: 10px;
-} */
-.fake-review::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 55%;
-  height: 55%;
-  pointer-events: none;
-  border-radius: 25px 0 0 0; /* Only round the top-left corner */
 
-  border-top: 2px solid #2f9094;
-  border-left: 2px solid #2f9094;
-
-  /* Create the fade effect with mask */
-  mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
-  mask-composite: intersect;
-  -webkit-mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
-  -webkit-mask-composite: source-in;
-}
-
-.fake-review::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 55%;
-  height: 55%;
-  pointer-events: none;
-  border-radius: 0 0 25px 0; /* Only round the bottom-right corner */
-
-  border-bottom: 2px solid #2f9094;
-  border-right: 2px solid #2f9094;
-
-  /* Create the fade effect with mask */
-  mask: linear-gradient(to left, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to top, #fff 0%, #fff 80%, transparent 100%);
-  mask-composite: intersect;
-  -webkit-mask: linear-gradient(to left, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to top, #fff 0%, #fff 80%, transparent 100%);
-  -webkit-mask-composite: source-in;
-}
-
-.review-card-top {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.review-card-top h1 {
-  color: #fff;
-}
-.review-card-top p,
-.review-card-content p {
-  color: #ffffffde;
-  font-weight: 500;
-  line-height: 1.3;
-}
-
-.fake-review-img {
-  height: 70px;
-  width: 70px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.fake-review-img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: right;
-}
-.fake-review-img h1 {
-  font-size: 18px;
-  color: #fff;
-}
-/* .fake-review-img p {
-  font-size: 12px;
-  color: #fff;
-  opacity: 0.8;
-} */
-/* .fake-review-line p {
-  color: #fff;
-  opacity: 0.8;
-  font-size: 20px;
-} */
-.review-card-rating {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-.review-card-rating p {
-  font-size: 12px;
-}
-.review-card-rating-stars {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.review-card-rating-img {
-  height: 16px;
-  width: 16px;
-}
-.review-card-rating-img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.review-card-rating p {
-  color: #fff;
-  opacity: 0.8;
-  margin: 0;
-}
-.review-card-content {
-  padding-right: 20px;
-}
 .amazon-section {
   padding: 80px 220px;
   background: white;
-  margin-top: 250px;
+  /* margin-top: 350px; */
 }
 .amazon-container {
   max-width: 90rem;
-  margin: 400px auto 0 auto;
+  margin: 0 auto;
 }
 .amazon-container-header {
   margin-bottom: 40px;
@@ -1055,16 +727,27 @@ h1 {
   width: 700px;
   height: auto;
 }
-.amazon-ppc-card {
-  position: absolute;
-  top: -950px;
-  left: 0;
-  width: 100%;
-  height: 600px;
-  background: linear-gradient(to right, #05214b 0%, #133c9f 40%, #194cc4 70%, #1c55c6 100%);
-  border-radius: 20px;
-  z-index: 10;
+.amazon-ppc-card-container {
+  position: relative;
 }
+
+.amazon-ppc-card {
+    max-width: 96rem;
+    height: 600px;
+    background: linear-gradient(to right, #05214b 0%, #133c9f 40%, #194cc4 70%, #1c55c6 100%);
+    border-radius: 20px;
+    z-index: 10;
+    margin: 0 auto;
+}
+.amazon-ppc-card-bg{
+    width: 100%;
+    height: 300px;
+    background: white;
+    position: absolute;
+    bottom: -1px;
+    z-index: -1;
+}
+
 .amazon-ppc-card-header {
   width: 100%;
   display: flex;
@@ -1974,7 +1657,7 @@ h1 {
     margin-bottom: 5px;
   }
   .case-study-header h2 {
-    font-size: 14px !important;
+    font-size: 10px !important;
   }
   .carousel-wrapper {
     width: 100%;
@@ -2034,15 +1717,6 @@ h1 {
     width: 70%;
     margin-bottom: 0;
   }
-  .fake-review {
-    padding: 20px 10px;
-    border-radius: 10px;
-    width: 100%;
-    left: 0;
-    height: auto;
-    bottom: -130px;
-    gap: 5px;
-  }
 
   .fake-review::before,
   .fake-review::after {
@@ -2051,10 +1725,7 @@ h1 {
   .fake-review-3 {
     bottom: -130px;
   }
-  .fake-review-img {
-    width: 40px;
-    height: 40px;
-  }
+  
   .fake-review-img img {
     object-position: left top !important;
   }
@@ -2063,7 +1734,7 @@ h1 {
   }
   .review-card-top h1 {
     padding: 0;
-    font-size: 18px;
+    font-size: 15px;
     text-align: left;
   }
   .review-card-rating {
@@ -2146,12 +1817,6 @@ h1 {
   .our-impact-btn {
     text-align: left;
   }
-  .our-impact-btn button {
-    width: 150px;
-    font-size: 20px;
-    padding: 7px;
-    margin-top: 10px;
-  }
 
   .our-impact-btn button span img {
     width: 18px;
@@ -2170,18 +1835,14 @@ h1 {
     height: 120px;
   }
 
-  .fake-review {
-    bottom: -19.3rem;
-  }
-
   .amazon-section {
     width: 100%;
     padding: 40px 20px;
-    margin-top: 750px;
+    /* margin-top: 450px; */
   }
 
   .amazon-container {
-    margin-top: 200px;
+    /* margin-top: 200px; */
   }
 
   .amazon-container-header {
@@ -2218,12 +1879,13 @@ h1 {
 
   /* CARD */
   .amazon-ppc-card {
-    position: absolute;
-    top: -2200px;
     height: auto;
     padding: 30px 20px;
-    margin: 1300px 0;
     background: linear-gradient(to bottom, #05214b 0%, #133c9f 40%, #194cc4 70%, #36abdb 100%);
+    width: 96%;
+  }
+  .amazon-ppc-card-bg {
+    height: 50%;
   }
 
   .amazon-ppc-card-header {
@@ -2303,7 +1965,7 @@ h1 {
 
   .amazon-content-img {
     flex-direction: column;
-    margin-top: 400px;
+    /* margin-top: 400px; */
   }
 
   /* IMAGE UNDER TEXT IN MOBILE */
@@ -2901,7 +2563,7 @@ h1 {
     margin-bottom: 5px;
   }
   .case-study-header h2 {
-    font-size: 16px !important;
+    font-size: 12px !important;
   }
   .carousel-wrapper {
     width: 100%;
@@ -2956,16 +2618,6 @@ h1 {
     width: 70%;
     margin-bottom: 0;
   }
-  .fake-review {
-    padding: 20px 10px;
-    border-radius: 10px;
-    width: 100%;
-    left: 0;
-    height: auto;
-    bottom: -130px;
-    gap: 5px;
-  }
-
   .fake-review::before,
   .fake-review::after {
     border-radius: 10px;
@@ -2973,10 +2625,7 @@ h1 {
   .fake-review-3 {
     bottom: -130px;
   }
-  .fake-review-img {
-    width: 40px;
-    height: 40px;
-  }
+
   .fake-review-img img {
     object-position: left top !important;
   }
@@ -2985,7 +2634,7 @@ h1 {
   }
   .review-card-top h1 {
     padding: 0;
-    font-size: 18px;
+    font-size: 15px;
     text-align: left;
   }
   .review-card-rating {
@@ -3018,9 +2667,6 @@ h1 {
     object-fit: contain;
   }
 
-  .review-card-content {
-    margin: 5px 0 0 0;
-  }
   .review-card-content p {
     font-size: 10px;
     text-align: left;
@@ -3068,12 +2714,12 @@ h1 {
   .our-impact-btn {
     text-align: left;
   }
-  .our-impact-btn button {
+  /* .our-impact-btn button {
     width: 154px;
     font-size: 21px;
     padding: 8px;
     margin-top: 6px;
-  }
+  } */
 
   .our-impact-btn button span img {
     width: 18px;
@@ -3092,18 +2738,14 @@ h1 {
     height: 135px;
   }
 
-  .fake-review {
-    bottom: -19.3rem;
-  }
-
   .amazon-section {
     width: 100%;
     padding: 40px 20px;
-    margin-top: 750px;
+    /* margin-top: 750px; */
   }
 
   .amazon-container {
-    margin-top: 200px;
+    /* margin-top: 200px; */
   }
 
   .amazon-container-header {
@@ -3140,12 +2782,13 @@ h1 {
 
   /* CARD */
   .amazon-ppc-card {
-    position: absolute;
-    top: -2200px;
     height: auto;
     padding: 30px 20px;
-    margin: 1300px 0;
     background: linear-gradient(to bottom, #05214b 0%, #133c9f 40%, #194cc4 70%, #36abdb 100%);
+    width: 96%;
+  }
+  .amazon-ppc-card-bg {
+    height: 50%;
   }
 
   .amazon-ppc-card-header {
@@ -3225,7 +2868,7 @@ h1 {
 
   .amazon-content-img {
     flex-direction: column;
-    margin-top: 400px;
+    /* margin-top: 400px; */
   }
 
   /* IMAGE UNDER TEXT IN MOBILE */
@@ -3247,7 +2890,7 @@ h1 {
   }
   .timeline {
     position: relative;
-    padding-left: 40px;
+    padding-left: 10px;
     height: 520px;
     flex-direction: column;
   }
@@ -3827,7 +3470,7 @@ h1 {
     margin-bottom: 5px;
   }
   .case-study-header h2 {
-    font-size: 17px !important;
+    font-size: 12px !important;
   }
   .carousel-wrapper {
     width: 100%;
@@ -3887,15 +3530,6 @@ h1 {
     width: 70%;
     margin-bottom: 0;
   }
-  .fake-review {
-    padding: 20px 10px;
-    border-radius: 10px;
-    width: 100%;
-    left: 0;
-    height: auto;
-    bottom: -130px;
-    gap: 5px;
-  }
 
   .fake-review::before,
   .fake-review::after {
@@ -3904,10 +3538,7 @@ h1 {
   .fake-review-3 {
     bottom: -130px;
   }
-  .fake-review-img {
-    width: 40px;
-    height: 40px;
-  }
+
   .fake-review-img img {
     object-position: left top !important;
   }
@@ -3916,7 +3547,7 @@ h1 {
   }
   .review-card-top h1 {
     padding: 0;
-    font-size: 18px;
+    font-size: 15px;
     text-align: left;
   }
   .review-card-rating {
@@ -3968,14 +3599,6 @@ h1 {
     text-align: start;
   }
 
-  .growth-percentage {
-    width: 100%; /* FIXED: Ensures grid fills container without overflow */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    justify-items: left; /* FIXED: Stretches grid items to fill columns evenly, preventing right overflow */
-    margin: 0px 0 0 0; /* Adds vertical breathing room */
-  }
   .growth-percentage div {
     margin: 10px 0;
   }
@@ -3992,19 +3615,11 @@ h1 {
   .growth-desc {
     width: 100%; /* FIXED: Ensures grid fills container without overflow */
   }
-  .growth-desc p {
-    text-align: justify;
-    font-size: 16px;
-  }
+  
   .our-impact-btn {
     text-align: left;
   }
-  .our-impact-btn button {
-    width: 170px;
-    font-size: 20px;
-    padding: 8px;
-    margin-top: 10px;
-  }
+  
 
   .our-impact-btn button span img {
     width: 18px;
@@ -4016,25 +3631,16 @@ h1 {
     bottom: 0;
     right: 0;
   } */
-  .case-study-container-img .case-study-img {
-    bottom: -10.4rem;
-    right: 2.6rem;
-    width: 268px;
-    height: 150px;
-  }
 
-  .fake-review {
-    bottom: -19.3rem;
-  }
 
   .amazon-section {
     width: 100%;
     padding: 40px 20px;
-    margin-top: 750px;
+    /* margin-top: 550px; */
   }
 
   .amazon-container {
-    margin-top: 200px;
+    /* margin-top: 200px; */
   }
 
   .amazon-container-header {
@@ -4071,12 +3677,14 @@ h1 {
 
   /* CARD */
   .amazon-ppc-card {
-    position: absolute;
-    top: -2200px;
     height: auto;
     padding: 30px 20px;
-    margin: 1300px 0;
     background: linear-gradient(to bottom, #05214b 0%, #133c9f 40%, #194cc4 70%, #36abdb 100%);
+    width: 96%;
+  }
+
+  .amazon-ppc-card-bg {
+    height: 50%;
   }
 
   .amazon-ppc-card-header {
@@ -4156,7 +3764,7 @@ h1 {
 
   .amazon-content-img {
     flex-direction: column;
-    margin-top: 400px;
+    /* margin-top: 400px; */
   }
 
   /* IMAGE UNDER TEXT IN MOBILE */
@@ -4178,7 +3786,7 @@ h1 {
   }
   .timeline {
     position: relative;
-    padding-left: 40px;
+    padding-left: 11px;
     height: 520px;
     flex-direction: column;
   }
@@ -4211,7 +3819,7 @@ h1 {
   .timeline-dot {
     position: absolute;
     left: 5px;
-    top: 144px;
+    top: 115px;
     width: 10px;
     height: 10px;
     background: black;
@@ -4222,7 +3830,7 @@ h1 {
   .timeline-dot-3 {
     position: absolute;
     left: 5px;
-    bottom: 0px;
+    bottom: 48px;
     width: 10px;
     height: 10px;
     background: black;
@@ -4739,7 +4347,7 @@ h1 {
     margin-bottom: 20px;
   }
 
-  .case-study-title h1 {
+  /* .case-study-title h1 {
     font-size: 40px !important;
     text-align: start;
   }
@@ -4747,7 +4355,7 @@ h1 {
   .case-study-title p {
     font-size: 20px;
     text-align: start;
-  }
+  } */
 
   .case-study-header {
     width: 100%;
@@ -4760,7 +4368,7 @@ h1 {
     margin-bottom: 5px;
   }
   .case-study-header h2 {
-    font-size: 24px !important;
+    font-size: 13px !important;
   }
   .carousel-wrapper {
     width: 100%;
@@ -4805,9 +4413,9 @@ h1 {
     width: 90vw;
   }
 
-  .case-study-growth-image-container {
+  /* .case-study-growth-image-container {
     flex-direction: column;
-  }
+  } */
 
   .case-study-container h1 {
     font-size: 22px;
@@ -4815,7 +4423,7 @@ h1 {
     width: 70%;
     margin-bottom: 0;
   }
-  .fake-review {
+  /* .fake-review {
     padding: 20px 10px;
     border-radius: 10px;
     width: 100%;
@@ -4823,7 +4431,7 @@ h1 {
     height: auto;
     bottom: -130px;
     gap: 5px;
-  }
+  } */
 
   .fake-review::before,
   .fake-review::after {
@@ -4832,21 +4440,14 @@ h1 {
   .fake-review-3 {
     bottom: -130px;
   }
-  .fake-review-img {
-    width: 50px;
-    height: 50px;
-  }
+  
   .fake-review-img img {
     object-position: left top !important;
   }
   .review-card-top {
     gap: 10px;
   }
-  .review-card-top h1 {
-    padding: 0;
-    font-size: 18px;
-    text-align: left;
-  }
+  
   .review-card-rating {
     display: flex;
     align-items: center;
@@ -4862,14 +4463,7 @@ h1 {
     font-size: 11px;
   }
 
-  .review-card-rating-img {
-    width: 10px;
-    height: 10px;
-    /* overflow: hidden; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  
 
   .review-card-rating-img img {
     width: 13px;
@@ -4904,9 +4498,7 @@ h1 {
     justify-items: left; /* FIXED: Stretches grid items to fill columns evenly, preventing right overflow */
     margin: 0px 0 0 0; /* Adds vertical breathing room */
   }
-  .growth-percentage div {
-    margin: 10px 0;
-  }
+  
 
   .growth-percentage h2 {
     font-size: 36px;
@@ -4927,12 +4519,12 @@ h1 {
   .our-impact-btn {
     text-align: left;
   }
-  .our-impact-btn button {
+  /* .our-impact-btn button {
     width: 148px;
     font-size: 18px;
     padding: 8px;
     margin-top: 10px;
-  }
+  } */
 
   .our-impact-btn button span img {
     width: 18px;
@@ -4944,27 +4536,27 @@ h1 {
     bottom: 0;
     right: 0;
   } */
-  .case-study-container-img .case-study-img {
+  /* .case-study-container-img .case-study-img {
     bottom: -11.7rem;
     right: 7rem;
     width: 70%;
     height: 160px;
-  }
+  } */
 
-  .fake-review {
+  /* .fake-review {
     width: 93%;
     left: 3%;
     bottom: -19rem;
-  }
+  } */
 
   .amazon-section {
     width: 100%;
     padding: 40px 20px;
-    margin-top: 750px;
+    /* margin-top: 650px; */
   }
 
   .amazon-container {
-    margin-top: 200px;
+    /* margin-top: 200px; */
   }
 
   .amazon-container-header {
@@ -5001,12 +4593,14 @@ h1 {
 
   /* CARD */
   .amazon-ppc-card {
-    position: absolute;
-    top: -2200px;
     height: auto;
     padding: 30px 20px;
-    margin: 1300px 0;
     background: linear-gradient(to bottom, #05214b 0%, #133c9f 40%, #194cc4 70%, #36abdb 100%);
+    width: 96%;
+  }
+
+  .amazon-ppc-card-bg {
+    height: 50%;
   }
 
   .amazon-ppc-card-header {
@@ -5086,7 +4680,7 @@ h1 {
 
   .amazon-content-img {
     flex-direction: column;
-    margin-top: 400px;
+    /* margin-top: 400px; */
   }
 
   /* IMAGE UNDER TEXT IN MOBILE */
@@ -5244,12 +4838,12 @@ h1 {
   }
   .timeline-image-mobile.active {
     display: block;
+    width: 60%;
+    height: auto;
     max-height: 500px;
     opacity: 1;
-
     -webkit-clip-path: inset(0 0 0 0);
     clip-path: inset(0 0 0 0);
-
     transform: scale(1);
   }
   .amazon-advertising {
@@ -5436,11 +5030,12 @@ h1 {
   }
 
   .amazon-section {
-    margin-top: 300px;
+    /* margin-top: 300px; */
+    padding: 40px 80px;
   }
 
   .amazon-container {
-    margin-top: 250px;
+    /* margin-top: 250px; */
   }
 
   /* Hero Section */
@@ -5581,10 +5176,10 @@ h1 {
     padding: 40px 30px;
   }
 
-  .case-study-title {
-    /* padding: 0 40px; */
+  /* .case-study-title {
+    /* padding: 0 40px; 
     margin-bottom: 20px;
-  }
+  } */
 
   .case-study-title h1 {
     font-size: 36px;
@@ -5629,22 +5224,22 @@ h1 {
     width: auto;
   }
 
-  .case-study-growth-image-container {
+  /* .case-study-growth-image-container {
     flex-direction: column;
-    /* margin-top: 50px; */
+    margin-top: 50px;
     margin-left: 10px;
-  }
-  .case-study-container-img .case-study-img {
+  } */
+  /* .case-study-container-img .case-study-img {
     bottom: -13.8rem;
     right: 3.8rem;
     width: 407px;
     height: 200px;
-  }
+  } */
 
-  .fake-review {
+  /* .fake-review {
     bottom: -24.3rem;
     width: 100%;
-  }
+  } */
 
   /* .fake-review {
     padding: 20px 10px;
@@ -5657,21 +5252,14 @@ h1 {
   .fake-review-3 {
     bottom: -80%;
   } */
-  .fake-review-img {
-    width: 40px;
-    height: 40px;
-  }
+  
   .fake-review-img img {
     object-position: left top !important;
   }
   .review-card-top {
     gap: 10px;
   }
-  .review-card-top h1 {
-    padding: 0;
-    font-size: 18px;
-    text-align: left;
-  }
+  
   .review-card-rating {
     display: flex;
     align-items: center;
@@ -5705,10 +5293,7 @@ h1 {
   .review-card-content {
     margin: 5px 0 0 0;
   }
-  .review-card-content p {
-    font-size: 14px;
-    text-align: left;
-  }
+  
 
   .amazon-ppc-card-ratings-card {
     padding: 10px 5px;
@@ -5773,12 +5358,10 @@ h1 {
     align-items: center;
   }
 
-  .case-study-descs h1 {
+  /* .case-study-descs h1 {
     font-size: 20px;
-  }
+  } */
   .amazon-ppc-card {
-    top: -650px;
-    margin-bottom: 40px;
     height: 430px;
   }
   .amazon-ppc-card-header h1 {
@@ -6100,22 +5683,22 @@ h1 {
     gap: 15px;
   }
 
-  .case-study-container-img .case-study-img {
+  /* .case-study-container-img .case-study-img {
     width: 430px;
     height: 215px;
     bottom: 9.8rem;
     right: 3.1rem;
-  }
+  } */
 
-  .fake-review {
+  /* .fake-review {
     width: 100%;
     /* height: 240px;
     padding: 10px 20px;
     border-radius: 20px;
     position: absolute;
     bottom: 100px;
-    left: 0px; */
-  }
+    left: 0px; 
+  } */
 
   .case-study-spacer {
     position: relative;
@@ -6148,22 +5731,22 @@ h1 {
     height: 50px;
   }
 
-  .growth-desc {
+  /* .growth-desc {
     width: 400px;
-  }
+  } */
 
-  .growth-percentage {
+  /* .growth-percentage {
     width: 400px;
     padding-bottom: 5px;
-  }
+  } */
 
   .growth-percentage h2 {
     font-size: 36px;
   }
 
-  .growth-percentage {
+  /* .growth-percentage {
     font-size: 18px;
-  }
+  } */
 
   .advertising-card img {
     width: 576px;
@@ -6356,25 +5939,25 @@ h1 {
     gap: 15px; /* spacing between image and text */
   }
 
-  .fake-review {
+  /* .fake-review {
     width: 80%;
     height: 100%;
     padding: 10px 20px;
     border-radius: 20px;
     position: absolute;
     bottom: -50%;
-    left: 8%; /* force card to stay left */
-  }
+    left: 8%; /* force card to stay left 
+  } */
 
-  .fake-review-3 {
+  /* .fake-review-3 {
     bottom: -40%;
-  }
+  } */
 
-  .case-study-container-img {
+  /* .case-study-container-img {
     position: relative;
     right: 0 !important;
     margin-left: 20%;
-  }
+  } */
 
   .case-study-spacer {
     height: auto;
@@ -6391,34 +5974,34 @@ h1 {
   .carousel-wrapper {
     height: auto;
   }
-  .case-study-container-img .case-study-img {
+  /* .case-study-container-img .case-study-img {
     width: 80%;
     height: 30%;
     margin-left: 70px;
     margin-right: 0;
     margin-top: -5%;
-  }
+  } */
 
   .golden-fox img {
     width: 150px;
     height: 50px;
   }
 
-  .growth-desc {
+  /* .growth-desc {
     width: 400px;
-  }
+  } */
 
-  .growth-percentage {
+  /* .growth-percentage {
     width: 400px;
-  }
+  } */
 
   .growth-percentage h2 {
     font-size: 40px;
   }
 
-  .growth-percentage {
+  /* .growth-percentage {
     font-size: 18px;
-  }
+  } */
 
   .amazon-ppc-card h1 {
     font-size: 36px;

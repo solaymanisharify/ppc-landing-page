@@ -1,50 +1,141 @@
 // ----------------------------
 // Amazon PPC Image
 
+// const amazonImgSection = document.querySelector(".amazon-content-img");
+// const scrollContainer = document.querySelector(".amazon-ppc-content");
+// const blocks = document.querySelectorAll(".amazon-ppc-content-text");
+// const image = document.getElementById("ppcImage");
+
+// function updateContentOnScroll() {
+//   const rect = amazonImgSection.getBoundingClientRect();
+//   const sectionTop = window.scrollY + rect.top;
+//   const sectionHeight = rect.height;
+
+//   // Calculate scroll progress relative to the section
+//   const scrollY = window.scrollY;
+//   const progress = Math.min(Math.max((scrollY - sectionTop + window.innerHeight / 2) / sectionHeight, 0), 1);
+//   const index = Math.round(progress * (blocks.length - 1));
+//   const activeBlock = blocks[index];
+
+//   if (activeBlock) {
+//     // Update image if changed
+//     const img = activeBlock.dataset.image;
+//     const current = image.src.split("/").pop();
+//     if (img && img !== current) {
+//       image.src = "assets/images/Desktop/" + img;
+//     }
+
+//     // Highlight active block
+//     blocks.forEach((block, i) => {
+//       if (i === index) {
+//         block.style.opacity = 1;
+//       } else {
+//         // block.style.opacity = 0.3;
+//       }
+//     });
+
+//     // Scroll the inner container so the active block is vertically centered
+//     const scrollTop = activeBlock.offsetTop - scrollContainer.clientHeight / 2 + activeBlock.clientHeight / 2;
+//     scrollContainer.scrollTo({
+//       top: scrollTop,
+//       behavior: "smooth", // or 'auto' if you don't want smooth
+//     });
+//   }
+// }
+
+// window.addEventListener("scroll", updateContentOnScroll);
+// window.addEventListener("resize", updateContentOnScroll);
+
 const amazonImgSection = document.querySelector(".amazon-content-img");
 const scrollContainer = document.querySelector(".amazon-ppc-content");
 const blocks = document.querySelectorAll(".amazon-ppc-content-text");
 const image = document.getElementById("ppcImage");
 
-function updateContentOnScroll() {
+let isSyncing = false;
+
+/* ---------- Shared update logic ---------- */
+function updateActiveBlock(index, syncInner = true) {
+  const activeBlock = blocks[index];
+  if (!activeBlock) return;
+
+  // Update image
+  const img = activeBlock.dataset.image;
+  const current = image.src.split("/").pop();
+  if (img && img !== current) {
+    image.src = "assets/images/Desktop/" + img;
+  }
+
+  // Highlight active block
+  blocks.forEach((block, i) => {
+    block.style.opacity = i === index ? 1 : 0.3;
+  });
+
+  // Sync inner scroll ONLY when window scrolls
+  if (syncInner) {
+    isSyncing = true;
+    const scrollTop =
+      activeBlock.offsetTop -
+      scrollContainer.clientHeight / 2 +
+      activeBlock.clientHeight / 2;
+
+    scrollContainer.scrollTo({
+      top: scrollTop,
+      behavior: "smooth",
+    });
+
+    setTimeout(() => (isSyncing = false), 200);
+  }
+}
+
+/* ---------- OUTER (window) scroll ---------- */
+function onWindowScroll() {
+  if (isSyncing) return;
+
   const rect = amazonImgSection.getBoundingClientRect();
   const sectionTop = window.scrollY + rect.top;
   const sectionHeight = rect.height;
 
-  // Calculate scroll progress relative to the section
   const scrollY = window.scrollY;
-  const progress = Math.min(Math.max((scrollY - sectionTop + window.innerHeight / 2) / sectionHeight, 0), 1);
+  const progress = Math.min(
+    Math.max(
+      (scrollY - sectionTop + window.innerHeight / 2) / sectionHeight,
+      0
+    ),
+    1
+  );
+
   const index = Math.round(progress * (blocks.length - 1));
-  const activeBlock = blocks[index];
-
-  if (activeBlock) {
-    // Update image if changed
-    const img = activeBlock.dataset.image;
-    const current = image.src.split("/").pop();
-    if (img && img !== current) {
-      image.src = "assets/images/Desktop/" + img;
-    }
-
-    // Highlight active block
-    blocks.forEach((block, i) => {
-      if (i === index) {
-        block.style.opacity = 1;
-      } else {
-        // block.style.opacity = 0.3;
-      }
-    });
-
-    // Scroll the inner container so the active block is vertically centered
-    const scrollTop = activeBlock.offsetTop - scrollContainer.clientHeight / 2 + activeBlock.clientHeight / 2;
-    scrollContainer.scrollTo({
-      top: scrollTop,
-      behavior: "smooth", // or 'auto' if you don't want smooth
-    });
-  }
+  updateActiveBlock(index, true);
 }
 
-window.addEventListener("scroll", updateContentOnScroll);
-window.addEventListener("resize", updateContentOnScroll);
+/* ---------- INNER scroll ---------- */
+function onInnerScroll() {
+  if (isSyncing) return;
+
+  const center =
+    scrollContainer.scrollTop + scrollContainer.clientHeight / 2;
+
+  let closestIndex = 0;
+  let minDistance = Infinity;
+
+  blocks.forEach((block, i) => {
+    const blockCenter = block.offsetTop + block.clientHeight / 2;
+    const distance = Math.abs(center - blockCenter);
+
+    if (distance < minDistance) {
+      minDistance = distance;
+      closestIndex = i;
+    }
+  });
+
+  updateActiveBlock(closestIndex, false);
+}
+
+/* ---------- Events ---------- */
+window.addEventListener("scroll", onWindowScroll);
+window.addEventListener("resize", onWindowScroll);
+scrollContainer.addEventListener("scroll", onInnerScroll);
+
 
 // ----------------------------
 // Init
@@ -151,8 +242,8 @@ dots.forEach((dot) => {
       };
       dotOffset = {
         broad: 50,
-        phrase: 265,
-        exact: -280,
+        phrase: 228,
+        exact: -232,
       };
     }
     if (window.innerWidth < 640) {
@@ -220,11 +311,13 @@ dots.forEach((dot) => {
       document.querySelector(".timeline-dot-3").style.transform = `translateY(${dotOffset.exact}px)`;
       document.getElementById("content-exact").style.transform = `translateY(${0}px)`;
       if (window.innerWidth < 640) {
+        document.getElementById('content-phrase').style.transform = `translateY(${contentOffset.exact}px)`;
+      document.querySelector(".timeline-dot").style.transform = `translateY(${dotOffset.exact + 213}px)`;
         document.getElementById("content-exact").style.transform = `translateY(${-200}px)`;
         const exactImg = document.querySelector('.timeline-image-mobile[data-target="content-exact"]');
         const phraseContent = document.getElementById("content-phrase");
         if (exactImg) {
-          exactImg.style.marginTop = "200px";
+          exactImg.style.marginTop = "113px";
         }
       }
     }

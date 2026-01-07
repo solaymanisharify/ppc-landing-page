@@ -447,8 +447,7 @@
     padding: 0;
   }
   .panel__stack .panel__card {
-    min-height: 400px;
-    max-height: 470px;
+    height: 62dvh;
     padding: 30px 16px 0px;
     flex-direction: column;
   }
@@ -555,8 +554,7 @@
     padding: 0;
   }
   .panel__stack .panel__card {
-    min-height: 400px;
-    max-height: 470px;
+    height: 62dvh;
     padding: 30px 16px 0px;
     flex-direction: column;
   }
@@ -677,8 +675,7 @@
     padding: 0;
   }
   .panel__stack .panel__card {
-    min-height: 400px;
-    max-height: 500px;
+    height: 62dvh;
     padding: 30px 16px 0px;
     flex-direction: column;
   }
@@ -688,7 +685,7 @@
   }
 
   .listing-optimization-desc-content h3 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .listing-optimization-desc-content p {
@@ -733,9 +730,9 @@
     margin-top: 10px;
   } */
   
-  .listing-optimization-desc-content h3 {
+  /* .listing-optimization-desc-content h3 {
     display: none;
-  }
+  } */
   .listing-optimization-desc-content .mobile-version {
     display: flex;
     width: 100%;
@@ -815,10 +812,10 @@
     top: 0;
     left: 0;
     width: 100%; */
-    min-height: 72dvh;
-    max-height: 80dvh;
+    height: 73dvh;
     padding: 2.8rem 1.5rem 1.8rem;
-    /* flex-direction: column; */
+    flex-direction: column;
+    justify-content: space-between;
     /* border-radius: 20px;
 
     transform-origin: top center;
@@ -826,7 +823,7 @@
   }
 
   .listing-optimization-desc {
-    width: 50%;
+    width: 100%;
     justify-content: flex-start;
   }
 
@@ -896,7 +893,7 @@
   .increase-sales-img, 
   .reduce-acos-img, 
   .weekly-reporting-img {
-    width: 50%;
+    width: 100%;
     align-items: flex-start;
   }
 
@@ -997,9 +994,9 @@
     padding: 20px;
   } */
 
-  .listing-optimization-desc-content h3 {
+  /* .listing-optimization-desc-content h3 {
     font-size: 14px;
-  }
+  } */
 
   /* .listing-optimization-desc-content p {
     font-size: 13px;
@@ -1021,9 +1018,9 @@
   /* .listing-title-div h2 {
     font-size: 16px;
   } */
-  .listing-optimization-desc-content h3 {
+  /* .listing-optimization-desc-content h3 {
     display: none;
-  }
+  } */
   /* .listing-optimization-desc-content .mobile-version {
     display: flex;
     width: 100%;
