@@ -405,7 +405,7 @@
   }
 
   .horizontal {
-    padding: 70px 0 0 0;
+    padding: 70px 28px 0;
     gap: 20px;
   }
   .case-study-titles {
@@ -418,7 +418,7 @@
   }
 
   .case-study-container-1 {
-    margin-left: 2%;
+    margin-left: 0;
   }
 
   .fake-review {
@@ -426,6 +426,12 @@
     margin: 0;
     width: 100%;
     gap: 5px;
+    border-radius: 10px;
+  }
+
+  .fake-review::before,
+  .fake-review::after {
+    border-radius: 10px;
   }
 
   .case-study-container-img .case-study-img {
@@ -460,6 +466,11 @@
 
   .case-study-container-1, .case-study-container-2, .case-study-container-3 {
     padding: 20px;
+    border-radius: 10px;
+  }
+
+  .case-study-container-1::before, .case-study-container-2::before, .case-study-container-3::before {
+    border-radius: 10px 0 0 0;
   }
 
   .golden-fox img {
@@ -468,7 +479,7 @@
   }
 
   .sticky-parent {
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 0px;
   }
 
@@ -505,7 +516,7 @@
   }
 
   .horizontal {
-    padding: 70px 0 0 0;
+    padding: 70px 35px 0;
     gap: 20px;
   }
   .case-study-titles {
@@ -518,7 +529,7 @@
   }
 
   .case-study-container-1 {
-    margin-left: 2%;
+    margin-left: 0;
   }
 
   .fake-review {
@@ -526,6 +537,12 @@
     margin: 0;
     width: 100%;
     gap: 5px;
+    border-radius: 10px;
+  }
+
+  .fake-review::before,
+  .fake-review::after {
+    border-radius: 10px;
   }
 
   .case-study-container-img .case-study-img {
@@ -560,6 +577,11 @@
 
   .case-study-container-1, .case-study-container-2, .case-study-container-3 {
     padding: 20px;
+    border-radius: 10px;
+  }
+
+  .case-study-container-1::before, .case-study-container-2::before, .case-study-container-3::before {
+    border-radius: 10px 0 0 0;
   }
 
   .golden-fox img {
@@ -568,7 +590,7 @@
   }
 
   .sticky-parent {
-    margin-top: 0px;
+    margin-top: 25px;
     margin-bottom: 0px;
   }
 
@@ -605,7 +627,7 @@
   }
 
   .horizontal {
-    padding: 70px 0 0 0;
+    padding: 70px 35px 0;
     gap: 20px;
   }
   .case-study-titles {
@@ -618,7 +640,7 @@
   }
 
   .case-study-container-1 {
-    margin-left: 2%;
+    margin-left: 0;
   }
 
   .fake-review {
@@ -626,6 +648,12 @@
     margin: 0;
     width: 100%;
     gap: 5px;
+    border-radius: 10px;
+  }
+
+  .fake-review::before,
+  .fake-review::after {
+    border-radius: 10px;
   }
 
   .case-study-container-img .case-study-img {
@@ -659,6 +687,11 @@
 
   .case-study-container-1, .case-study-container-2, .case-study-container-3 {
     padding: 20px;
+    border-radius: 10px;
+  }
+
+  .case-study-container-1::before, .case-study-container-2::before, .case-study-container-3::before {
+    border-radius: 10px 0 0 0;
   }
 
   .golden-fox img {
@@ -672,7 +705,7 @@
   }
 
   .sticky-parent {
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 0px;
   }
 
@@ -681,7 +714,7 @@
   }
 }
 
-@media (max-width: 767px) and (min-width: 424px) {
+@media (max-width: 768px) and (min-width: 424px) {
   .sticky {
     top: 3%;
     height: 90dvh;
@@ -691,6 +724,11 @@
   .case-study-container-2,
   .case-study-container-3 {
     padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .case-study-container-1::before, .case-study-container-2::before, .case-study-container-3::before {
+    border-radius: 10px 0 0 0;
   }
 
   .case-study-growth-image-container {
@@ -716,7 +754,7 @@
   }
 
   .sticky-parent {
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 0px;
   }
   .case-study-titles {
@@ -724,7 +762,7 @@
     margin-bottom: 0px;
   }
   .horizontal {
-    padding: 70px 0 0 0;
+    padding: 70px 75px 0;
     gap: 20px;
   }
 
@@ -752,6 +790,12 @@
   .fake-review {
     padding: 30px 18px;
     margin: 0;
+    border-radius: 10px;
+  }
+
+  .fake-review::before,
+  .fake-review::after {
+    border-radius: 10px;
   }
 
   .fake-review-img {
@@ -769,7 +813,7 @@
   }
 
   .case-study-container-1 {
-    margin-left: 5%;
+    margin-left: 0;
   }
 
 
@@ -822,7 +866,7 @@
 
 /* Mobile adjustments */
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 769px) and (max-width: 1023px) {
 
   .sticky {
     height: 94vh;
