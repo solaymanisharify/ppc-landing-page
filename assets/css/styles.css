@@ -660,9 +660,14 @@ h1 {
 }
 .amazon-ppc .accordion .accordion-item .accordion-content {
     background: transparent;
+    transition: max-height 1s cubic-bezier(0.4, 0, 0.6, 1),
+        opacity 0.8s cubic-bezier(0.4, 0, 0.6, 1) 0.05s,
+        transform 0.6s cubic-bezier(0.4, 0, 0.6, 1),
+        padding 0.7s cubic-bezier(0.4, 0, 0.6, 1);
+    will-change: max-height, opacity, transform;
 }
 .amazon-ppc .accordion .accordion-item .accordion-content.active {
-    max-height: 100%;
+    max-height: max-content;
     padding: 10px 0;
 }
 .amazon-ppc .accordion .accordion-item .accordion-content div {
