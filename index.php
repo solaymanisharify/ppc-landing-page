@@ -626,10 +626,10 @@
             </div>
             <div class="amazon-ppc">
                 <div class="amazon-content-img">
-                    <div class="amazon-container-header-mobile">
+                    <!-- <div class="amazon-container-header-mobile">
                         <h1>Amazon PPC for Every Phase</h1>
                         <h3>Custom Strategies to our Growth</h3>
-                    </div>
+                    </div> -->
                     <div class="amazon-ppc-wrapper">
                         <div class="fade-top"></div>
                         <div class="amazon-ppc-content">
@@ -651,6 +651,44 @@
                     <div class="amazon-ppc-img">
                         <div class="radial"></div>
                         <img id="ppcImage" src="assets/images/Desktop/Launch.webp" alt="">
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="radial2"></div>
+                    <div class="accordion-item">
+                        <div class="accordion-header active">
+                            <h1>Launch</h1>
+                            <!-- <img class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow"> -->
+                        </div>
+                        <div class="accordion-content active">
+                            <div>
+                                <p>Every brand is unique - that’s why we tailor your PPC launch plan to your specific goals, audience, and product positioning. - Listing Optimization - Initial Keyword Research - Auto & Manual Campaign Setup - Maximize Impression - Harvesting & Data Collection</p>
+                                <img id="ppcImage" src="assets/images/Desktop/Launch.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h1>Optimize</h1>
+                        </div>
+                        <div class="accordion-content">
+                            <div>
+                                <p>Every Amazon business performs differently — and so should your ad strategy. You need tailored adjustments of - Review & Refine Keywords - Adjust Bids & Budgets - Campaign Segmentation - Brand Awareness - Monitor & Report Performance</p>
+                                <img id="ppcImage" src="assets/images/Desktop/Optimize.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h1>Dominate</h1>
+                        </div>
+                        <div class="accordion-content">
+                            <div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, dolorum porro! Libero sint, assumenda fuga, voluptatem tempore laborum recusandae distinctio quia voluptate aliquid placeat soluta! Nihil exercitationem id cum</p>
+                                <img id="ppcImage" src="assets/images/Desktop/dominate.webp" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

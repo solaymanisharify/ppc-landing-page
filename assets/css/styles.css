@@ -618,7 +618,7 @@ h1 {
   font-family: "Recoleta", serif;
   font-weight: 300;
   color: #082c6b;
-  font-size: 50px;
+  font-size: clamp(36px, 5vw, 50px);
   margin-bottom: 10px;
 }
 .amazon-container-header h3 {
@@ -630,11 +630,56 @@ h1 {
 }
 .amazon-ppc {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
   justify-content: space-between;
   position: relative;
 }
+
+.amazon-ppc .accordion {
+  display: none;
+}
+.amazon-ppc .accordion .accordion-item {
+  border-bottom: none;
+}
+.amazon-ppc .accordion .accordion-item .accordion-header {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+.amazon-ppc .accordion .accordion-item .accordion-header.active {
+  border-bottom: none;
+  
+}
+.amazon-ppc .accordion .accordion-item .accordion-header h1 {
+    color: #000000;
+    font-size: clamp(1.5rem, 3vw, 20px);
+    padding-left: 0px;
+}
+.amazon-ppc .accordion .accordion-item .accordion-content {
+    background: transparent;
+}
+.amazon-ppc .accordion .accordion-item .accordion-content.active {
+    max-height: 100%;
+    padding: 10px 0;
+}
+.amazon-ppc .accordion .accordion-item .accordion-content div {
+    padding-bottom: 0px;
+}
+.amazon-ppc .accordion .accordion-item .accordion-content div p {
+    color: black;
+    padding: 0px;
+    font-size: clamp(0.7rem, 3vw, 1rem);
+}
+.amazon-ppc .accordion .accordion-item .accordion-content div img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+
 .amazon-ppc-wrapper {
   position: relative;
 }
@@ -665,7 +710,7 @@ h1 {
 }
 
 .fade-top {
-  top: -35px;
+  top: -40px;
   background: linear-gradient(to bottom, #fff 0%, rgba(255, 255, 255, 0) 100%);
 }
 
@@ -722,6 +767,17 @@ h1 {
   top: -50px;
   left: -100px;
   z-index: 1;
+  filter: blur(40px);
+}
+.radial2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(11, 131, 254, 0.8) 0%, rgba(11, 131, 254, 0) 70%);
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  z-index: -10;
   filter: blur(40px);
 }
 .amazon-ppc-img img {
@@ -1846,13 +1902,13 @@ h1 {
     /* margin-top: 200px; */
   }
 
-  .amazon-container-header {
+  /* .amazon-container-header {
     display: none;
-  }
+  } */
 
-  .amazon-container-header-mobile {
+  /* .amazon-container-header-mobile {
     display: block;
-  }
+  } */
 
   .amazon-container-header-mobile h1 {
     font-family: "Recoleta", serif;
@@ -1871,11 +1927,19 @@ h1 {
     color: #131921;
   }
 
+  .amazon-container-header {
+    margin-bottom: 10px;
+  }
+
   /* MAIN WRAPPER BECOMES COLUMN */
   .amazon-ppc {
     flex-direction: column;
     gap: 40px;
     position: relative;
+  }
+
+  .amazon-ppc .accordion {
+    display: block;
   }
 
   /* CARD */
@@ -1965,7 +2029,8 @@ h1 {
   }
 
   .amazon-content-img {
-    flex-direction: column;
+    display: none;
+    /* flex-direction: column; */
     /* margin-top: 400px; */
   }
 
@@ -2032,7 +2097,7 @@ h1 {
   .timeline-dot-3 {
     position: absolute;
     left: 5px;
-    bottom: 0px;
+    bottom: 63px;
     width: 10px;
     height: 10px;
     background: black;
@@ -2749,13 +2814,13 @@ h1 {
     /* margin-top: 200px; */
   }
 
-  .amazon-container-header {
+  /* .amazon-container-header {
     display: none;
-  }
+  } */
 
-  .amazon-container-header-mobile {
+  /* .amazon-container-header-mobile {
     display: block;
-  }
+  } */
 
   .amazon-container-header-mobile h1 {
     font-family: "Recoleta", serif;
@@ -2774,11 +2839,19 @@ h1 {
     color: #131921;
   }
 
+  .amazon-container-header {
+    margin-bottom: 10px;
+  }
+
   /* MAIN WRAPPER BECOMES COLUMN */
   .amazon-ppc {
     flex-direction: column;
     gap: 40px;
     position: relative;
+  }
+
+  .amazon-ppc .accordion {
+    display: block;
   }
 
   /* CARD */
@@ -2868,7 +2941,8 @@ h1 {
   }
 
   .amazon-content-img {
-    flex-direction: column;
+    display: none;
+    /* flex-direction: column; */
     /* margin-top: 400px; */
   }
 
@@ -2924,7 +2998,7 @@ h1 {
   .timeline-dot {
     position: absolute;
     left: 5px;
-    top: 144px;
+    top: 128px;
     width: 10px;
     height: 10px;
     background: black;
@@ -2935,7 +3009,7 @@ h1 {
   .timeline-dot-3 {
     position: absolute;
     left: 5px;
-    bottom: 0px;
+    bottom: 47px;
     width: 10px;
     height: 10px;
     background: black;
@@ -3644,13 +3718,13 @@ h1 {
     /* margin-top: 200px; */
   }
 
-  .amazon-container-header {
+  /* .amazon-container-header {
     display: none;
-  }
+  } */
 
-  .amazon-container-header-mobile {
+  /* .amazon-container-header-mobile {
     display: block;
-  }
+  } */
 
   .amazon-container-header-mobile h1 {
     font-family: "Recoleta", serif;
@@ -3669,11 +3743,19 @@ h1 {
     color: #131921;
   }
 
+  .amazon-container-header {
+    margin-bottom: 10px;
+  }
+
   /* MAIN WRAPPER BECOMES COLUMN */
   .amazon-ppc {
     flex-direction: column;
     gap: 40px;
     position: relative;
+  }
+
+  .amazon-ppc .accordion {
+    display: block;
   }
 
   /* CARD */
@@ -3764,7 +3846,8 @@ h1 {
   }
 
   .amazon-content-img {
-    flex-direction: column;
+    display: none;
+    /* flex-direction: column; */
     /* margin-top: 400px; */
   }
 
@@ -4557,13 +4640,13 @@ h1 {
     /* margin-top: 200px; */
   }
 
-  .amazon-container-header {
+  /* .amazon-container-header {
     display: none;
-  }
+  } */
 
-  .amazon-container-header-mobile {
+  /* .amazon-container-header-mobile {
     display: block;
-  }
+  } */
 
   .amazon-container-header-mobile h1 {
     font-family: "Recoleta", serif;
@@ -4582,11 +4665,19 @@ h1 {
     color: #131921;
   }
 
+  .amazon-container-header {
+    margin-bottom: 10px;
+  }
+
   /* MAIN WRAPPER BECOMES COLUMN */
   .amazon-ppc {
     flex-direction: column;
     gap: 40px;
     position: relative;
+  }
+
+  .amazon-ppc .accordion {
+    display: block;
   }
 
   /* CARD */
@@ -4677,7 +4768,8 @@ h1 {
   }
 
   .amazon-content-img {
-    flex-direction: column;
+    display: none;
+    /* flex-direction: column; */
     /* margin-top: 400px; */
   }
 
@@ -4744,7 +4836,7 @@ h1 {
   .timeline-dot-3 {
     position: absolute;
     left: 5px;
-    bottom: 0px;
+    bottom: 33px;
     width: 10px;
     height: 10px;
     background: black;
@@ -5347,9 +5439,9 @@ h1 {
   }
 
   /* Amazon PPC Section */
-  .amazon-container-header h1 {
+  /* .amazon-container-header h1 {
     font-size: 40px;
-  }
+  } */
 
   .amazon-ppc {
     flex-direction: column;

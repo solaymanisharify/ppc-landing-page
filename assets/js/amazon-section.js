@@ -246,7 +246,7 @@ dots.forEach((dot) => {
         exact: -232,
       };
     }
-    if (window.innerWidth < 640) {
+    if (window.innerWidth < 769) {
       document.querySelectorAll(".timeline-image-mobile").forEach((img) => {
         // remove previous state
         img.classList.remove("active", "from-bottom", "from-top");
@@ -288,10 +288,10 @@ dots.forEach((dot) => {
       document.querySelector(".timeline-dot").style.transform = `translateY(${dotOffset.phrase}px)`;
       const phraseImg = document.querySelector('.timeline-image-mobile[data-target="content-phrase"]');
       const phraseContent = document.getElementById("content-phrase");
-      if (window.innerWidth < 640) {
-        phraseImg.style.marginTop = "250px";
-        // phraseContent.style.transform = `translateY(${contentOffset.broad * -1}px)`;
-      }
+      // if (window.innerWidth < 768) {
+      //   // phraseImg.style.marginTop = "250px";
+      //   // phraseContent.style.transform = `translateY(${contentOffset.broad * -1}px)`;
+      // }
     } else if (targetId === "content-phrase") {
       if (window.innerWidth < 640) {
         const phraseImg = document.querySelector('.timeline-image-mobile[data-target="content-phrase"]');
@@ -301,10 +301,10 @@ dots.forEach((dot) => {
           phraseContent.style.transform = `translateY( ${contentOffset.phrase}px)`;
         }
       }
-      const exactImg = document.querySelector('.timeline-image-mobile[data-target="content-exact"]');
-      if (exactImg) {
-        exactImg.style.marginTop = "300px";
-      }
+      // const exactImg = document.querySelector('.timeline-image-mobile[data-target="content-exact"]');
+      // if (exactImg) {
+      //   exactImg.style.marginTop = "300px";
+      // }
     } else if (targetId === "content-exact") {
       document.getElementById('content-phrase').style.transform = `translateY(${contentOffset.exact}px)`;
       document.querySelector(".timeline-dot").style.transform = `translateY(${dotOffset.exact - 6}px)`;
@@ -312,7 +312,7 @@ dots.forEach((dot) => {
       document.getElementById("content-exact").style.transform = `translateY(${0}px)`;
       if (window.innerWidth < 640) {
         document.getElementById('content-phrase').style.transform = `translateY(${contentOffset.exact}px)`;
-      document.querySelector(".timeline-dot").style.transform = `translateY(${dotOffset.exact + 213}px)`;
+        document.querySelector(".timeline-dot").style.transform = `translateY(${dotOffset.exact + 213}px)`;
         document.getElementById("content-exact").style.transform = `translateY(${-200}px)`;
         const exactImg = document.querySelector('.timeline-image-mobile[data-target="content-exact"]');
         const phraseContent = document.getElementById("content-phrase");
