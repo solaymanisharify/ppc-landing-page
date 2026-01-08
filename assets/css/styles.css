@@ -4093,7 +4093,7 @@ h1 {
     padding: 2px 4px;
   }
   .amazon-advertising-pricing-img img {
-    width: 400px;
+    /* width: 400px; */
     height: 250px;
   }
 }
