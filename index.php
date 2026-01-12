@@ -26,7 +26,7 @@
 <body>
     <!-- Hero section -->
     <div class="hero-container">
-        <div class="hero-body container">
+        <div class="hero-body">
             <div class="hero-1">
                 <button class="launch-dominate-btn">From Launch to Dominate</button>
                 <h1 class="scalable-amazon">Scalable Amazon Advertising <br> <span>Management</span></h1>
@@ -50,7 +50,7 @@
     <!-- 1st section -->
     <div class="main-container">
         <div class="first-container">
-            <div class="reveneue-section container">
+            <div class="reveneue-section">
                 <div class="item-list">
                     <div class="item-list-1">
                         <div class="revenue-icon">
@@ -778,17 +778,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="amazon-ppc-strategy">
-                    <div class="amazon-ppc-card-header">
-                        <h1>The right strategy. The right data.
-                            <br><span>The right growth.</span>
-                        </h1>
-                    </div>
-                    <div class="amazon-ppc-strategy-img">
-                        <div class="img-wrapper">
-                            <img src="assets/images/Desktop/Right-Strategy.png" alt="">
-                        </div>
-                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="amazon-ppc-strategy-container">
+        <div class="amazon-ppc-strategy">
+            <div class="amazon-ppc-card-header">
+                <h1>The right strategy. The right data.
+                    <br><span>The right growth.</span>
+                </h1>
+            </div>
+            <div class="amazon-ppc-strategy-img">
+                <div class="img-wrapper">
+                    <img src="assets/images/Desktop/Right-Strategy.png" alt="">
                 </div>
             </div>
         </div>

@@ -305,7 +305,7 @@ h1 {
 .reveneue-section {
   /* background: #000; */
 
-  max-width: 90rem;
+  max-width: 84%;
   margin: 140px auto 0 auto;
   text-align: center;
   justify-content: space-between;
@@ -600,9 +600,8 @@ h1 {
 
 
 .amazon-section {
-  padding: 80px 220px;
-  background: white;
-  /* margin-top: 350px; */
+    padding: 9.5rem 220px 170px 220px;
+    background: white;
 }
 .amazon-container {
   max-width: 90rem;
@@ -790,11 +789,12 @@ h1 {
   height: auto;
 }
 .amazon-ppc-card-container {
-  position: relative;
+    position: relative;
+    margin: 6rem 0 0 0;
 }
 
 .amazon-ppc-card {
-    max-width: 96rem;
+    max-width: 90rem;
     height: 600px;
     background: linear-gradient(to right, #05214b 0%, #133c9f 40%, #194cc4 70%, #1c55c6 100%);
     border-radius: 20px;
@@ -922,7 +922,7 @@ h1 {
   gap: 0px;
 }
 .amazon-keyword {
-  margin-top: 20px;
+  margin-top: 8rem;
 }
 .amazon-keyword header h1 {
   font-family: "Recoleta", serif;
@@ -942,7 +942,7 @@ h1 {
 
 .timeline {
   position: relative;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   display: flex;
   justify-content: space-between;
   gap: 10rem;
@@ -1133,8 +1133,8 @@ h1 {
 }
 .amazon-advertising {
   position: relative;
-  padding-bottom: 450px;
-  margin-top: 125px;
+  /* padding-bottom: 450px; */
+  margin-top: 165px;
 }
 .amazon-advertising header {
   margin-top: 40px;
@@ -1213,16 +1213,29 @@ h1 {
   text-align: right;
 }
 
-.amazon-ppc-strategy {
+.amazon-ppc-strategy-container{
+  position: relative;
+  /* padding: 140px 0; */
+  
+}
+.amazon-ppc-strategy-container::before{
+  content: '';
   position: absolute;
-  height: 720px;
-  bottom: -450px;
-  left: 0;
+  top: -50px;
+  height: 50%;
   width: 100%;
+  z-index: -1;
+  background: #ffffff;
+}
+
+.amazon-ppc-strategy {
+  height: 720px;
+  /* width: 100%; */
+  max-width: 90rem;
+  margin: 0 auto;
   background: linear-gradient(to right, #05214b 0%, #133c9f 40%, #194cc4 70%, #36abdb 100%);
   border-radius: 20px;
-  z-index: 10;
-  margin-top: 253px;
+  margin: 0 auto;
 }
 
 .amazon-ppc-strategy h1 {
@@ -1258,7 +1271,7 @@ h1 {
   max-width: 1400px;
   margin: 0 auto;
   min-height: 600px;
-  /* margin: 500px auto 0 auto; */
+  margin: 150px auto 0 auto;
 }
 .ppc-question-header h1 {
   font-size: 62px;
@@ -5951,6 +5964,7 @@ h1 {
 
   .reveneue-section {
     margin: 0px;
+    max-width: 100%;
   }
   .revenue-icon img {
     width: 40px;
