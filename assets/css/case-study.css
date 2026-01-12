@@ -38,7 +38,7 @@
 }
 
 .case-study-title p {
-  font-family: "SF-Pro-Desplay";
+  font-family: "Poppins";
   font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: 300;
   color: white;
@@ -927,7 +927,7 @@
   }
 
   .case-study-titles {
-    padding: 20px 10%;
+    padding: 20px 5.5%;
   }
   .case-study-container-1 {
     margin-left: 8px;
@@ -942,7 +942,7 @@
   }
 
   .horizontal {
-    padding: 150px 90px 0 9%;
+    padding: 150px 90px 0 5.5%;
   }
 
   .case-study-container-1,
