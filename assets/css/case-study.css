@@ -39,7 +39,7 @@
 
 .case-study-title p {
   font-family: "SF-Pro-Desplay";
-  font-size: clamp(1.125rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: 300;
   color: white;
   margin-top: 0;
@@ -406,11 +406,11 @@
   }
 
   .horizontal {
-    padding: 70px 28px 0;
+    padding: 70px 20px 0;
     gap: 20px;
   }
   .case-study-titles {
-    padding: 0px 7%;
+    padding: 0px 0 0 6%;
     margin-bottom: 0px;
   }
 
@@ -517,11 +517,11 @@
   }
 
   .horizontal {
-    padding: 70px 35px 0;
+    padding: 70px 45px 0;
     gap: 20px;
   }
   .case-study-titles {
-    padding: 0px 7%;
+    padding: 0 0 0 12%;
     margin-bottom: 0px;
   }
 
@@ -628,11 +628,11 @@
   }
 
   .horizontal {
-    padding: 70px 35px 0;
+    padding: 70px 9.5% 0;
     gap: 20px;
   }
   .case-study-titles {
-    padding: 0px 7%;
+    padding: 0px 9.5%;
     margin-bottom: 0px;
   }
 
@@ -759,11 +759,11 @@
     margin-bottom: 0px;
   }
   .case-study-titles {
-    padding: 4px 9%;
+    padding: 4px 8%;
     margin-bottom: 0px;
   }
   .horizontal {
-    padding: 70px 75px 0;
+    padding: 70px 8% 0;
     gap: 20px;
   }
 
@@ -927,7 +927,7 @@
   }
 
   .case-study-titles {
-    padding: 20px 80px;
+    padding: 20px 10%;
   }
   .case-study-container-1 {
     margin-left: 8px;
@@ -942,7 +942,7 @@
   }
 
   .horizontal {
-    padding: 150px 90px 0 90px;
+    padding: 150px 90px 0 9%;
   }
 
   .case-study-container-1,
@@ -955,7 +955,7 @@
     font-size: 1.8rem;
   } */
   .sticky-parent {
-    margin-top: 80px;
+    /* margin-top: 80px; */
   }
   .case-study-container-img {
     bottom: -27%;

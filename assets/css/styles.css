@@ -1594,7 +1594,8 @@ h1 {
 
   .reveneue-section {
     padding: 0px;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
+    max-width: 100%;
   }
 
   .revenue-icon img {
@@ -2513,7 +2514,8 @@ h1 {
 
   .reveneue-section {
     padding: 0px;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
+    max-width: 100%;
   }
 
   .revenue-icon img {
@@ -3427,7 +3429,8 @@ h1 {
 
   .reveneue-section {
     padding: 0px;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
+    max-width: 100%;
   }
 
   .revenue-icon img {
@@ -4207,6 +4210,10 @@ h1 {
     /* width: 400px; */
     height: 250px;
   }
+
+  .amazon-ppc-card-container {
+      margin: 0;
+  }
 }
 
 @media (max-width: 768px) and (min-width: 426px) {
@@ -4333,7 +4340,8 @@ h1 {
 
   .reveneue-section {
     padding: 0px;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
+    max-width: 100%;
   }
 
   .revenue-icon img {
@@ -5201,8 +5209,10 @@ h1 {
 
   /* Stats Section */
   .reveneue-section {
-    margin-top: 60px;
-  }
+    padding: 0px;
+    margin: 60px 0 0 0;
+    max-width: 100%;
+}
   .revenue-icon img {
     width: 40px;
     height: 40px;
